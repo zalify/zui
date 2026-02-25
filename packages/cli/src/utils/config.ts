@@ -2,13 +2,14 @@ import path, { join } from 'node:path'
 import * as p from '@clack/prompts'
 import { cosmiconfig } from 'cosmiconfig'
 import { Context, Effect, Layer, pipe, Schema } from 'effect'
-// @ts-expect-error
-import { outputJSON, readJSON } from 'fs-extra/esm'
+import fsExtra from 'fs-extra'
 import { createMatchPath } from 'tsconfig-paths'
 import type { Framework } from '~/schema'
 import { ConfigInvalid, ConfigNotFound, FileError } from './errors'
 import { PandaConfig } from './panda-config'
 import { TSConfig } from './tsconfig'
+
+const { outputJSON, readJSON } = fsExtra
 
 const BaseConfigSchema = Schema.Struct({
   framework: Schema.Literal('react', 'solid', 'svelte', 'vue'),

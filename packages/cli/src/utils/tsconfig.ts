@@ -1,6 +1,7 @@
 import path from 'node:path'
 import * as p from '@clack/prompts'
-import { Context, Effect, Layer, Schema } from 'effect'
+import { Context, Effect, Layer, pipe, Schema } from 'effect'
+import { outputJSON, readJSON } from 'fs-extra'
 import { parse } from 'tsconfck'
 import { TSConfigInvalid, TSConfigNotFound } from './errors'
 import { PandaConfig } from './panda-config'
@@ -80,3 +81,59 @@ const getBaseUrl = (config: { tsconfig: unknown; tsconfigFile: string }) => {
 
   return path.resolve(path.dirname(config.tsconfigFile), baseUrl)
 }
+
+interface TSConfigFileContent {
+  compilerOptions?: {
+    baseUrl?: string
+    paths?: Record<string, string[]>
+  }
+}
+
+const getTSConfigFilePath = PandaConfig.pipe(
+  Effect.flatMap((pandaConfig) =>
+    Effect.tryPromise({
+      try: () => parse(pandaConfig.path),
+      catch: () => TSConfigNotFound(process.cwd()),
+    }),
+  ),
+  Effect.map((config) => config.tsconfigFile),
+)
+
+export const ensureTSConfigPaths = () =>
+  pipe(
+    getTSConfigFilePath,
+    Effect.flatMap((tsconfigFile) =>
+      pipe(
+        Effect.tryPromise({
+          try: () => readJSON(tsconfigFile) as Promise<TSConfigFileContent>,
+          catch: () => TSConfigNotFound(tsconfigFile),
+        }),
+        Effect.flatMap((tsconfig) => {
+          const compilerOptions = tsconfig.compilerOptions ?? {}
+          const paths = compilerOptions.paths ?? {}
+          const styledSystemAlias = paths['styled-system/*'] ?? []
+
+          const nextStyledSystemAlias = styledSystemAlias.includes('./styled-system/*')
+            ? styledSystemAlias
+            : [...styledSystemAlias, './styled-system/*']
+
+          const nextTSConfig: TSConfigFileContent = {
+            ...tsconfig,
+            compilerOptions: {
+              ...compilerOptions,
+              baseUrl: compilerOptions.baseUrl ?? '.',
+              paths: {
+                ...paths,
+                'styled-system/*': nextStyledSystemAlias,
+              },
+            },
+          }
+
+          return Effect.tryPromise({
+            try: () => outputJSON(tsconfigFile, nextTSConfig, { spaces: 2 }),
+            catch: () => TSConfigNotFound(tsconfigFile),
+          })
+        }),
+      ),
+    ),
+  )

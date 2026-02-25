@@ -1,13 +1,14 @@
 import { join } from 'node:path'
 import { Effect, Match, pipe } from 'effect'
-// @ts-expect-error
-import { outputFile } from 'fs-extra/esm'
+import fsExtra from 'fs-extra'
 import type { RegistryItem } from '../schema'
 import { Config } from './config'
 import { FileError } from './errors'
 import { updateIndexFile } from './index-file'
 import { updatePandaConfig } from './panda-config'
 import { updateRecipeIndex } from './recipes'
+
+const { outputFile } = fsExtra
 
 export const install = ({ panda, files = [] }: RegistryItem) =>
   Config.pipe(

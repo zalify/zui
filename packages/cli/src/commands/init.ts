@@ -7,7 +7,7 @@ import { install } from '~/utils/install'
 import { updatePandaConfig, withPandaConfig } from '~/utils/panda-config'
 import { promptInitConfig } from '~/utils/prompt'
 import { fetchRegistryItems } from '~/utils/registry-client'
-import { withTSConfig } from '~/utils/tsconfig'
+import { ensureTSConfigPaths, withTSConfig } from '~/utils/tsconfig'
 
 export const init = new Command('init').description('').action(async () => {
   p.intro(`${color.bgCyan(color.black(' ZUI '))}`)
@@ -23,6 +23,7 @@ export const init = new Command('init').description('').action(async () => {
               fetchRegistryItems({ ids: ['__init', accentColor, grayColor] }).pipe(
                 Effect.flatMap((items) => Effect.all(items.map(install))),
               ),
+              ensureTSConfigPaths(),
               updatePandaConfig({
                 extension: {
                   jsxFramework: framework,
