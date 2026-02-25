@@ -1,5 +1,5 @@
 {
-  "name": "@zui/cli",
+  "name": "@zuish/cli",
   "version": "1.0.0",
   "description": "CLI tool for ZUI components",
   "type": "module",

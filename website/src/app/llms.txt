@@ -28,7 +28,7 @@ ZUI takes a different approach from traditional component libraries. Instead of 
 **3. Code Distribution**
 - Components distributed as source code, not NPM packages
 - Two ways to get components:
-  - **CLI:** `npx @zui/cli add [component]`
+  - **CLI:** `npx @zuish/cli add [component]`
   - **Docs:** Copy directly from the website
 - You own the code once it's in your project
 
@@ -64,12 +64,12 @@ npm install @ark-ui/react lucide-react
 
 2. **Initialize ZUI:**
 ```bash
-npx @zui/cli init
+npx @zuish/cli init
 ```
 
 3. **Add components:**
 ```bash
-npx @zui/cli add button
+npx @zuish/cli add button
 ```
 
 ### Framework-Specific Packages
@@ -243,7 +243,7 @@ This separation allows you to:
 
 ### Customization Workflow
 
-1. Add component via CLI: `npx @zui/cli add button`
+1. Add component via CLI: `npx @zuish/cli add button`
 2. Component code lands in your project
 3. Edit the recipe in your Panda config to change styles
 4. Modify component implementation for behavior changes

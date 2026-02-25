@@ -13,7 +13,7 @@ import { shadows } from './theme/tokens/shadows'
 import { zIndex } from './theme/tokens/z-index'
 
 export const preset = definePreset({
-  name: '@zui/preset',
+  name: '@zuish/preset',
   presets: ['@pandacss/preset-base', '@pandacss/preset-panda'],
   globalCss,
   conditions,

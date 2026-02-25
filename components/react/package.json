@@ -1,5 +1,5 @@
 {
-  "name": "@zui/react",
+  "name": "@zuish/react",
   "type": "module",
   "private": true,
   "scripts": {
@@ -8,7 +8,7 @@
     "lint": "biome lint ./src",
     "storybook": "storybook dev -p 6006",
     "typecheck": "tsc",
-    "registry:prepare": "scripts registry prepare --name @zui/react",
+    "registry:prepare": "scripts registry prepare --name @zuish/react",
     "registry:build": "scripts registry build react",
     "typedoc": "scripts typedoc --out ../../website/public/types/react"
   },
@@ -24,8 +24,8 @@
     "@pandacss/dev": "1.8.2",
     "@pandacss/preset-base": "1.8.2",
     "@pandacss/preset-panda": "1.8.2",
-    "@zui/preset": "workspace:*",
-    "@zui/scripts": "workspace:*",
+    "@zuish/preset": "workspace:*",
+    "@zuish/scripts": "workspace:*",
     "@storybook/addon-a11y": "10.2.12",
     "@storybook/addon-themes": "10.2.12",
     "@storybook/react": "10.2.12",

@@ -6,12 +6,12 @@ export const App = () => {
     <HStack gap="4">
       <Avatar.Root size="lg">
         <Avatar.Image src="https://avatars.githubusercontent.com/u/10615036?v=4" />
-        <Avatar.Fallback name="Christian Busch" />
+        <Avatar.Fallback name="Ryan Zou" />
       </Avatar.Root>
       <Box>
-        <Text fontWeight="medium">Christian Busch</Text>
+        <Text fontWeight="medium">Ryan Zou</Text>
         <Text color="fg.muted" textStyle="sm">
-          christian@zui.com
+          ryan@zalify.com
         </Text>
       </Box>
     </HStack>

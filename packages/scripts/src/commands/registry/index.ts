@@ -10,7 +10,7 @@ export const registry = new Command('registry')
   .addCommand(
     new Command('prepare')
       .description('prepare registry.json from component files')
-      .requiredOption('--name <name>', 'registry name (e.g., @zui/react)')
+      .requiredOption('--name <name>', 'registry name (e.g., @zuish/react)')
       .argument('[pattern]', 'glob pattern for component files (e.g., src/components/ui/*.tsx)')
       .action(async (pattern, options) => {
         p.intro(`${color.bgCyan(color.black(' ZUI '))}`)

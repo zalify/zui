@@ -1,5 +1,5 @@
 import { defineConfig } from '@pandacss/dev'
-import { plugin, preset } from '@zui/preset'
+import { plugin, preset } from '@zuish/preset'
 
 export default defineConfig({
   presets: [preset],

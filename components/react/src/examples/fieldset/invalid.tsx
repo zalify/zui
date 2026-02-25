@@ -10,11 +10,11 @@ export const App = () => {
       <Fieldset.Content>
         <Field.Root>
           <Field.Label>Name</Field.Label>
-          <Input name="name" defaultValue="Christian Busch" />
+          <Input name="name" defaultValue="Ryan Zou" />
         </Field.Root>
         <Field.Root invalid>
           <Field.Label>Email address</Field.Label>
-          <Input name="email" type="email" defaultValue="christian@zui.com" />
+          <Input name="email" type="email" defaultValue="ryan@zalify.com" />
           <Field.ErrorText>The email has already been taken.</Field.ErrorText>
         </Field.Root>
       </Fieldset.Content>

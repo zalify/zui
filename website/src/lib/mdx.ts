@@ -104,7 +104,7 @@ const replaceInstallationGuide = async (ctx: TransformContext): Promise<string> 
   const replacement = `Use the ZUI CLI to add the ${capitalizedComponent} component to your project:
 
 \`\`\`bash
-npx @zui/cli add ${ctx.component}
+npx @zuish/cli add ${ctx.component}
 \`\`\``
 
   return ctx.content.replace(/<InstallationGuide[^>]*\/>/g, replacement)

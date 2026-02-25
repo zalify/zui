@@ -1,6 +1,6 @@
 import { defineConfig, defineTextStyles } from '@pandacss/dev'
 import type { PandaPlugin, Preset } from '@pandacss/types'
-import { plugin, preset } from '@zui/preset'
+import { plugin, preset } from '@zuish/preset'
 import typographyPreset from 'pandacss-preset-typography'
 
 // @ts-expect-error

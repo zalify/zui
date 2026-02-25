@@ -139,7 +139,7 @@ export const withConfig = <A, R>(effect: Effect.Effect<A, never, R>) =>
     Effect.catchAll(({ message }) =>
       Effect.sync(() => {
         p.log.error(message)
-        p.outro(`Run npx @zui/cli init to create a new configuration.`)
+        p.outro(`Run npx @zuish/cli init to create a new configuration.`)
       }),
     ),
   )

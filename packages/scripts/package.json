@@ -1,5 +1,5 @@
 {
-  "name": "@zui/scripts",
+  "name": "@zuish/scripts",
   "type": "module",
   "private": true,
   "bin": {

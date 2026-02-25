@@ -1,6 +1,6 @@
 {
   "$schema": "https://zui.sh/schema/registry.json",
-  "name": "@zui/preset",
+  "name": "@zuish/preset",
   "homepage": "https://zui.sh",
   "items": [
     {

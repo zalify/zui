@@ -192,7 +192,7 @@ export const generateRegistry = async (options: { name: string; pattern?: string
   const pattern = options.pattern || 'src/components/ui/*.tsx'
   console.log(`🔍 Scanning files matching: ${pattern}`)
 
-  // Extract framework from registry name (e.g., '@zui/solid' -> 'solid')
+  // Extract framework from registry name (e.g., '@zuish/solid' -> 'solid')
   const framework: Framework = options.name.includes('solid') ? 'solid' : 'react'
 
   const files = await fg(pattern, {

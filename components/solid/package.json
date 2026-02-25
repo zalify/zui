@@ -1,5 +1,5 @@
 {
-  "name": "@zui/solid",
+  "name": "@zuish/solid",
   "type": "module",
   "private": true,
   "scripts": {
@@ -8,7 +8,7 @@
     "lint": "biome lint ./src",
     "storybook": "storybook dev -p 6006",
     "typecheck": "tsc",
-    "registry:prepare": "scripts registry prepare --name @zui/solid",
+    "registry:prepare": "scripts registry prepare --name @zuish/solid",
     "registry:build": "scripts registry build solid",
     "typedoc": "scripts typedoc --out ../../website/public/types/solid"
   },
@@ -21,8 +21,8 @@
     "@pandacss/dev": "1.8.2",
     "@pandacss/preset-base": "1.8.2",
     "@pandacss/preset-panda": "1.8.2",
-    "@zui/preset": "workspace:*",
-    "@zui/scripts": "workspace:*",
+    "@zuish/preset": "workspace:*",
+    "@zuish/scripts": "workspace:*",
     "@storybook/addon-a11y": "10.2.0",
     "@storybook/addon-themes": "10.2.0",
     "lorem-ipsum": "2.0.8",

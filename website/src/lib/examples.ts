@@ -1,4 +1,4 @@
-import * as Examples from '@zui/react/examples'
+import * as Examples from '@zuish/react/examples'
 import { camelCase, pascalCase } from 'change-case'
 
 const componentRegistry = new Map()
