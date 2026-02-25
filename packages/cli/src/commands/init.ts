@@ -23,7 +23,12 @@ export const init = new Command('init').description('').action(async () => {
               fetchRegistryItems({ ids: ['__init', accentColor, grayColor] }).pipe(
                 Effect.flatMap((items) => Effect.all(items.map(install))),
               ),
-              updatePandaConfig({ extension: borderRadius }),
+              updatePandaConfig({
+                extension: {
+                  jsxFramework: framework,
+                  ...borderRadius,
+                },
+              }),
             ]),
             Effect.provide(Layer.effect(Config, Effect.succeed(config))),
           ),

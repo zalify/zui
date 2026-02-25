@@ -1,3 +1,4 @@
+import path from 'node:path'
 import * as p from '@clack/prompts'
 import { Context, Effect, Layer, Schema } from 'effect'
 import { parse } from 'tsconfck'
@@ -6,7 +7,6 @@ import { PandaConfig } from './panda-config'
 
 const TSConfigSchema = Schema.Struct({
   compilerOptions: Schema.Struct({
-    baseUrl: Schema.String,
     paths: Schema.Record({
       key: Schema.String,
       value: Schema.mutable(Schema.Array(Schema.String)),
@@ -29,15 +29,19 @@ const getConfig = PandaConfig.pipe(
       catch: () => TSConfigNotFound(process.cwd()),
     }),
   ),
-  Effect.flatMap((config) => Schema.decodeUnknown(TSConfigSchema)(config.tsconfig)),
-  Effect.flatMap((config) => {
-    const aliasPrefix = getTsConfigAliasPrefix(config)
+  Effect.flatMap((config) =>
+    Schema.decodeUnknown(TSConfigSchema)(config.tsconfig).pipe(
+      Effect.map((tsconfig) => ({ tsconfig, baseUrl: getBaseUrl(config) })),
+    ),
+  ),
+  Effect.flatMap(({ tsconfig, baseUrl }) => {
+    const aliasPrefix = getTsConfigAliasPrefix(tsconfig)
     if (!aliasPrefix) return Effect.fail(TSConfigInvalid())
 
     return Effect.succeed({
       aliasPrefix,
-      baseUrl: config.compilerOptions?.baseUrl || '',
-      paths: config.compilerOptions?.paths || {},
+      baseUrl,
+      paths: tsconfig.compilerOptions.paths,
     })
   }),
 )
@@ -66,4 +70,13 @@ const getTsConfigAliasPrefix = (tsConfig: TSConfigSchema): string | null => {
   }
 
   return Object.keys(paths)[0]?.replace(/\/\*$/, '') ?? null
+}
+
+const getBaseUrl = (config: { tsconfig: unknown; tsconfigFile: string }) => {
+  const compilerOptions = (config.tsconfig as { compilerOptions?: { baseUrl?: unknown } })
+    .compilerOptions
+
+  const baseUrl = typeof compilerOptions?.baseUrl === 'string' ? compilerOptions.baseUrl : '.'
+
+  return path.resolve(path.dirname(config.tsconfigFile), baseUrl)
 }
