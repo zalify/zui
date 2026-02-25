@@ -38,7 +38,9 @@ export const withPandaConfig = <A, R>(effect: Effect.Effect<A, never, R>) =>
     Effect.catchTag('PandaConfigNotFound', ({ message }) =>
       Effect.sync(() => {
         p.log.error(message)
-        p.log.info('For Next.js, run: bun add -D @pandacss/dev && bun panda init --postcss')
+        p.log.info(
+          'For Next.js, run either: npm install -D @pandacss/dev && npx panda init --postcss or pnpm install -D @pandacss/dev && pnpm panda init --postcss',
+        )
         p.outro(`Visit https://panda-css.com/docs/overview/getting-started to get started.`)
       }),
     ),
@@ -47,6 +49,15 @@ export const withPandaConfig = <A, R>(effect: Effect.Effect<A, never, R>) =>
 interface UpdatePandaConfigOptions {
   extension?: JsonValue
   imports?: RegistryItemImport[]
+}
+
+const withoutInclude = (extension?: JsonValue): JsonValue | undefined => {
+  if (!extension || typeof extension !== 'object' || Array.isArray(extension)) {
+    return extension
+  }
+
+  const { include: _include, ...rest } = extension as Record<string, JsonValue>
+  return rest
 }
 
 export const updatePandaConfig = ({ extension, imports = [] }: UpdatePandaConfigOptions = {}) =>
@@ -59,7 +70,9 @@ export const updatePandaConfig = ({ extension, imports = [] }: UpdatePandaConfig
               ? mod.exports['default'].$args[0]
               : mod.exports['default']
 
-          deepMergeObject(options, replaceRefs(extension))
+          const safeExtension = replaceRefs(withoutInclude(extension))
+
+          deepMergeObject(options, safeExtension)
 
           for (const item of imports) {
             if (['registry:theme', 'registry:color', 'registry:recipe'].includes(item.type)) {

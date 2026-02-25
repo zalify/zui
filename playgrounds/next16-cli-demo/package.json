@@ -24,7 +24,7 @@
     "@types/node": "^20",
     "@types/react": "^19",
     "@types/react-dom": "^19",
-    "@zuish/cli": "file:../../packages/cli/zuish-cli-1.0.5.tgz",
+    "@zuish/cli": "workspace:*",
     "babel-plugin-react-compiler": "1.0.0",
     "typescript": "^5"
   }

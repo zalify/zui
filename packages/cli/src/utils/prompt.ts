@@ -11,8 +11,9 @@ export const promptInitConfig = () =>
         catch: () => new Error('Failed to collect configuration. Please try again.'),
       }),
     ),
-    Effect.map(({ framework, accentColor, grayColor }) => ({
+    Effect.map(({ framework, packageManager, accentColor, grayColor }) => ({
       framework,
+      packageManager,
       accentColor,
       grayColor,
       borderRadius: {
@@ -32,6 +33,7 @@ export const promptInitConfig = () =>
   )
 
 type Option = p.Option<string>
+type PackageManager = 'npm' | 'pnpm'
 
 interface Args {
   accentColors: Option[]
@@ -46,6 +48,12 @@ const prompt = ({ accentColors, neutralColors }: Args) =>
           message: 'Which JavaScript framework are you using?',
           options: [{ value: 'react' }, { value: 'solid' }],
           initialValue: 'react',
+        }),
+      packageManager: () =>
+        p.select<PackageManager>({
+          message: 'Which package manager should we use to initialize dependencies?',
+          options: [{ value: 'npm' }, { value: 'pnpm' }],
+          initialValue: 'pnpm',
         }),
       accentColor: () =>
         p.autocomplete({

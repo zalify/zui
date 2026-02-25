@@ -88,7 +88,7 @@
     },
     "packages/cli": {
       "name": "@zuish/cli",
-      "version": "1.0.5",
+      "version": "1.0.6",
       "bin": {
         "zui": "dist/index.js",
       },
@@ -169,7 +169,7 @@
         "@types/node": "^20",
         "@types/react": "^19",
         "@types/react-dom": "^19",
-        "@zuish/cli": "file:../../packages/cli/zuish-cli-1.0.5.tgz",
+        "@zuish/cli": "workspace:*",
         "babel-plugin-react-compiler": "1.0.0",
         "typescript": "^5",
       },
@@ -2812,8 +2812,6 @@
     "next/postcss": ["postcss@8.4.31", "", { "dependencies": { "nanoid": "^3.3.6", "picocolors": "^1.0.0", "source-map-js": "^1.0.2" } }, "sha512-PS08Iboia9mts/2ygV3eLpY5ghnUcfLV/EXTOW1E2qYxJKGGBUtNjN76FYHnMs36RmARn41bC0AZmn+rR0OVpQ=="],
 
     "next16-cli-demo/@types/node": ["@types/node@20.19.33", "", { "dependencies": { "undici-types": "~6.21.0" } }, "sha512-Rs1bVAIdBs5gbTIKza/tgpMuG1k3U/UMJLWecIMxNdJFDMzcM5LOiLVRYh3PilWEYDIeUDv7bpiHPLPsbydGcw=="],
-
-    "next16-cli-demo/@zuish/cli": ["@zuish/cli@../../packages/cli/zuish-cli-1.0.5.tgz", { "dependencies": { "@better-fetch/fetch": "1.1.21", "@clack/prompts": "1.0.1", "commander": "14.0.3", "cosmiconfig": "9.0.0", "effect": "3.19.19", "fs-extra": "11.3.3", "magicast": "0.5.2", "package-directory": "8.2.0", "picocolors": "1.1.1", "ts-morph": "27.0.2", "tsconfck": "3.1.6", "tsconfig-paths": "4.2.0", "zod": "4.3.6" }, "peerDependencies": { "typescript": "^5" }, "bin": { "zui": "dist/index.js" } }],
 
     "next16-cli-demo/react": ["react@19.2.3", "", {}, "sha512-Ku/hhYbVjOQnXDZFv2+RibmLFGwFdeeKHFcOTlrt7xplBnya5OGn/hIRDsqDiSUcfORsDC7MPxwork8jBwsIWA=="],
 

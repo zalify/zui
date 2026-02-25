@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 import { execSync } from 'node:child_process'
-import { existsSync } from 'node:fs'
+import { existsSync, rmSync } from 'node:fs'
 import path from 'node:path'
 import { fileURLToPath } from 'node:url'
 
@@ -10,6 +10,7 @@ const __dirname = path.dirname(__filename)
 const cliDir = path.resolve(__dirname, '..')
 const repoRoot = path.resolve(cliDir, '..', '..')
 const demoDir = path.join(repoRoot, 'playgrounds', 'next16-cli-demo')
+
 
 const run = (command, cwd) => {
   console.log(`\n$ ${command}`)
@@ -25,16 +26,6 @@ const assertExists = (relativePath, message) => {
   }
 }
 
-const getLatestTarball = () => {
-  const output = execSync('npm pack --silent', { cwd: cliDir, encoding: 'utf8' })
-  return output
-    .trim()
-    .split('\n')
-    .map((line) => line.trim())
-    .filter(Boolean)
-    .at(-1)
-}
-
 if (!existsSync(demoDir)) {
   console.error(`Demo app not found at: ${demoDir}`)
   console.error(
@@ -43,18 +34,16 @@ if (!existsSync(demoDir)) {
   process.exit(1)
 }
 
-run('bun run build', cliDir)
-const tarball = getLatestTarball()
-
-if (!tarball) {
-  console.error('Failed to create CLI tarball via npm pack.')
-  process.exit(1)
+// Remove stale local @zuish/cli copy left over from the old file:tgz dependency
+// so bun install uses the root workspace symlink instead
+const staleCliInstall = path.join(demoDir, 'node_modules', '@zuish', 'cli')
+if (existsSync(staleCliInstall)) {
+  rmSync(staleCliInstall, { recursive: true, force: true })
+  console.log('Removed stale local @zuish/cli install from demo node_modules')
 }
 
-const tarballPath = path.join(cliDir, tarball)
-console.log(`Using tarball: ${tarballPath}`)
-
-run(`npm i -D "${tarballPath}"`, demoDir)
+run('bun install', repoRoot)
+run('bun run build', cliDir)
 run('npx panda init --force --jsx-framework react --postcss', demoDir)
 run('npx zui init --default', demoDir)
 assertExists('components.json', '`zui init --default` did not generate components.json')
