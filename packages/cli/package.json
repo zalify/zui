@@ -47,6 +47,7 @@
     "lint": "biome lint ./src",
     "test": "bun test ./src",
     "build": "tsup",
+    "test:local": "node ./scripts/local-test.mjs",
     "release-it": "release-it"
   },
   "dependencies": {

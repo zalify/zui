@@ -9,10 +9,34 @@ import { promptInitConfig } from '~/utils/prompt'
 import { fetchRegistryItems } from '~/utils/registry-client'
 import { ensureTSConfigPaths, withTSConfig } from '~/utils/tsconfig'
 
-export const init = new Command('init').description('').action(async () => {
-  p.intro(`${color.bgCyan(color.black(' ZUI '))}`)
+const defaultInitConfig = {
+  framework: 'react' as const,
+  accentColor: 'jade',
+  grayColor: 'neutral',
+  borderRadius: {
+    theme: {
+      extend: {
+        semanticTokens: {
+          radii: {
+            l1: { value: '{radii.xs}' },
+            l2: { value: '{radii.sm}' },
+            l3: { value: '{radii.md}' },
+          },
+        },
+      },
+    },
+  },
+}
 
-  const program = promptInitConfig().pipe(
+export const init = new Command('init')
+  .description('initialize zui in your project')
+  .option('--default', 'use default init values without prompts', false)
+  .action(async (opts) => {
+    p.intro(`${color.bgCyan(color.black(' ZUI '))}`)
+
+    const initConfig = opts.default ? Effect.succeed(defaultInitConfig) : promptInitConfig()
+
+    const program = initConfig.pipe(
     Effect.flatMap(({ framework, accentColor, grayColor, borderRadius }) =>
       pipe(
         saveConfig(framework),
@@ -47,5 +71,5 @@ export const init = new Command('init').description('').action(async () => {
     ),
   )
 
-  await Effect.runPromise(withPandaConfig(withTSConfig(program)))
-})
+    await Effect.runPromise(withPandaConfig(withTSConfig(program)))
+  })

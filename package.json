@@ -5,7 +5,8 @@
   "workspaces": [
     "components/*",
     "packages/*",
-    "website"
+    "website",
+    "playgrounds/*"
   ],
   "scripts": {
     "prepare": "bun run --filter='*' prepare",
@@ -14,11 +15,13 @@
     "test": "bun run --filter='*' test",
     "typecheck": "bun run --filter='*' typecheck",
     "cli": "bun run --cwd packages/cli",
+    "cli:test:local": "bun run --cwd packages/cli test:local",
     "preset": "bun run --cwd packages/preset",
     "react": "bun run --cwd components/react",
     "solid": "bun run --cwd components/solid",
     "vue": "bun run --cwd components/vue",
-    "web": "bun run --cwd website"
+    "web": "bun run --cwd website",
+    "demo:next16": "bun run --cwd playgrounds/next16-cli-demo dev"
   },
   "devDependencies": {
     "@biomejs/biome": "2.4.4",

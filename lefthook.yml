@@ -2,5 +2,14 @@ pre-commit:
   commands:
     check:
       glob: "*.{js,ts,cjs,mjs,d.cts,d.mts,jsx,tsx,json,jsonc}"
-      run: bun biome check --write --no-errors-on-unmatched --files-ignore-unknown=true --colors=off {staged_files}
+      run: |
+        root_files=$(printf '%s\n' {staged_files} | rg -v '^playgrounds/next16-cli-demo/' || true)
+        if [ -n "$root_files" ]; then
+          bun biome check --write --no-errors-on-unmatched --files-ignore-unknown=true --colors=off $root_files
+        fi
+
+        demo_files=$(printf '%s\n' {staged_files} | rg '^playgrounds/next16-cli-demo/' | sed 's#^playgrounds/next16-cli-demo/##' || true)
+        if [ -n "$demo_files" ]; then
+          bun run --cwd playgrounds/next16-cli-demo biome check --write --no-errors-on-unmatched --files-ignore-unknown=true --colors=off $demo_files
+        fi
       stage_fixed: true

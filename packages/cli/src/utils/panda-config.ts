@@ -38,6 +38,7 @@ export const withPandaConfig = <A, R>(effect: Effect.Effect<A, never, R>) =>
     Effect.catchTag('PandaConfigNotFound', ({ message }) =>
       Effect.sync(() => {
         p.log.error(message)
+        p.log.info('For Next.js, run: bun add -D @pandacss/dev && bun panda init --postcss')
         p.outro(`Visit https://panda-css.com/docs/overview/getting-started to get started.`)
       }),
     ),
