@@ -1,3 +1,5 @@
+'use client'
+
 import { loremIpsum } from 'lorem-ipsum'
 import { ScrollArea } from '@/components/ui'
 

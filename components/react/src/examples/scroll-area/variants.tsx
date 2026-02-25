@@ -1,3 +1,5 @@
+'use client'
+
 import { loremIpsum } from 'lorem-ipsum'
 import { Stack } from 'styled-system/jsx'
 import { Heading, ScrollArea } from '@/components/ui'
