@@ -51,9 +51,9 @@
         "lucide-solid": "0.563.0",
       },
       "devDependencies": {
-        "@pandacss/dev": "1.8.1",
-        "@pandacss/preset-base": "1.8.1",
-        "@pandacss/preset-panda": "1.8.1",
+        "@pandacss/dev": "1.8.2",
+        "@pandacss/preset-base": "1.8.2",
+        "@pandacss/preset-panda": "1.8.2",
         "@storybook/addon-a11y": "10.2.0",
         "@storybook/addon-themes": "10.2.0",
         "@zui/preset": "workspace:*",
@@ -79,9 +79,9 @@
         "vue": "3.5.27",
       },
       "devDependencies": {
-        "@pandacss/dev": "1.8.1",
-        "@pandacss/preset-base": "1.8.1",
-        "@pandacss/preset-panda": "1.8.1",
+        "@pandacss/dev": "1.8.2",
+        "@pandacss/preset-base": "1.8.2",
+        "@pandacss/preset-panda": "1.8.2",
         "@zui/preset": "workspace:*",
         "@zui/scripts": "workspace:*",
       },
@@ -127,7 +127,7 @@
         "@ark-ui/react": "5.32.0",
       },
       "devDependencies": {
-        "@pandacss/dev": "1.8.1",
+        "@pandacss/dev": "1.8.2",
         "@radix-ui/colors": "3.0.0",
         "@zui/scripts": "workspace:*",
         "typescript": "5.9.3",
@@ -2680,14 +2680,6 @@
 
     "@zag-js/vue/@zag-js/utils": ["@zag-js/utils@1.31.1", "", {}, "sha512-KLm0pmOtf4ydALbaVLboL7W98TDVxwVVLvSuvtRgV53XTjlsVopTRA5/Xmzq2NhWujDZAXv7bRV603NDgDcjSw=="],
 
-    "@zui/preset/@pandacss/dev": ["@pandacss/dev@1.8.1", "", { "dependencies": { "@clack/prompts": "0.11.0", "@pandacss/config": "1.8.1", "@pandacss/logger": "1.8.1", "@pandacss/mcp": "1.8.1", "@pandacss/node": "1.8.1", "@pandacss/postcss": "1.8.1", "@pandacss/preset-base": "1.8.1", "@pandacss/preset-panda": "1.8.1", "@pandacss/shared": "1.8.1", "@pandacss/token-dictionary": "1.8.1", "@pandacss/types": "1.8.1", "cac": "6.7.14" }, "bin": { "panda": "bin.js", "pandacss": "bin.js" } }, "sha512-rHE7JEDNbqLVpybgT1Ff5R1loYxX3sF/a729EVvsBUtcd/xSHZyjhg8vnB5hXajaWt9Ro+u7chAB6+pdqd1Jog=="],
-
-    "@zui/solid/@pandacss/dev": ["@pandacss/dev@1.8.1", "", { "dependencies": { "@clack/prompts": "0.11.0", "@pandacss/config": "1.8.1", "@pandacss/logger": "1.8.1", "@pandacss/mcp": "1.8.1", "@pandacss/node": "1.8.1", "@pandacss/postcss": "1.8.1", "@pandacss/preset-base": "1.8.1", "@pandacss/preset-panda": "1.8.1", "@pandacss/shared": "1.8.1", "@pandacss/token-dictionary": "1.8.1", "@pandacss/types": "1.8.1", "cac": "6.7.14" }, "bin": { "panda": "bin.js", "pandacss": "bin.js" } }, "sha512-rHE7JEDNbqLVpybgT1Ff5R1loYxX3sF/a729EVvsBUtcd/xSHZyjhg8vnB5hXajaWt9Ro+u7chAB6+pdqd1Jog=="],
-
-    "@zui/solid/@pandacss/preset-base": ["@pandacss/preset-base@1.8.1", "", { "dependencies": { "@pandacss/types": "1.8.1" } }, "sha512-NJtVQz4Dn3FuFLci8GvbXVGegKvAkYh7xB5TwJA5mqwRIOqWZ6+U/WoVXu9aR9wj3/EYAhqA5qUJQXrC6dUFmA=="],
-
-    "@zui/solid/@pandacss/preset-panda": ["@pandacss/preset-panda@1.8.1", "", { "dependencies": { "@pandacss/types": "1.8.1" } }, "sha512-89QSWcSdhr1ViW6o0YMAQrSCxmY+xsrr0eA6GnNT6FWkjwL1QAtwjezWwODHN26BjlNTLmW8aK39Tepj6Wh2Aw=="],
-
     "@zui/solid/@storybook/addon-a11y": ["@storybook/addon-a11y@10.2.0", "", { "dependencies": { "@storybook/global": "^5.0.0", "axe-core": "^4.2.0" }, "peerDependencies": { "storybook": "^10.2.0" } }, "sha512-PJVvEr6KpuOvCr1megfp39RNvFSut6XmFxaiDKtf8kxYbD8tMYL2n/9xFcPIvozJCO4zRmug50X+OIoh0GsSGQ=="],
 
     "@zui/solid/@storybook/addon-themes": ["@storybook/addon-themes@10.2.0", "", { "dependencies": { "ts-dedent": "^2.0.0" }, "peerDependencies": { "storybook": "^10.2.0" } }, "sha512-BJsBvxqMtBcZYKVOt0S8NRMAeOBXND5mtOr3ga7jRXDGMP6/BbFo/SBJ1QKjRTsXw/rsOfm6MKWc4jwgbuj4Nw=="],
@@ -2695,12 +2687,6 @@
     "@zui/solid/storybook": ["storybook@10.2.0", "", { "dependencies": { "@storybook/global": "^5.0.0", "@storybook/icons": "^2.0.1", "@testing-library/jest-dom": "^6.6.3", "@testing-library/user-event": "^14.6.1", "@vitest/expect": "3.2.4", "@vitest/spy": "3.2.4", "esbuild": "^0.18.0 || ^0.19.0 || ^0.20.0 || ^0.21.0 || ^0.22.0 || ^0.23.0 || ^0.24.0 || ^0.25.0 || ^0.26.0 || ^0.27.0", "open": "^10.2.0", "recast": "^0.23.5", "semver": "^7.7.3", "use-sync-external-store": "^1.5.0", "ws": "^8.18.0" }, "peerDependencies": { "prettier": "^2 || ^3" }, "optionalPeers": ["prettier"], "bin": "./dist/bin/dispatcher.js" }, "sha512-fIQnFtpksRRgHR1CO1onGX3djaog4qsW/c5U8arqYTkUEr2TaWpn05mIJDOBoPJFlOdqFrB4Ttv0PZJxV7avhw=="],
 
     "@zui/solid/vite-tsconfig-paths": ["vite-tsconfig-paths@6.0.5", "", { "dependencies": { "debug": "^4.1.1", "globrex": "^0.1.2", "tsconfck": "^3.0.3" }, "peerDependencies": { "vite": "*" } }, "sha512-f/WvY6ekHykUF1rWJUAbCU7iS/5QYDIugwpqJA+ttwKbxSbzNlqlE8vZSrsnxNQciUW+z6lvhlXMaEyZn9MSig=="],
-
-    "@zui/vue/@pandacss/dev": ["@pandacss/dev@1.8.1", "", { "dependencies": { "@clack/prompts": "0.11.0", "@pandacss/config": "1.8.1", "@pandacss/logger": "1.8.1", "@pandacss/mcp": "1.8.1", "@pandacss/node": "1.8.1", "@pandacss/postcss": "1.8.1", "@pandacss/preset-base": "1.8.1", "@pandacss/preset-panda": "1.8.1", "@pandacss/shared": "1.8.1", "@pandacss/token-dictionary": "1.8.1", "@pandacss/types": "1.8.1", "cac": "6.7.14" }, "bin": { "panda": "bin.js", "pandacss": "bin.js" } }, "sha512-rHE7JEDNbqLVpybgT1Ff5R1loYxX3sF/a729EVvsBUtcd/xSHZyjhg8vnB5hXajaWt9Ro+u7chAB6+pdqd1Jog=="],
-
-    "@zui/vue/@pandacss/preset-base": ["@pandacss/preset-base@1.8.1", "", { "dependencies": { "@pandacss/types": "1.8.1" } }, "sha512-NJtVQz4Dn3FuFLci8GvbXVGegKvAkYh7xB5TwJA5mqwRIOqWZ6+U/WoVXu9aR9wj3/EYAhqA5qUJQXrC6dUFmA=="],
-
-    "@zui/vue/@pandacss/preset-panda": ["@pandacss/preset-panda@1.8.1", "", { "dependencies": { "@pandacss/types": "1.8.1" } }, "sha512-89QSWcSdhr1ViW6o0YMAQrSCxmY+xsrr0eA6GnNT6FWkjwL1QAtwjezWwODHN26BjlNTLmW8aK39Tepj6Wh2Aw=="],
 
     "anymatch/picomatch": ["picomatch@2.3.1", "", {}, "sha512-JU3teHTNjmE2VCGFzuY8EXzCDVwEqB2a8fsIvwaStHhAWJEeVd1o1QD80CU6+ZdEXXSLbSsuLwJjkCBWqRQUVA=="],
 
@@ -3176,73 +3162,7 @@
 
     "@zag-js/vue/@zag-js/core/@zag-js/dom-query": ["@zag-js/dom-query@1.31.1", "", { "dependencies": { "@zag-js/types": "1.31.1" } }, "sha512-2tCZLwSfoXm62gwl0neiAN6u5VnzUhy5wHtKbX+klqGFatnca3Bm++H9+4PHMrwUWRbPg3H5N151lKFEOQhBfQ=="],
 
-    "@zui/preset/@pandacss/dev/@clack/prompts": ["@clack/prompts@0.11.0", "", { "dependencies": { "@clack/core": "0.5.0", "picocolors": "^1.0.0", "sisteransi": "^1.0.5" } }, "sha512-pMN5FcrEw9hUkZA4f+zLlzivQSeQf5dRGJjSUbvVYDLvpKCdQx5OaknvKzgbtXOizhP+SJJJjqEbOe55uKKfAw=="],
-
-    "@zui/preset/@pandacss/dev/@pandacss/config": ["@pandacss/config@1.8.1", "", { "dependencies": { "@pandacss/logger": "1.8.1", "@pandacss/preset-base": "1.8.1", "@pandacss/preset-panda": "1.8.1", "@pandacss/shared": "1.8.1", "@pandacss/types": "1.8.1", "bundle-n-require": "1.1.2", "escalade": "3.2.0", "microdiff": "1.5.0", "typescript": "5.9.3" } }, "sha512-SvFvfDav//c2lbk9+IPRGCLGhUd1G8z/Nxs0CwZNLXpI0xTNy0ISGMV1ZKkqBFbmH95e+/5oZXnnM4rAS1LO0g=="],
-
-    "@zui/preset/@pandacss/dev/@pandacss/logger": ["@pandacss/logger@1.8.1", "", { "dependencies": { "@pandacss/types": "1.8.1", "kleur": "4.1.5" } }, "sha512-u++vUM+roJPPle0PQ1BGl6GkxwusfzEbKtX35L/5GtF6+CQ1ZfbD07HlMjEzmyEQ+KeQ8joR1Ubh/YGrZdEWrQ=="],
-
-    "@zui/preset/@pandacss/dev/@pandacss/mcp": ["@pandacss/mcp@1.8.1", "", { "dependencies": { "@clack/prompts": "0.11.0", "@modelcontextprotocol/sdk": "^1.25.1", "@pandacss/logger": "1.8.1", "@pandacss/node": "1.8.1", "@pandacss/token-dictionary": "1.8.1", "@pandacss/types": "1.8.1", "zod": "^4.0.0" } }, "sha512-z3VOz9XVvpdQ0bf6a1REGZToFFcwU/0jyK699fRD3jzMg+OJ24j/T8RZvlFoDPCWcifjXI7eUCSnUJ1TVqXfcQ=="],
-
-    "@zui/preset/@pandacss/dev/@pandacss/node": ["@pandacss/node@1.8.1", "", { "dependencies": { "@pandacss/config": "1.8.1", "@pandacss/core": "1.8.1", "@pandacss/generator": "1.8.1", "@pandacss/logger": "1.8.1", "@pandacss/parser": "1.8.1", "@pandacss/reporter": "1.8.1", "@pandacss/shared": "1.8.1", "@pandacss/token-dictionary": "1.8.1", "@pandacss/types": "1.8.1", "browserslist": "4.28.0", "chokidar": "4.0.3", "fast-glob": "3.3.3", "fs-extra": "11.3.2", "glob-parent": "6.0.2", "is-glob": "4.0.3", "lodash.merge": "4.6.2", "look-it-up": "2.1.0", "outdent": " ^0.8.0", "p-limit": "5.0.0", "package-manager-detector": "1.6.0", "perfect-debounce": "1.0.0", "picomatch": "4.0.3", "pkg-types": "2.3.0", "pluralize": "8.0.0", "postcss": "8.5.6", "prettier": "3.2.5", "ts-morph": "27.0.2", "ts-pattern": "5.9.0", "tsconfck": "3.1.6" } }, "sha512-59Cb55sFL+TO2Sd/s2SxSvh0nY/ouBsJQYqRvUkgLL56FDH28euCYvj8Tt6H9rISKl6xhCpixF7svA8YjTOuXg=="],
-
-    "@zui/preset/@pandacss/dev/@pandacss/postcss": ["@pandacss/postcss@1.8.1", "", { "dependencies": { "@pandacss/node": "1.8.1", "postcss": "8.5.6" } }, "sha512-xopXqr/Bh/KTewxgsYe2muHIsuLqrZ64RH1cW4KRY5TOI+JaL7M4qAPTqa/fVMh+LV9k0woTd423g7Q3d2oivA=="],
-
-    "@zui/preset/@pandacss/dev/@pandacss/preset-base": ["@pandacss/preset-base@1.8.1", "", { "dependencies": { "@pandacss/types": "1.8.1" } }, "sha512-NJtVQz4Dn3FuFLci8GvbXVGegKvAkYh7xB5TwJA5mqwRIOqWZ6+U/WoVXu9aR9wj3/EYAhqA5qUJQXrC6dUFmA=="],
-
-    "@zui/preset/@pandacss/dev/@pandacss/preset-panda": ["@pandacss/preset-panda@1.8.1", "", { "dependencies": { "@pandacss/types": "1.8.1" } }, "sha512-89QSWcSdhr1ViW6o0YMAQrSCxmY+xsrr0eA6GnNT6FWkjwL1QAtwjezWwODHN26BjlNTLmW8aK39Tepj6Wh2Aw=="],
-
-    "@zui/preset/@pandacss/dev/@pandacss/shared": ["@pandacss/shared@1.8.1", "", {}, "sha512-8U+iqqvb1hmTRHOCkO4q29OMv//szv/wJAQG6SPEuYth7QH+fEvPMl2qsZyDTe1b+pkB1bt7tpvTF4+lR1K8EA=="],
-
-    "@zui/preset/@pandacss/dev/@pandacss/token-dictionary": ["@pandacss/token-dictionary@1.8.1", "", { "dependencies": { "@pandacss/logger": "^1.8.1", "@pandacss/shared": "1.8.1", "@pandacss/types": "1.8.1", "picomatch": "^4.0.0", "ts-pattern": "5.9.0" } }, "sha512-6uDH/QbxE/sS/QzfaSswxa+hMdDR1U3PUGVD/uCrt3tJ4zTHgR2icZ3vH9GN9k17WFutzcVQaKTKscY3PYn9TA=="],
-
-    "@zui/preset/@pandacss/dev/@pandacss/types": ["@pandacss/types@1.8.1", "", {}, "sha512-5hNn6PsbmSWdHmfETGTGW+gpFmzf0xdKlzbFHIIKHZK+zicCtHIg6iMahZsf9wvYiBu0LAKwgdKR+kDMya5N8w=="],
-
-    "@zui/solid/@pandacss/dev/@clack/prompts": ["@clack/prompts@0.11.0", "", { "dependencies": { "@clack/core": "0.5.0", "picocolors": "^1.0.0", "sisteransi": "^1.0.5" } }, "sha512-pMN5FcrEw9hUkZA4f+zLlzivQSeQf5dRGJjSUbvVYDLvpKCdQx5OaknvKzgbtXOizhP+SJJJjqEbOe55uKKfAw=="],
-
-    "@zui/solid/@pandacss/dev/@pandacss/config": ["@pandacss/config@1.8.1", "", { "dependencies": { "@pandacss/logger": "1.8.1", "@pandacss/preset-base": "1.8.1", "@pandacss/preset-panda": "1.8.1", "@pandacss/shared": "1.8.1", "@pandacss/types": "1.8.1", "bundle-n-require": "1.1.2", "escalade": "3.2.0", "microdiff": "1.5.0", "typescript": "5.9.3" } }, "sha512-SvFvfDav//c2lbk9+IPRGCLGhUd1G8z/Nxs0CwZNLXpI0xTNy0ISGMV1ZKkqBFbmH95e+/5oZXnnM4rAS1LO0g=="],
-
-    "@zui/solid/@pandacss/dev/@pandacss/logger": ["@pandacss/logger@1.8.1", "", { "dependencies": { "@pandacss/types": "1.8.1", "kleur": "4.1.5" } }, "sha512-u++vUM+roJPPle0PQ1BGl6GkxwusfzEbKtX35L/5GtF6+CQ1ZfbD07HlMjEzmyEQ+KeQ8joR1Ubh/YGrZdEWrQ=="],
-
-    "@zui/solid/@pandacss/dev/@pandacss/mcp": ["@pandacss/mcp@1.8.1", "", { "dependencies": { "@clack/prompts": "0.11.0", "@modelcontextprotocol/sdk": "^1.25.1", "@pandacss/logger": "1.8.1", "@pandacss/node": "1.8.1", "@pandacss/token-dictionary": "1.8.1", "@pandacss/types": "1.8.1", "zod": "^4.0.0" } }, "sha512-z3VOz9XVvpdQ0bf6a1REGZToFFcwU/0jyK699fRD3jzMg+OJ24j/T8RZvlFoDPCWcifjXI7eUCSnUJ1TVqXfcQ=="],
-
-    "@zui/solid/@pandacss/dev/@pandacss/node": ["@pandacss/node@1.8.1", "", { "dependencies": { "@pandacss/config": "1.8.1", "@pandacss/core": "1.8.1", "@pandacss/generator": "1.8.1", "@pandacss/logger": "1.8.1", "@pandacss/parser": "1.8.1", "@pandacss/reporter": "1.8.1", "@pandacss/shared": "1.8.1", "@pandacss/token-dictionary": "1.8.1", "@pandacss/types": "1.8.1", "browserslist": "4.28.0", "chokidar": "4.0.3", "fast-glob": "3.3.3", "fs-extra": "11.3.2", "glob-parent": "6.0.2", "is-glob": "4.0.3", "lodash.merge": "4.6.2", "look-it-up": "2.1.0", "outdent": " ^0.8.0", "p-limit": "5.0.0", "package-manager-detector": "1.6.0", "perfect-debounce": "1.0.0", "picomatch": "4.0.3", "pkg-types": "2.3.0", "pluralize": "8.0.0", "postcss": "8.5.6", "prettier": "3.2.5", "ts-morph": "27.0.2", "ts-pattern": "5.9.0", "tsconfck": "3.1.6" } }, "sha512-59Cb55sFL+TO2Sd/s2SxSvh0nY/ouBsJQYqRvUkgLL56FDH28euCYvj8Tt6H9rISKl6xhCpixF7svA8YjTOuXg=="],
-
-    "@zui/solid/@pandacss/dev/@pandacss/postcss": ["@pandacss/postcss@1.8.1", "", { "dependencies": { "@pandacss/node": "1.8.1", "postcss": "8.5.6" } }, "sha512-xopXqr/Bh/KTewxgsYe2muHIsuLqrZ64RH1cW4KRY5TOI+JaL7M4qAPTqa/fVMh+LV9k0woTd423g7Q3d2oivA=="],
-
-    "@zui/solid/@pandacss/dev/@pandacss/shared": ["@pandacss/shared@1.8.1", "", {}, "sha512-8U+iqqvb1hmTRHOCkO4q29OMv//szv/wJAQG6SPEuYth7QH+fEvPMl2qsZyDTe1b+pkB1bt7tpvTF4+lR1K8EA=="],
-
-    "@zui/solid/@pandacss/dev/@pandacss/token-dictionary": ["@pandacss/token-dictionary@1.8.1", "", { "dependencies": { "@pandacss/logger": "^1.8.1", "@pandacss/shared": "1.8.1", "@pandacss/types": "1.8.1", "picomatch": "^4.0.0", "ts-pattern": "5.9.0" } }, "sha512-6uDH/QbxE/sS/QzfaSswxa+hMdDR1U3PUGVD/uCrt3tJ4zTHgR2icZ3vH9GN9k17WFutzcVQaKTKscY3PYn9TA=="],
-
-    "@zui/solid/@pandacss/dev/@pandacss/types": ["@pandacss/types@1.8.1", "", {}, "sha512-5hNn6PsbmSWdHmfETGTGW+gpFmzf0xdKlzbFHIIKHZK+zicCtHIg6iMahZsf9wvYiBu0LAKwgdKR+kDMya5N8w=="],
-
-    "@zui/solid/@pandacss/preset-base/@pandacss/types": ["@pandacss/types@1.8.1", "", {}, "sha512-5hNn6PsbmSWdHmfETGTGW+gpFmzf0xdKlzbFHIIKHZK+zicCtHIg6iMahZsf9wvYiBu0LAKwgdKR+kDMya5N8w=="],
-
-    "@zui/solid/@pandacss/preset-panda/@pandacss/types": ["@pandacss/types@1.8.1", "", {}, "sha512-5hNn6PsbmSWdHmfETGTGW+gpFmzf0xdKlzbFHIIKHZK+zicCtHIg6iMahZsf9wvYiBu0LAKwgdKR+kDMya5N8w=="],
-
     "@zui/solid/storybook/semver": ["semver@7.7.3", "", { "bin": { "semver": "bin/semver.js" } }, "sha512-SdsKMrI9TdgjdweUSR9MweHA4EJ8YxHn8DFaDisvhVlUOe4BF1tLD7GAj0lIqWVl+dPb/rExr0Btby5loQm20Q=="],
-
-    "@zui/vue/@pandacss/dev/@clack/prompts": ["@clack/prompts@0.11.0", "", { "dependencies": { "@clack/core": "0.5.0", "picocolors": "^1.0.0", "sisteransi": "^1.0.5" } }, "sha512-pMN5FcrEw9hUkZA4f+zLlzivQSeQf5dRGJjSUbvVYDLvpKCdQx5OaknvKzgbtXOizhP+SJJJjqEbOe55uKKfAw=="],
-
-    "@zui/vue/@pandacss/dev/@pandacss/config": ["@pandacss/config@1.8.1", "", { "dependencies": { "@pandacss/logger": "1.8.1", "@pandacss/preset-base": "1.8.1", "@pandacss/preset-panda": "1.8.1", "@pandacss/shared": "1.8.1", "@pandacss/types": "1.8.1", "bundle-n-require": "1.1.2", "escalade": "3.2.0", "microdiff": "1.5.0", "typescript": "5.9.3" } }, "sha512-SvFvfDav//c2lbk9+IPRGCLGhUd1G8z/Nxs0CwZNLXpI0xTNy0ISGMV1ZKkqBFbmH95e+/5oZXnnM4rAS1LO0g=="],
-
-    "@zui/vue/@pandacss/dev/@pandacss/logger": ["@pandacss/logger@1.8.1", "", { "dependencies": { "@pandacss/types": "1.8.1", "kleur": "4.1.5" } }, "sha512-u++vUM+roJPPle0PQ1BGl6GkxwusfzEbKtX35L/5GtF6+CQ1ZfbD07HlMjEzmyEQ+KeQ8joR1Ubh/YGrZdEWrQ=="],
-
-    "@zui/vue/@pandacss/dev/@pandacss/mcp": ["@pandacss/mcp@1.8.1", "", { "dependencies": { "@clack/prompts": "0.11.0", "@modelcontextprotocol/sdk": "^1.25.1", "@pandacss/logger": "1.8.1", "@pandacss/node": "1.8.1", "@pandacss/token-dictionary": "1.8.1", "@pandacss/types": "1.8.1", "zod": "^4.0.0" } }, "sha512-z3VOz9XVvpdQ0bf6a1REGZToFFcwU/0jyK699fRD3jzMg+OJ24j/T8RZvlFoDPCWcifjXI7eUCSnUJ1TVqXfcQ=="],
-
-    "@zui/vue/@pandacss/dev/@pandacss/node": ["@pandacss/node@1.8.1", "", { "dependencies": { "@pandacss/config": "1.8.1", "@pandacss/core": "1.8.1", "@pandacss/generator": "1.8.1", "@pandacss/logger": "1.8.1", "@pandacss/parser": "1.8.1", "@pandacss/reporter": "1.8.1", "@pandacss/shared": "1.8.1", "@pandacss/token-dictionary": "1.8.1", "@pandacss/types": "1.8.1", "browserslist": "4.28.0", "chokidar": "4.0.3", "fast-glob": "3.3.3", "fs-extra": "11.3.2", "glob-parent": "6.0.2", "is-glob": "4.0.3", "lodash.merge": "4.6.2", "look-it-up": "2.1.0", "outdent": " ^0.8.0", "p-limit": "5.0.0", "package-manager-detector": "1.6.0", "perfect-debounce": "1.0.0", "picomatch": "4.0.3", "pkg-types": "2.3.0", "pluralize": "8.0.0", "postcss": "8.5.6", "prettier": "3.2.5", "ts-morph": "27.0.2", "ts-pattern": "5.9.0", "tsconfck": "3.1.6" } }, "sha512-59Cb55sFL+TO2Sd/s2SxSvh0nY/ouBsJQYqRvUkgLL56FDH28euCYvj8Tt6H9rISKl6xhCpixF7svA8YjTOuXg=="],
-
-    "@zui/vue/@pandacss/dev/@pandacss/postcss": ["@pandacss/postcss@1.8.1", "", { "dependencies": { "@pandacss/node": "1.8.1", "postcss": "8.5.6" } }, "sha512-xopXqr/Bh/KTewxgsYe2muHIsuLqrZ64RH1cW4KRY5TOI+JaL7M4qAPTqa/fVMh+LV9k0woTd423g7Q3d2oivA=="],
-
-    "@zui/vue/@pandacss/dev/@pandacss/shared": ["@pandacss/shared@1.8.1", "", {}, "sha512-8U+iqqvb1hmTRHOCkO4q29OMv//szv/wJAQG6SPEuYth7QH+fEvPMl2qsZyDTe1b+pkB1bt7tpvTF4+lR1K8EA=="],
-
-    "@zui/vue/@pandacss/dev/@pandacss/token-dictionary": ["@pandacss/token-dictionary@1.8.1", "", { "dependencies": { "@pandacss/logger": "^1.8.1", "@pandacss/shared": "1.8.1", "@pandacss/types": "1.8.1", "picomatch": "^4.0.0", "ts-pattern": "5.9.0" } }, "sha512-6uDH/QbxE/sS/QzfaSswxa+hMdDR1U3PUGVD/uCrt3tJ4zTHgR2icZ3vH9GN9k17WFutzcVQaKTKscY3PYn9TA=="],
-
-    "@zui/vue/@pandacss/dev/@pandacss/types": ["@pandacss/types@1.8.1", "", {}, "sha512-5hNn6PsbmSWdHmfETGTGW+gpFmzf0xdKlzbFHIIKHZK+zicCtHIg6iMahZsf9wvYiBu0LAKwgdKR+kDMya5N8w=="],
-
-    "@zui/vue/@pandacss/preset-base/@pandacss/types": ["@pandacss/types@1.8.1", "", {}, "sha512-5hNn6PsbmSWdHmfETGTGW+gpFmzf0xdKlzbFHIIKHZK+zicCtHIg6iMahZsf9wvYiBu0LAKwgdKR+kDMya5N8w=="],
-
-    "@zui/vue/@pandacss/preset-panda/@pandacss/types": ["@pandacss/types@1.8.1", "", {}, "sha512-5hNn6PsbmSWdHmfETGTGW+gpFmzf0xdKlzbFHIIKHZK+zicCtHIg6iMahZsf9wvYiBu0LAKwgdKR+kDMya5N8w=="],
 
     "babel-plugin-jsx-dom-expressions/@babel/types/@babel/helper-validator-identifier": ["@babel/helper-validator-identifier@7.27.1", "", {}, "sha512-D2hP9eA+Sqx1kBZgzxZh0y1trbuU+JoDkiEwqhQ36nodYqJwyEIhPSdMNd7lOm/4io72luTPWH20Yda0xOuUow=="],
 
@@ -3524,48 +3444,6 @@
 
     "@pandacss/parser/@vue/compiler-sfc/@vue/compiler-core/entities": ["entities@4.5.0", "", {}, "sha512-V0hjH4dGPh9Ao5p0MoRY6BVqtwCjhz6vI5LT8AJ55H+4g9/4vbHx1I54fS0XuclLhDHArPQCiMjDxjaL8fPxhw=="],
 
-    "@zui/preset/@pandacss/dev/@clack/prompts/@clack/core": ["@clack/core@0.5.0", "", { "dependencies": { "picocolors": "^1.0.0", "sisteransi": "^1.0.5" } }, "sha512-p3y0FIOwaYRUPRcMO7+dlmLh8PSRcrjuTndsiA0WAFbWES0mLZlrjVoBRZ9DzkPFJZG6KGkJmoEAY0ZcVWTkow=="],
-
-    "@zui/preset/@pandacss/dev/@pandacss/node/@pandacss/core": ["@pandacss/core@1.8.1", "", { "dependencies": { "@csstools/postcss-cascade-layers": "5.0.2", "@pandacss/is-valid-prop": "^1.8.1", "@pandacss/logger": "1.8.1", "@pandacss/shared": "1.8.1", "@pandacss/token-dictionary": "1.8.1", "@pandacss/types": "1.8.1", "browserslist": "4.28.0", "hookable": "5.5.3", "lightningcss": "1.30.2", "lodash.merge": "4.6.2", "outdent": "0.8.0", "postcss": "8.5.6", "postcss-discard-duplicates": "7.0.2", "postcss-discard-empty": "7.0.1", "postcss-merge-rules": "7.0.7", "postcss-minify-selectors": "7.0.5", "postcss-nested": "7.0.2", "postcss-normalize-whitespace": "7.0.1", "postcss-selector-parser": "7.1.1", "ts-pattern": "5.9.0" } }, "sha512-8axy9BApvc/oX5/K2/qX23HX1cHvp3MI/fm+CDx31v9zH3MIy4X49MMDeEU9o6L2Q6p6yinPgQZi7gtOqw+mfQ=="],
-
-    "@zui/preset/@pandacss/dev/@pandacss/node/@pandacss/generator": ["@pandacss/generator@1.8.1", "", { "dependencies": { "@pandacss/core": "1.8.1", "@pandacss/is-valid-prop": "^1.8.1", "@pandacss/logger": "1.8.1", "@pandacss/shared": "1.8.1", "@pandacss/token-dictionary": "1.8.1", "@pandacss/types": "1.8.1", "javascript-stringify": "2.1.0", "outdent": " ^0.8.0", "pluralize": "8.0.0", "postcss": "8.5.6", "ts-pattern": "5.9.0" } }, "sha512-+20L+KeSbd2tqalH51M8pAMcJ6HM9rgnKXOyNAN/kx78WXec4jCZN9z9CSCFbrRxH/qpcIx20oAXZBbNghHSyQ=="],
-
-    "@zui/preset/@pandacss/dev/@pandacss/node/@pandacss/parser": ["@pandacss/parser@1.8.1", "", { "dependencies": { "@pandacss/config": "^1.8.1", "@pandacss/core": "^1.8.1", "@pandacss/extractor": "1.8.1", "@pandacss/logger": "1.8.1", "@pandacss/shared": "1.8.1", "@pandacss/types": "1.8.1", "@vue/compiler-sfc": "3.5.25", "magic-string": "0.30.21", "ts-morph": "27.0.2", "ts-pattern": "5.9.0" } }, "sha512-dyWX+P4zouBuvqbWqySKDWnrIeq/C2jdeS/GjswQny3pGQHwm1np9yqHfNEtKlaIouXYACbjP1cXl/tEgiKXHA=="],
-
-    "@zui/preset/@pandacss/dev/@pandacss/node/@pandacss/reporter": ["@pandacss/reporter@1.8.1", "", { "dependencies": { "@pandacss/core": "1.8.1", "@pandacss/generator": "1.8.1", "@pandacss/logger": "1.8.1", "@pandacss/shared": "1.8.1", "@pandacss/types": "1.8.1", "table": "6.9.0", "wordwrapjs": "5.1.1" } }, "sha512-aTAObZ8ALxhGIXtHMEJ0KzDx3au1qlwHe60EA4BGGEPfBg25ntM8SaSbxOMhwUcbD5VffzywRoJeqWMaPmg3zw=="],
-
-    "@zui/preset/@pandacss/dev/@pandacss/node/fs-extra": ["fs-extra@11.3.2", "", { "dependencies": { "graceful-fs": "^4.2.0", "jsonfile": "^6.0.1", "universalify": "^2.0.0" } }, "sha512-Xr9F6z6up6Ws+NjzMCZc6WXg2YFRlrLP9NQDO3VQrWrfiojdhS56TzueT88ze0uBdCTwEIhQ3ptnmKeWGFAe0A=="],
-
-    "@zui/preset/@pandacss/dev/@pandacss/node/glob-parent": ["glob-parent@6.0.2", "", { "dependencies": { "is-glob": "^4.0.3" } }, "sha512-XxwI8EOhVQgWp6iDL+3b0r86f4d6AX6zSU55HfB4ydCEuXLXc5FcYeOu+nnGftS4TEju/11rt4KJPTMgbfmv4A=="],
-
-    "@zui/solid/@pandacss/dev/@clack/prompts/@clack/core": ["@clack/core@0.5.0", "", { "dependencies": { "picocolors": "^1.0.0", "sisteransi": "^1.0.5" } }, "sha512-p3y0FIOwaYRUPRcMO7+dlmLh8PSRcrjuTndsiA0WAFbWES0mLZlrjVoBRZ9DzkPFJZG6KGkJmoEAY0ZcVWTkow=="],
-
-    "@zui/solid/@pandacss/dev/@pandacss/node/@pandacss/core": ["@pandacss/core@1.8.1", "", { "dependencies": { "@csstools/postcss-cascade-layers": "5.0.2", "@pandacss/is-valid-prop": "^1.8.1", "@pandacss/logger": "1.8.1", "@pandacss/shared": "1.8.1", "@pandacss/token-dictionary": "1.8.1", "@pandacss/types": "1.8.1", "browserslist": "4.28.0", "hookable": "5.5.3", "lightningcss": "1.30.2", "lodash.merge": "4.6.2", "outdent": "0.8.0", "postcss": "8.5.6", "postcss-discard-duplicates": "7.0.2", "postcss-discard-empty": "7.0.1", "postcss-merge-rules": "7.0.7", "postcss-minify-selectors": "7.0.5", "postcss-nested": "7.0.2", "postcss-normalize-whitespace": "7.0.1", "postcss-selector-parser": "7.1.1", "ts-pattern": "5.9.0" } }, "sha512-8axy9BApvc/oX5/K2/qX23HX1cHvp3MI/fm+CDx31v9zH3MIy4X49MMDeEU9o6L2Q6p6yinPgQZi7gtOqw+mfQ=="],
-
-    "@zui/solid/@pandacss/dev/@pandacss/node/@pandacss/generator": ["@pandacss/generator@1.8.1", "", { "dependencies": { "@pandacss/core": "1.8.1", "@pandacss/is-valid-prop": "^1.8.1", "@pandacss/logger": "1.8.1", "@pandacss/shared": "1.8.1", "@pandacss/token-dictionary": "1.8.1", "@pandacss/types": "1.8.1", "javascript-stringify": "2.1.0", "outdent": " ^0.8.0", "pluralize": "8.0.0", "postcss": "8.5.6", "ts-pattern": "5.9.0" } }, "sha512-+20L+KeSbd2tqalH51M8pAMcJ6HM9rgnKXOyNAN/kx78WXec4jCZN9z9CSCFbrRxH/qpcIx20oAXZBbNghHSyQ=="],
-
-    "@zui/solid/@pandacss/dev/@pandacss/node/@pandacss/parser": ["@pandacss/parser@1.8.1", "", { "dependencies": { "@pandacss/config": "^1.8.1", "@pandacss/core": "^1.8.1", "@pandacss/extractor": "1.8.1", "@pandacss/logger": "1.8.1", "@pandacss/shared": "1.8.1", "@pandacss/types": "1.8.1", "@vue/compiler-sfc": "3.5.25", "magic-string": "0.30.21", "ts-morph": "27.0.2", "ts-pattern": "5.9.0" } }, "sha512-dyWX+P4zouBuvqbWqySKDWnrIeq/C2jdeS/GjswQny3pGQHwm1np9yqHfNEtKlaIouXYACbjP1cXl/tEgiKXHA=="],
-
-    "@zui/solid/@pandacss/dev/@pandacss/node/@pandacss/reporter": ["@pandacss/reporter@1.8.1", "", { "dependencies": { "@pandacss/core": "1.8.1", "@pandacss/generator": "1.8.1", "@pandacss/logger": "1.8.1", "@pandacss/shared": "1.8.1", "@pandacss/types": "1.8.1", "table": "6.9.0", "wordwrapjs": "5.1.1" } }, "sha512-aTAObZ8ALxhGIXtHMEJ0KzDx3au1qlwHe60EA4BGGEPfBg25ntM8SaSbxOMhwUcbD5VffzywRoJeqWMaPmg3zw=="],
-
-    "@zui/solid/@pandacss/dev/@pandacss/node/fs-extra": ["fs-extra@11.3.2", "", { "dependencies": { "graceful-fs": "^4.2.0", "jsonfile": "^6.0.1", "universalify": "^2.0.0" } }, "sha512-Xr9F6z6up6Ws+NjzMCZc6WXg2YFRlrLP9NQDO3VQrWrfiojdhS56TzueT88ze0uBdCTwEIhQ3ptnmKeWGFAe0A=="],
-
-    "@zui/solid/@pandacss/dev/@pandacss/node/glob-parent": ["glob-parent@6.0.2", "", { "dependencies": { "is-glob": "^4.0.3" } }, "sha512-XxwI8EOhVQgWp6iDL+3b0r86f4d6AX6zSU55HfB4ydCEuXLXc5FcYeOu+nnGftS4TEju/11rt4KJPTMgbfmv4A=="],
-
-    "@zui/vue/@pandacss/dev/@clack/prompts/@clack/core": ["@clack/core@0.5.0", "", { "dependencies": { "picocolors": "^1.0.0", "sisteransi": "^1.0.5" } }, "sha512-p3y0FIOwaYRUPRcMO7+dlmLh8PSRcrjuTndsiA0WAFbWES0mLZlrjVoBRZ9DzkPFJZG6KGkJmoEAY0ZcVWTkow=="],
-
-    "@zui/vue/@pandacss/dev/@pandacss/node/@pandacss/core": ["@pandacss/core@1.8.1", "", { "dependencies": { "@csstools/postcss-cascade-layers": "5.0.2", "@pandacss/is-valid-prop": "^1.8.1", "@pandacss/logger": "1.8.1", "@pandacss/shared": "1.8.1", "@pandacss/token-dictionary": "1.8.1", "@pandacss/types": "1.8.1", "browserslist": "4.28.0", "hookable": "5.5.3", "lightningcss": "1.30.2", "lodash.merge": "4.6.2", "outdent": "0.8.0", "postcss": "8.5.6", "postcss-discard-duplicates": "7.0.2", "postcss-discard-empty": "7.0.1", "postcss-merge-rules": "7.0.7", "postcss-minify-selectors": "7.0.5", "postcss-nested": "7.0.2", "postcss-normalize-whitespace": "7.0.1", "postcss-selector-parser": "7.1.1", "ts-pattern": "5.9.0" } }, "sha512-8axy9BApvc/oX5/K2/qX23HX1cHvp3MI/fm+CDx31v9zH3MIy4X49MMDeEU9o6L2Q6p6yinPgQZi7gtOqw+mfQ=="],
-
-    "@zui/vue/@pandacss/dev/@pandacss/node/@pandacss/generator": ["@pandacss/generator@1.8.1", "", { "dependencies": { "@pandacss/core": "1.8.1", "@pandacss/is-valid-prop": "^1.8.1", "@pandacss/logger": "1.8.1", "@pandacss/shared": "1.8.1", "@pandacss/token-dictionary": "1.8.1", "@pandacss/types": "1.8.1", "javascript-stringify": "2.1.0", "outdent": " ^0.8.0", "pluralize": "8.0.0", "postcss": "8.5.6", "ts-pattern": "5.9.0" } }, "sha512-+20L+KeSbd2tqalH51M8pAMcJ6HM9rgnKXOyNAN/kx78WXec4jCZN9z9CSCFbrRxH/qpcIx20oAXZBbNghHSyQ=="],
-
-    "@zui/vue/@pandacss/dev/@pandacss/node/@pandacss/parser": ["@pandacss/parser@1.8.1", "", { "dependencies": { "@pandacss/config": "^1.8.1", "@pandacss/core": "^1.8.1", "@pandacss/extractor": "1.8.1", "@pandacss/logger": "1.8.1", "@pandacss/shared": "1.8.1", "@pandacss/types": "1.8.1", "@vue/compiler-sfc": "3.5.25", "magic-string": "0.30.21", "ts-morph": "27.0.2", "ts-pattern": "5.9.0" } }, "sha512-dyWX+P4zouBuvqbWqySKDWnrIeq/C2jdeS/GjswQny3pGQHwm1np9yqHfNEtKlaIouXYACbjP1cXl/tEgiKXHA=="],
-
-    "@zui/vue/@pandacss/dev/@pandacss/node/@pandacss/reporter": ["@pandacss/reporter@1.8.1", "", { "dependencies": { "@pandacss/core": "1.8.1", "@pandacss/generator": "1.8.1", "@pandacss/logger": "1.8.1", "@pandacss/shared": "1.8.1", "@pandacss/types": "1.8.1", "table": "6.9.0", "wordwrapjs": "5.1.1" } }, "sha512-aTAObZ8ALxhGIXtHMEJ0KzDx3au1qlwHe60EA4BGGEPfBg25ntM8SaSbxOMhwUcbD5VffzywRoJeqWMaPmg3zw=="],
-
-    "@zui/vue/@pandacss/dev/@pandacss/node/fs-extra": ["fs-extra@11.3.2", "", { "dependencies": { "graceful-fs": "^4.2.0", "jsonfile": "^6.0.1", "universalify": "^2.0.0" } }, "sha512-Xr9F6z6up6Ws+NjzMCZc6WXg2YFRlrLP9NQDO3VQrWrfiojdhS56TzueT88ze0uBdCTwEIhQ3ptnmKeWGFAe0A=="],
-
-    "@zui/vue/@pandacss/dev/@pandacss/node/glob-parent": ["glob-parent@6.0.2", "", { "dependencies": { "is-glob": "^4.0.3" } }, "sha512-XxwI8EOhVQgWp6iDL+3b0r86f4d6AX6zSU55HfB4ydCEuXLXc5FcYeOu+nnGftS4TEju/11rt4KJPTMgbfmv4A=="],
-
     "jsdom/tough-cookie/tldts/tldts-core": ["tldts-core@6.1.86", "", {}, "sha512-Je6p7pkk+KMzMv2XXKmAE3McmolOQFdxkKw0R8EYNr7sELW46JqnNeTX8ybPiQgvg1ymCoF8LXs5fzFaZvJPTA=="],
 
     "msw/@inquirer/confirm/@inquirer/core/@inquirer/ansi": ["@inquirer/ansi@1.0.0", "", {}, "sha512-JWaTfCxI1eTmJ1BIv86vUfjVatOdxwD0DAVKYevY8SazeUUZtW+tNbsdejVO1GYE0GXJW1N1ahmiC3TFd+7wZA=="],
@@ -3660,42 +3538,6 @@
 
     "@joshwooding/vite-plugin-react-docgen-typescript/glob/minimatch/brace-expansion/balanced-match": ["balanced-match@4.0.4", "", {}, "sha512-BLrgEcRTwX2o6gGxGOCNyMvGSp35YofuYzw9h1IMTRmKqttAZZVU67bdb9Pr2vUHA8+j3i2tJfjO6C6+4myGTA=="],
 
-    "@zui/preset/@pandacss/dev/@pandacss/node/@pandacss/core/@pandacss/is-valid-prop": ["@pandacss/is-valid-prop@1.8.1", "", {}, "sha512-gf2HTBCOboc65Jlb9swAjbffXSIv+A4vzSQ9iHyTCDLMcXTHYjPOQNliI36WkuQgR0pNXggBbQXGNaT9wKcrAw=="],
-
-    "@zui/preset/@pandacss/dev/@pandacss/node/@pandacss/core/postcss-nested": ["postcss-nested@7.0.2", "", { "dependencies": { "postcss-selector-parser": "^7.0.0" }, "peerDependencies": { "postcss": "^8.2.14" } }, "sha512-5osppouFc0VR9/VYzYxO03VaDa3e8F23Kfd6/9qcZTUI8P58GIYlArOET2Wq0ywSl2o2PjELhYOFI4W7l5QHKw=="],
-
-    "@zui/preset/@pandacss/dev/@pandacss/node/@pandacss/core/postcss-selector-parser": ["postcss-selector-parser@7.1.1", "", { "dependencies": { "cssesc": "^3.0.0", "util-deprecate": "^1.0.2" } }, "sha512-orRsuYpJVw8LdAwqqLykBj9ecS5/cRHlI5+nvTo8LcCKmzDmqVORXtOIYEEQuL9D4BxtA1lm5isAqzQZCoQ6Eg=="],
-
-    "@zui/preset/@pandacss/dev/@pandacss/node/@pandacss/generator/@pandacss/is-valid-prop": ["@pandacss/is-valid-prop@1.8.1", "", {}, "sha512-gf2HTBCOboc65Jlb9swAjbffXSIv+A4vzSQ9iHyTCDLMcXTHYjPOQNliI36WkuQgR0pNXggBbQXGNaT9wKcrAw=="],
-
-    "@zui/preset/@pandacss/dev/@pandacss/node/@pandacss/parser/@pandacss/extractor": ["@pandacss/extractor@1.8.1", "", { "dependencies": { "@pandacss/shared": "1.8.1", "ts-evaluator": "1.2.0", "ts-morph": "27.0.2" } }, "sha512-fgztRMZq1f/M8zdCku9ads+Wslje9/stypjN/qLjV436NI2LWktDmWYGTiEyHZTR5yEfI2LtJCa1b1BvZcU07g=="],
-
-    "@zui/preset/@pandacss/dev/@pandacss/node/@pandacss/parser/@vue/compiler-sfc": ["@vue/compiler-sfc@3.5.25", "", { "dependencies": { "@babel/parser": "^7.28.5", "@vue/compiler-core": "3.5.25", "@vue/compiler-dom": "3.5.25", "@vue/compiler-ssr": "3.5.25", "@vue/shared": "3.5.25", "estree-walker": "^2.0.2", "magic-string": "^0.30.21", "postcss": "^8.5.6", "source-map-js": "^1.2.1" } }, "sha512-PUgKp2rn8fFsI++lF2sO7gwO2d9Yj57Utr5yEsDf3GNaQcowCLKL7sf+LvVFvtJDXUp/03+dC6f2+LCv5aK1ag=="],
-
-    "@zui/solid/@pandacss/dev/@pandacss/node/@pandacss/core/@pandacss/is-valid-prop": ["@pandacss/is-valid-prop@1.8.1", "", {}, "sha512-gf2HTBCOboc65Jlb9swAjbffXSIv+A4vzSQ9iHyTCDLMcXTHYjPOQNliI36WkuQgR0pNXggBbQXGNaT9wKcrAw=="],
-
-    "@zui/solid/@pandacss/dev/@pandacss/node/@pandacss/core/postcss-nested": ["postcss-nested@7.0.2", "", { "dependencies": { "postcss-selector-parser": "^7.0.0" }, "peerDependencies": { "postcss": "^8.2.14" } }, "sha512-5osppouFc0VR9/VYzYxO03VaDa3e8F23Kfd6/9qcZTUI8P58GIYlArOET2Wq0ywSl2o2PjELhYOFI4W7l5QHKw=="],
-
-    "@zui/solid/@pandacss/dev/@pandacss/node/@pandacss/core/postcss-selector-parser": ["postcss-selector-parser@7.1.1", "", { "dependencies": { "cssesc": "^3.0.0", "util-deprecate": "^1.0.2" } }, "sha512-orRsuYpJVw8LdAwqqLykBj9ecS5/cRHlI5+nvTo8LcCKmzDmqVORXtOIYEEQuL9D4BxtA1lm5isAqzQZCoQ6Eg=="],
-
-    "@zui/solid/@pandacss/dev/@pandacss/node/@pandacss/generator/@pandacss/is-valid-prop": ["@pandacss/is-valid-prop@1.8.1", "", {}, "sha512-gf2HTBCOboc65Jlb9swAjbffXSIv+A4vzSQ9iHyTCDLMcXTHYjPOQNliI36WkuQgR0pNXggBbQXGNaT9wKcrAw=="],
-
-    "@zui/solid/@pandacss/dev/@pandacss/node/@pandacss/parser/@pandacss/extractor": ["@pandacss/extractor@1.8.1", "", { "dependencies": { "@pandacss/shared": "1.8.1", "ts-evaluator": "1.2.0", "ts-morph": "27.0.2" } }, "sha512-fgztRMZq1f/M8zdCku9ads+Wslje9/stypjN/qLjV436NI2LWktDmWYGTiEyHZTR5yEfI2LtJCa1b1BvZcU07g=="],
-
-    "@zui/solid/@pandacss/dev/@pandacss/node/@pandacss/parser/@vue/compiler-sfc": ["@vue/compiler-sfc@3.5.25", "", { "dependencies": { "@babel/parser": "^7.28.5", "@vue/compiler-core": "3.5.25", "@vue/compiler-dom": "3.5.25", "@vue/compiler-ssr": "3.5.25", "@vue/shared": "3.5.25", "estree-walker": "^2.0.2", "magic-string": "^0.30.21", "postcss": "^8.5.6", "source-map-js": "^1.2.1" } }, "sha512-PUgKp2rn8fFsI++lF2sO7gwO2d9Yj57Utr5yEsDf3GNaQcowCLKL7sf+LvVFvtJDXUp/03+dC6f2+LCv5aK1ag=="],
-
-    "@zui/vue/@pandacss/dev/@pandacss/node/@pandacss/core/@pandacss/is-valid-prop": ["@pandacss/is-valid-prop@1.8.1", "", {}, "sha512-gf2HTBCOboc65Jlb9swAjbffXSIv+A4vzSQ9iHyTCDLMcXTHYjPOQNliI36WkuQgR0pNXggBbQXGNaT9wKcrAw=="],
-
-    "@zui/vue/@pandacss/dev/@pandacss/node/@pandacss/core/postcss-nested": ["postcss-nested@7.0.2", "", { "dependencies": { "postcss-selector-parser": "^7.0.0" }, "peerDependencies": { "postcss": "^8.2.14" } }, "sha512-5osppouFc0VR9/VYzYxO03VaDa3e8F23Kfd6/9qcZTUI8P58GIYlArOET2Wq0ywSl2o2PjELhYOFI4W7l5QHKw=="],
-
-    "@zui/vue/@pandacss/dev/@pandacss/node/@pandacss/core/postcss-selector-parser": ["postcss-selector-parser@7.1.1", "", { "dependencies": { "cssesc": "^3.0.0", "util-deprecate": "^1.0.2" } }, "sha512-orRsuYpJVw8LdAwqqLykBj9ecS5/cRHlI5+nvTo8LcCKmzDmqVORXtOIYEEQuL9D4BxtA1lm5isAqzQZCoQ6Eg=="],
-
-    "@zui/vue/@pandacss/dev/@pandacss/node/@pandacss/generator/@pandacss/is-valid-prop": ["@pandacss/is-valid-prop@1.8.1", "", {}, "sha512-gf2HTBCOboc65Jlb9swAjbffXSIv+A4vzSQ9iHyTCDLMcXTHYjPOQNliI36WkuQgR0pNXggBbQXGNaT9wKcrAw=="],
-
-    "@zui/vue/@pandacss/dev/@pandacss/node/@pandacss/parser/@pandacss/extractor": ["@pandacss/extractor@1.8.1", "", { "dependencies": { "@pandacss/shared": "1.8.1", "ts-evaluator": "1.2.0", "ts-morph": "27.0.2" } }, "sha512-fgztRMZq1f/M8zdCku9ads+Wslje9/stypjN/qLjV436NI2LWktDmWYGTiEyHZTR5yEfI2LtJCa1b1BvZcU07g=="],
-
-    "@zui/vue/@pandacss/dev/@pandacss/node/@pandacss/parser/@vue/compiler-sfc": ["@vue/compiler-sfc@3.5.25", "", { "dependencies": { "@babel/parser": "^7.28.5", "@vue/compiler-core": "3.5.25", "@vue/compiler-dom": "3.5.25", "@vue/compiler-ssr": "3.5.25", "@vue/shared": "3.5.25", "estree-walker": "^2.0.2", "magic-string": "^0.30.21", "postcss": "^8.5.6", "source-map-js": "^1.2.1" } }, "sha512-PUgKp2rn8fFsI++lF2sO7gwO2d9Yj57Utr5yEsDf3GNaQcowCLKL7sf+LvVFvtJDXUp/03+dC6f2+LCv5aK1ag=="],
-
     "react-docgen/@babel/core/@babel/generator/@jridgewell/gen-mapping/@jridgewell/sourcemap-codec": ["@jridgewell/sourcemap-codec@1.5.0", "", {}, "sha512-gv3ZRaISU3fjPAgNsriBRqGWQL6quFx04YMPW/zD8XMLsU32mhCCbfbO6KZFLjvYpCZ8zyDEgqsgf+PwPaM7GQ=="],
 
     "react-docgen/@babel/core/@babel/generator/@jridgewell/trace-mapping/@jridgewell/sourcemap-codec": ["@jridgewell/sourcemap-codec@1.5.0", "", {}, "sha512-gv3ZRaISU3fjPAgNsriBRqGWQL6quFx04YMPW/zD8XMLsU32mhCCbfbO6KZFLjvYpCZ8zyDEgqsgf+PwPaM7GQ=="],
@@ -3715,53 +3557,5 @@
     "vite-plugin-solid/@babel/core/@babel/helper-compilation-targets/browserslist/node-releases": ["node-releases@2.0.19", "", {}, "sha512-xxOWJsBKtzAq7DY0J+DTzuz58K8e7sJbdgwkbMWQe8UYB6ekmsQ45q0M/tJDsGaZmbC+l7n57UV8Hl5tHxO9uw=="],
 
     "vite-plugin-solid/@babel/core/@babel/helper-compilation-targets/browserslist/update-browserslist-db": ["update-browserslist-db@1.1.3", "", { "dependencies": { "escalade": "^3.2.0", "picocolors": "^1.1.1" }, "peerDependencies": { "browserslist": ">= 4.21.0" }, "bin": { "update-browserslist-db": "cli.js" } }, "sha512-UxhIZQ+QInVdunkDAaiazvvT/+fXL5Osr0JZlJulepYu6Jd7qJtDZjlur0emRlT71EN3ScPoE7gvsuIKKNavKw=="],
-
-    "@zui/preset/@pandacss/dev/@pandacss/node/@pandacss/core/postcss-nested/postcss-selector-parser": ["postcss-selector-parser@7.1.0", "", { "dependencies": { "cssesc": "^3.0.0", "util-deprecate": "^1.0.2" } }, "sha512-8sLjZwK0R+JlxlYcTuVnyT2v+htpdrjDOKuMcOVdYjt52Lh8hWRYpxBPoKx/Zg+bcjc3wx6fmQevMmUztS/ccA=="],
-
-    "@zui/preset/@pandacss/dev/@pandacss/node/@pandacss/parser/@vue/compiler-sfc/@babel/parser": ["@babel/parser@7.28.5", "", { "dependencies": { "@babel/types": "^7.28.5" }, "bin": "./bin/babel-parser.js" }, "sha512-KKBU1VGYR7ORr3At5HAtUQ+TV3SzRCXmA/8OdDZiLDBIZxVyzXuztPjfLd3BV1PRAQGCMWWSHYhL0F8d5uHBDQ=="],
-
-    "@zui/preset/@pandacss/dev/@pandacss/node/@pandacss/parser/@vue/compiler-sfc/@vue/compiler-core": ["@vue/compiler-core@3.5.25", "", { "dependencies": { "@babel/parser": "^7.28.5", "@vue/shared": "3.5.25", "entities": "^4.5.0", "estree-walker": "^2.0.2", "source-map-js": "^1.2.1" } }, "sha512-vay5/oQJdsNHmliWoZfHPoVZZRmnSWhug0BYT34njkYTPqClh3DNWLkZNJBVSjsNMrg0CCrBfoKkjZQPM/QVUw=="],
-
-    "@zui/preset/@pandacss/dev/@pandacss/node/@pandacss/parser/@vue/compiler-sfc/@vue/compiler-dom": ["@vue/compiler-dom@3.5.25", "", { "dependencies": { "@vue/compiler-core": "3.5.25", "@vue/shared": "3.5.25" } }, "sha512-4We0OAcMZsKgYoGlMjzYvaoErltdFI2/25wqanuTu+S4gismOTRTBPi4IASOjxWdzIwrYSjnqONfKvuqkXzE2Q=="],
-
-    "@zui/preset/@pandacss/dev/@pandacss/node/@pandacss/parser/@vue/compiler-sfc/@vue/compiler-ssr": ["@vue/compiler-ssr@3.5.25", "", { "dependencies": { "@vue/compiler-dom": "3.5.25", "@vue/shared": "3.5.25" } }, "sha512-ritPSKLBcParnsKYi+GNtbdbrIE1mtuFEJ4U1sWeuOMlIziK5GtOL85t5RhsNy4uWIXPgk+OUdpnXiTdzn8o3A=="],
-
-    "@zui/preset/@pandacss/dev/@pandacss/node/@pandacss/parser/@vue/compiler-sfc/@vue/shared": ["@vue/shared@3.5.25", "", {}, "sha512-AbOPdQQnAnzs58H2FrrDxYj/TJfmeS2jdfEEhgiKINy+bnOANmVizIEgq1r+C5zsbs6l1CCQxtcj71rwNQ4jWg=="],
-
-    "@zui/solid/@pandacss/dev/@pandacss/node/@pandacss/core/postcss-nested/postcss-selector-parser": ["postcss-selector-parser@7.1.0", "", { "dependencies": { "cssesc": "^3.0.0", "util-deprecate": "^1.0.2" } }, "sha512-8sLjZwK0R+JlxlYcTuVnyT2v+htpdrjDOKuMcOVdYjt52Lh8hWRYpxBPoKx/Zg+bcjc3wx6fmQevMmUztS/ccA=="],
-
-    "@zui/solid/@pandacss/dev/@pandacss/node/@pandacss/parser/@vue/compiler-sfc/@babel/parser": ["@babel/parser@7.28.5", "", { "dependencies": { "@babel/types": "^7.28.5" }, "bin": "./bin/babel-parser.js" }, "sha512-KKBU1VGYR7ORr3At5HAtUQ+TV3SzRCXmA/8OdDZiLDBIZxVyzXuztPjfLd3BV1PRAQGCMWWSHYhL0F8d5uHBDQ=="],
-
-    "@zui/solid/@pandacss/dev/@pandacss/node/@pandacss/parser/@vue/compiler-sfc/@vue/compiler-core": ["@vue/compiler-core@3.5.25", "", { "dependencies": { "@babel/parser": "^7.28.5", "@vue/shared": "3.5.25", "entities": "^4.5.0", "estree-walker": "^2.0.2", "source-map-js": "^1.2.1" } }, "sha512-vay5/oQJdsNHmliWoZfHPoVZZRmnSWhug0BYT34njkYTPqClh3DNWLkZNJBVSjsNMrg0CCrBfoKkjZQPM/QVUw=="],
-
-    "@zui/solid/@pandacss/dev/@pandacss/node/@pandacss/parser/@vue/compiler-sfc/@vue/compiler-dom": ["@vue/compiler-dom@3.5.25", "", { "dependencies": { "@vue/compiler-core": "3.5.25", "@vue/shared": "3.5.25" } }, "sha512-4We0OAcMZsKgYoGlMjzYvaoErltdFI2/25wqanuTu+S4gismOTRTBPi4IASOjxWdzIwrYSjnqONfKvuqkXzE2Q=="],
-
-    "@zui/solid/@pandacss/dev/@pandacss/node/@pandacss/parser/@vue/compiler-sfc/@vue/compiler-ssr": ["@vue/compiler-ssr@3.5.25", "", { "dependencies": { "@vue/compiler-dom": "3.5.25", "@vue/shared": "3.5.25" } }, "sha512-ritPSKLBcParnsKYi+GNtbdbrIE1mtuFEJ4U1sWeuOMlIziK5GtOL85t5RhsNy4uWIXPgk+OUdpnXiTdzn8o3A=="],
-
-    "@zui/solid/@pandacss/dev/@pandacss/node/@pandacss/parser/@vue/compiler-sfc/@vue/shared": ["@vue/shared@3.5.25", "", {}, "sha512-AbOPdQQnAnzs58H2FrrDxYj/TJfmeS2jdfEEhgiKINy+bnOANmVizIEgq1r+C5zsbs6l1CCQxtcj71rwNQ4jWg=="],
-
-    "@zui/vue/@pandacss/dev/@pandacss/node/@pandacss/core/postcss-nested/postcss-selector-parser": ["postcss-selector-parser@7.1.0", "", { "dependencies": { "cssesc": "^3.0.0", "util-deprecate": "^1.0.2" } }, "sha512-8sLjZwK0R+JlxlYcTuVnyT2v+htpdrjDOKuMcOVdYjt52Lh8hWRYpxBPoKx/Zg+bcjc3wx6fmQevMmUztS/ccA=="],
-
-    "@zui/vue/@pandacss/dev/@pandacss/node/@pandacss/parser/@vue/compiler-sfc/@babel/parser": ["@babel/parser@7.28.5", "", { "dependencies": { "@babel/types": "^7.28.5" }, "bin": "./bin/babel-parser.js" }, "sha512-KKBU1VGYR7ORr3At5HAtUQ+TV3SzRCXmA/8OdDZiLDBIZxVyzXuztPjfLd3BV1PRAQGCMWWSHYhL0F8d5uHBDQ=="],
-
-    "@zui/vue/@pandacss/dev/@pandacss/node/@pandacss/parser/@vue/compiler-sfc/@vue/compiler-core": ["@vue/compiler-core@3.5.25", "", { "dependencies": { "@babel/parser": "^7.28.5", "@vue/shared": "3.5.25", "entities": "^4.5.0", "estree-walker": "^2.0.2", "source-map-js": "^1.2.1" } }, "sha512-vay5/oQJdsNHmliWoZfHPoVZZRmnSWhug0BYT34njkYTPqClh3DNWLkZNJBVSjsNMrg0CCrBfoKkjZQPM/QVUw=="],
-
-    "@zui/vue/@pandacss/dev/@pandacss/node/@pandacss/parser/@vue/compiler-sfc/@vue/compiler-dom": ["@vue/compiler-dom@3.5.25", "", { "dependencies": { "@vue/compiler-core": "3.5.25", "@vue/shared": "3.5.25" } }, "sha512-4We0OAcMZsKgYoGlMjzYvaoErltdFI2/25wqanuTu+S4gismOTRTBPi4IASOjxWdzIwrYSjnqONfKvuqkXzE2Q=="],
-
-    "@zui/vue/@pandacss/dev/@pandacss/node/@pandacss/parser/@vue/compiler-sfc/@vue/compiler-ssr": ["@vue/compiler-ssr@3.5.25", "", { "dependencies": { "@vue/compiler-dom": "3.5.25", "@vue/shared": "3.5.25" } }, "sha512-ritPSKLBcParnsKYi+GNtbdbrIE1mtuFEJ4U1sWeuOMlIziK5GtOL85t5RhsNy4uWIXPgk+OUdpnXiTdzn8o3A=="],
-
-    "@zui/vue/@pandacss/dev/@pandacss/node/@pandacss/parser/@vue/compiler-sfc/@vue/shared": ["@vue/shared@3.5.25", "", {}, "sha512-AbOPdQQnAnzs58H2FrrDxYj/TJfmeS2jdfEEhgiKINy+bnOANmVizIEgq1r+C5zsbs6l1CCQxtcj71rwNQ4jWg=="],
-
-    "@zui/preset/@pandacss/dev/@pandacss/node/@pandacss/parser/@vue/compiler-sfc/@babel/parser/@babel/types": ["@babel/types@7.28.5", "", { "dependencies": { "@babel/helper-string-parser": "^7.27.1", "@babel/helper-validator-identifier": "^7.28.5" } }, "sha512-qQ5m48eI/MFLQ5PxQj4PFaprjyCTLI37ElWMmNs0K8Lk3dVeOdNpB3ks8jc7yM5CDmVC73eMVk/trk3fgmrUpA=="],
-
-    "@zui/preset/@pandacss/dev/@pandacss/node/@pandacss/parser/@vue/compiler-sfc/@vue/compiler-core/entities": ["entities@4.5.0", "", {}, "sha512-V0hjH4dGPh9Ao5p0MoRY6BVqtwCjhz6vI5LT8AJ55H+4g9/4vbHx1I54fS0XuclLhDHArPQCiMjDxjaL8fPxhw=="],
-
-    "@zui/solid/@pandacss/dev/@pandacss/node/@pandacss/parser/@vue/compiler-sfc/@babel/parser/@babel/types": ["@babel/types@7.28.5", "", { "dependencies": { "@babel/helper-string-parser": "^7.27.1", "@babel/helper-validator-identifier": "^7.28.5" } }, "sha512-qQ5m48eI/MFLQ5PxQj4PFaprjyCTLI37ElWMmNs0K8Lk3dVeOdNpB3ks8jc7yM5CDmVC73eMVk/trk3fgmrUpA=="],
-
-    "@zui/solid/@pandacss/dev/@pandacss/node/@pandacss/parser/@vue/compiler-sfc/@vue/compiler-core/entities": ["entities@4.5.0", "", {}, "sha512-V0hjH4dGPh9Ao5p0MoRY6BVqtwCjhz6vI5LT8AJ55H+4g9/4vbHx1I54fS0XuclLhDHArPQCiMjDxjaL8fPxhw=="],
-
-    "@zui/vue/@pandacss/dev/@pandacss/node/@pandacss/parser/@vue/compiler-sfc/@babel/parser/@babel/types": ["@babel/types@7.28.5", "", { "dependencies": { "@babel/helper-string-parser": "^7.27.1", "@babel/helper-validator-identifier": "^7.28.5" } }, "sha512-qQ5m48eI/MFLQ5PxQj4PFaprjyCTLI37ElWMmNs0K8Lk3dVeOdNpB3ks8jc7yM5CDmVC73eMVk/trk3fgmrUpA=="],
-
-    "@zui/vue/@pandacss/dev/@pandacss/node/@pandacss/parser/@vue/compiler-sfc/@vue/compiler-core/entities": ["entities@4.5.0", "", {}, "sha512-V0hjH4dGPh9Ao5p0MoRY6BVqtwCjhz6vI5LT8AJ55H+4g9/4vbHx1I54fS0XuclLhDHArPQCiMjDxjaL8fPxhw=="],
   }
 }

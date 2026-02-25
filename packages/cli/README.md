@@ -9,7 +9,7 @@ A command-line tool for integrating ZUI components into your project.
 Set up ZUI in your project with an interactive prompt:
 
 ```bash
-npx park-ui init
+npx zui init
 ```
 
 This command will:
@@ -23,19 +23,19 @@ This command will:
 Add specific components to your project:
 
 ```bash
-npx park-ui add button card dialog
+npx zui add button card dialog
 ```
 
 Add all available components:
 
 ```bash
-npx park-ui add --all
+npx zui add --all
 ```
 
 You can also add more Radix colors this way
 
 ```bash
-npx park-ui add iris jade crimson
+npx zui add iris jade crimson
 ```
 
 ### Debug Configuration
@@ -43,14 +43,14 @@ npx park-ui add iris jade crimson
 View your current ZUI configuration:
 
 ```bash
-npx park-ui debug
+npx zui debug
 ```
 
 ## Options
 
 ```bash
-park-ui -v, --version    # Display version number
-park-ui -h, --help       # Display help information
+zui -v, --version    # Display version number
+zui -h, --help       # Display help information
 ```
 
 ## Support

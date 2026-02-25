@@ -1,4 +1,5 @@
 import { defineConfig, defineTextStyles } from '@pandacss/dev'
+import type { PandaPlugin, Preset } from '@pandacss/types'
 import { plugin, preset } from '@zui/preset'
 import typographyPreset from 'pandacss-preset-typography'
 
@@ -18,13 +19,13 @@ const textStyles = defineTextStyles({
 
 export default defineConfig({
   presets: [
-    preset,
+    preset as unknown as Preset,
     typographyPreset({ recipe: { notProse: true, semanticTokens: { defaults: false } } }),
   ],
   preflight: true,
   include: ['./src/**/*.{ts,tsx}', '../components/react/src/**/*.{ts,tsx}'],
   jsxFramework: 'react',
-  plugins: [plugin],
+  plugins: [plugin as unknown as PandaPlugin],
   theme: {
     extend: {
       tokens: {

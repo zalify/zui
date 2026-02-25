@@ -18,9 +18,9 @@
     "lucide-solid": "0.563.0"
   },
   "devDependencies": {
-    "@pandacss/dev": "1.8.1",
-    "@pandacss/preset-base": "1.8.1",
-    "@pandacss/preset-panda": "1.8.1",
+    "@pandacss/dev": "1.8.2",
+    "@pandacss/preset-base": "1.8.2",
+    "@pandacss/preset-panda": "1.8.2",
     "@zui/preset": "workspace:*",
     "@zui/scripts": "workspace:*",
     "@storybook/addon-a11y": "10.2.0",

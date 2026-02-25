@@ -12,7 +12,7 @@
     "@ark-ui/react": "5.32.0"
   },
   "devDependencies": {
-    "@pandacss/dev": "1.8.1",
+    "@pandacss/dev": "1.8.2",
     "@zui/scripts": "workspace:*",
     "@radix-ui/colors": "3.0.0",
     "typescript": "5.9.3"
