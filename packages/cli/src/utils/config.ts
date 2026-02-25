@@ -9,8 +9,6 @@ import { ConfigInvalid, ConfigNotFound, FileError } from './errors'
 import { PandaConfig } from './panda-config'
 import { TSConfig } from './tsconfig'
 
-const { outputJSON, readJSON } = fsExtra
-
 const BaseConfigSchema = Schema.Struct({
   framework: Schema.Literal('react', 'solid', 'svelte', 'vue'),
   panda: Schema.Struct({
@@ -77,17 +75,37 @@ export const ConigSchema = BaseConfigSchema.pipe(
                       : Effect.succeed(null),
                   }),
                   Effect.map((resolved) => ({
-                    ...config,
-                    resolvedPaths: {
-                      components: componentsPath,
-                      hooks: resolved.hooks ?? path.resolve(componentsPath, '..', 'hooks'),
-                      lib: resolved.lib ?? path.resolve(componentsPath, '..'),
-                      recipes:
-                        resolved.recipes ?? path.resolve(componentsPath, '..', 'theme', 'recipes'),
-                      theme: resolved.theme ?? path.resolve(componentsPath, '..', 'theme'),
-                      ui: resolved.ui ?? path.resolve(componentsPath, 'ui'),
-                    },
+                    // Never write source recipes/theme into Panda generated output.
+                    // If an alias resolves to styled-system/*, fallback to project source paths.
+                    resolvedRecipesPath: sanitizeResolvedPath(resolved.recipes),
+                    resolvedThemePath: sanitizeResolvedPath(resolved.theme),
+                    resolvedUiPath: sanitizeResolvedPath(resolved.ui),
+                    resolvedHooksPath: sanitizeResolvedPath(resolved.hooks),
+                    resolvedLibPath: sanitizeResolvedPath(resolved.lib),
+                    componentsPath,
                   })),
+                  Effect.map(
+                    ({
+                      resolvedRecipesPath,
+                      resolvedThemePath,
+                      resolvedUiPath,
+                      resolvedHooksPath,
+                      resolvedLibPath,
+                      componentsPath,
+                    }) => ({
+                      ...config,
+                      resolvedPaths: {
+                        components: componentsPath,
+                        hooks: resolvedHooksPath ?? path.resolve(componentsPath, '..', 'hooks'),
+                        lib: resolvedLibPath ?? path.resolve(componentsPath, '..'),
+                        recipes:
+                          resolvedRecipesPath ??
+                          path.resolve(componentsPath, '..', 'theme', 'recipes'),
+                        theme: resolvedThemePath ?? path.resolve(componentsPath, '..', 'theme'),
+                        ui: resolvedUiPath ?? path.resolve(componentsPath, 'ui'),
+                      },
+                    }),
+                  ),
                 ),
               ),
             ),
@@ -119,7 +137,7 @@ const getConfig = () =>
     Effect.flatMap((configPath) =>
       pipe(
         Effect.tryPromise({
-          try: () => readJSON(configPath),
+          try: () => fsExtra.readJSON(configPath),
           catch: () => ConfigNotFound(configPath),
         }),
         Effect.flatMap((config) =>
@@ -169,7 +187,7 @@ export const saveConfig = (framework: Framework) =>
   ]).pipe(
     Effect.flatMap(([config, configPath]) =>
       Effect.tryPromise({
-        try: () => outputJSON(configPath, config, { spaces: 2 }),
+        try: () => fsExtra.outputJSON(configPath, config, { spaces: 2 }),
         catch: () => FileError(configPath),
       }).pipe(Effect.map(() => config)),
     ),
@@ -183,3 +201,11 @@ const resolveImport = async (importPath: string, tsConfig: TSConfig) =>
     '.js',
     '.css',
   ])
+
+const sanitizeResolvedPath = (resolvedPath: string | null | undefined) => {
+  if (!resolvedPath) return null
+
+  const normalized = path.normalize(resolvedPath)
+  const marker = `${path.sep}styled-system${path.sep}`
+  return normalized.includes(marker) ? null : resolvedPath
+}

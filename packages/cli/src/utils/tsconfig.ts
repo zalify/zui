@@ -1,7 +1,7 @@
 import path from 'node:path'
 import * as p from '@clack/prompts'
 import { Context, Effect, Layer, pipe, Schema } from 'effect'
-import { outputJSON, readJSON } from 'fs-extra'
+import fsExtra from 'fs-extra'
 import { parse } from 'tsconfck'
 import { TSConfigInvalid, TSConfigNotFound } from './errors'
 import { PandaConfig } from './panda-config'
@@ -105,7 +105,7 @@ export const ensureTSConfigPaths = () =>
     Effect.flatMap((tsconfigFile) =>
       pipe(
         Effect.tryPromise({
-          try: () => readJSON(tsconfigFile) as Promise<TSConfigFileContent>,
+          try: () => fsExtra.readJSON(tsconfigFile) as Promise<TSConfigFileContent>,
           catch: () => TSConfigNotFound(tsconfigFile),
         }),
         Effect.flatMap((tsconfig) => {
@@ -130,7 +130,7 @@ export const ensureTSConfigPaths = () =>
           }
 
           return Effect.tryPromise({
-            try: () => outputJSON(tsconfigFile, nextTSConfig, { spaces: 2 }),
+            try: () => fsExtra.outputJSON(tsconfigFile, nextTSConfig, { spaces: 2 }),
             catch: () => TSConfigNotFound(tsconfigFile),
           })
         }),

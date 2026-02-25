@@ -8,8 +8,6 @@ import { updateIndexFile } from './index-file'
 import { updatePandaConfig } from './panda-config'
 import { updateRecipeIndex } from './recipes'
 
-const { outputFile } = fsExtra
-
 export const install = ({ panda, files = [] }: RegistryItem) =>
   Config.pipe(
     Effect.flatMap(({ resolvedPaths }) =>
@@ -18,7 +16,7 @@ export const install = ({ panda, files = [] }: RegistryItem) =>
           pipe(
             Effect.tryPromise({
               try: () =>
-                outputFile(
+                fsExtra.outputFile(
                   Match.value(file).pipe(
                     Match.when({ type: 'registry:block' }, ({ path }) =>
                       join(resolvedPaths.components, path),
