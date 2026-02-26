@@ -1,36 +1,34 @@
 ---
 title: Why Choose Zalify UI for Your Design System?
-description: "Build better design systems with Zalify UI: complete code ownership, beautiful components, and AI-ready architecture for React and Solid.js."
+description: "Build better design systems with Zalify UI: zero-config styling, beautiful components, and a consistent API for React."
 authors: ["chrizzly"]
 publishedAt: 2025-11-23
 ---
 
 
-You've been there: You install a popular UI component library, everything works great - until you need to customize that one button variant. Suddenly, you're writing CSS overrides, wrapping components in HOCs, and fighting with `!important` tags just to change a border radius.
+You've been there: You install a popular UI component library, everything works great - until you need to set up the styling system. Suddenly, you're installing CSS plugins, configuring PostCSS, importing global stylesheets, and wrestling with build tools just to get your first component on screen.
 
-This is the component library paradox. Traditional NPM-based libraries lock you into their API decisions. Customization requires workarounds and style overrides. You're stuck waiting for maintainers to fix bugs or add features you need today. And when you mix components from different libraries? Inconsistent UX across your entire application.
+Zalify UI takes a different approach. Install a single package, wrap your app with a provider, and every component is styled automatically — no CSS files, no build plugins, no configuration.
 
-Zalify UI flips the script entirely by giving you the source code directly - offering complete control without sacrificing beauty or accessibility.
+## Zero-Config by Design
 
-## The Open Code Philosophy
+Zalify UI ships all component styles embedded directly in the package. The `ZalifyProvider` component injects styles and configures theming through simple props:
 
-Unlike traditional component libraries, Zalify UI distributes components as source code, not NPM packages. This simple shift changes everything.
+```tsx
+<ZalifyProvider accentColor="jade" grayColor="neutral" borderRadius="md">
+  {children}
+</ZalifyProvider>
+```
 
-Every component lives directly in your codebase. You get full visibility into implementation and styling with no black boxes or abstracted APIs. Need a new button variant? Edit the recipe directly. No more CSS overrides or complex theming APIs. Changes that would take hours in traditional libraries take minutes with Zalify UI.
-
-This approach is also future-ready for the AI-assisted development era. LLMs can read and understand your components, and AI tools can generate modifications that fit seamlessly into your design system. And when you find a bug? Fix it yourself. Debug and patch issues directly in your codebase and ship fixes on your timeline, not the library maintainer's.
+Choose from 26 accent colors, 6 gray palettes, and 7 border radius levels. Your entire design system is configured in a single line — no theme files, no token configuration, no build steps.
 
 ## Built on Battle-Tested Foundations
 
-Zalify UI isn't built from scratch. It's built on proven technologies: Ark UI and Panda CSS.
+Zalify UI isn't built from scratch. It's built on Ark UI, which provides accessible component logic. Ark UI handles complex interactions like modals, dropdowns, and date pickers with a composable architecture. The predictable API works great for both developers and AI tools.
 
-Ark UI provides accessible, framework-agnostic component logic. It handles complex interactions like modals, dropdowns, and date pickers with a composable architecture that works identically across React, Vue, Svelte and Solid.js. The predictable API works great for both developers and AI tools.
+The result? You get accessibility and interaction logic from Ark UI, beautiful default styling from Zalify UI, and a consistent component API across your entire application.
 
-Panda CSS brings modern styling with zero runtime cost through build-time CSS generation. You get type-safe styling with autocomplete, no CSS-in-JS performance overhead, and a powerful theming system.
-
-The result? You get accessibility and interaction logic from Ark UI, beautiful customizable design from Zalify UI recipes, and complete control since everything lives in your codebase.
-
-## Beautiful by Default, Customizable by Design
+## Beautiful by Default
 
 Developed in collaboration with Brains & Pixels, Zalify UI provides a systematic design approach that looks professional out of the box.
 
@@ -40,36 +38,34 @@ Five standardized variants work across all components: solid for high-contrast C
 
 The advanced color system built on Radix Colors provides 12 shades per mode with light and dark mode support out of the box. You get more flexibility than traditional 11-shade scales with natural color pairings for harmonious UIs.
 
-Zalify UI also includes thoughtful design tokens like nested border radius values (l1, l2, l3) and adaptive shadows that work in both light and dark modes. There's even Figma integration with a free Foundations Kit and Pro Kit for seamless designer-to-developer workflow.
+Zalify UI also includes thoughtful design tokens like nested border radius values (l1, l2, l3) and adaptive shadows that work in both light and dark modes.
 
-## One API, Multiple Frameworks
+## Server Components First
 
-Zalify UI supports React, and Solid.js with a consistent API across all three frameworks. This means you learn once and use everywhere. You can switch frameworks without relearning component APIs, share design systems across different projects, and future-proof against framework trends.
-
-Getting components into your project is simple. Use the CLI with `npx @zalify-ui/cli add button` or browse the documentation and copy source code directly. No bloated dependencies for components you'll never use.
+Zalify UI is designed for the React Server Components architecture. Components that don't need interactivity — like `Heading`, `Text`, `Badge`, and `Code` — work as Server Components out of the box. Interactive components are properly marked with `'use client'` directives. This means less JavaScript shipped to the browser and faster page loads.
 
 ## Developer Experience That Scales
 
-Zalify UI integrates seamlessly with existing Panda CSS projects. Initialize with `npx @zalify-ui/cli init` and add components as needed. Because the code lives in your repository, you never have to worry about dependency updates breaking your UI or fighting with library APIs during upgrades.
+Getting started takes under a minute:
 
-The AI-enhanced workflow is particularly powerful. Components are structured for LLM understanding, so AI can generate new components that match your existing system. Consistent patterns make AI assistance more effective than with traditional black-box libraries.
+```bash
+npm install @zalify-ui/react
+```
+
+Add the provider to your layout, import components, and start building. No CLI commands, no codegen, no Panda CSS configuration. Because it's a standard NPM package, upgrades are straightforward and your tooling works as expected.
+
+The AI-enhanced workflow is particularly powerful. Components have a consistent, predictable API that LLMs can easily understand. AI tools can generate new UIs that integrate seamlessly with your existing Zalify UI components.
 
 ## When Should You Use Zalify UI?
 
-Zalify UI is perfect for projects requiring heavy customization, teams building custom design systems, and startups that need to move fast while owning their code. If accessibility is non-negotiable or you're embracing AI-assisted development, Zalify UI is an excellent choice.
-
-However, if you need a completely plug-and-play solution with zero customization, prefer complete abstraction from component internals, or are building a quick prototype that won't need customization, you might want to consider alternatives.
+Zalify UI is perfect for React projects that want beautiful defaults without configuration overhead, teams building applications that need consistent design, and developers who want Server Component support out of the box. If accessibility is non-negotiable or you're embracing AI-assisted development, Zalify UI is an excellent choice.
 
 ## Getting Started
 
-Getting started with Zalify UI takes just minutes. You'll need an existing Panda CSS setup, then install the Ark UI and Lucide Icons dependencies. Initialize with `npx @zalify-ui/cli init`, add your first component with `npx @zalify-ui/cli add button`, and start customizing by editing component recipes to match your brand.
+Getting started with Zalify UI takes just minutes. Install the package, wrap your app with `ZalifyProvider`, and import components. That's it.
 
 Check out the full documentation at [/docs/introduction](/docs/introduction) for complete setup instructions.
 
-## Own Your Component Library
+## A Better Component Library Experience
 
-Zalify UI represents a paradigm shift in how we think about component libraries. Traditional libraries optimize for getting started quickly, but they become obstacles as your needs evolve. Zalify UI optimizes for long-term success by giving you ownership from day one.
-
-You get complete control with source code in your repository, a beautiful foundation you can customize to match your brand, solid ground from Ark UI and Panda CSS for accessibility and performance, framework flexibility across React, and Solid.js, and a future-ready AI-friendly architecture.
-
-What could you build if you had complete control over every aspect of your component library without sacrificing quality or accessibility?
+Zalify UI provides a clean, zero-configuration experience without sacrificing quality or flexibility. Beautiful defaults, consistent APIs, embedded styling, and Server Component support — everything you need to build production applications with confidence.

@@ -1,4 +1,4 @@
-import { Span, TagsInput } from '@/components/ui'
+import { Span, TagsInput } from '@zalify-ui/react'
 
 export const App = () => {
   return (

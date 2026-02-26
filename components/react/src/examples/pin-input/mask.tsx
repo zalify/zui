@@ -1,4 +1,4 @@
-import { PinInput } from '@/components/ui'
+import { PinInput } from '@zalify-ui/react'
 
 export const App = () => {
   return (

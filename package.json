@@ -21,7 +21,7 @@
     "solid": "bun run --cwd components/solid",
     "vue": "bun run --cwd components/vue",
     "web": "bun run --cwd website",
-    "demo:next16": "bun run --cwd playgrounds/next16-cli-demo dev"
+    "demo": "bun run --cwd playgrounds/next16-cli-demo"
   },
   "devDependencies": {
     "@biomejs/biome": "2.4.4",

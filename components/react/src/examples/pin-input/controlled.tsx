@@ -1,6 +1,6 @@
 'use client'
 import { useState } from 'react'
-import { PinInput } from '@/components/ui'
+import { PinInput } from '@zalify-ui/react'
 
 export const App = () => {
   const [value, setValue] = useState(['', '', '', ''])

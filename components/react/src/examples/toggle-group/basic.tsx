@@ -1,5 +1,5 @@
 import { AlignCenterIcon, AlignJustifyIcon, AlignLeftIcon, AlignRightIcon } from 'lucide-react'
-import { ButtonGroup, IconButton, ToggleGroup } from '@/components/ui'
+import { ButtonGroup, IconButton, ToggleGroup } from '@zalify-ui/react'
 
 export const App = () => {
   return (

@@ -1,86 +1,51 @@
 ---
 title: Installation
-description: Check out the quickstart or follow the guide to setup Zalify UI in your project.
-metaDescription: Get up and running with Zalify UI in minutes! Follow our quickstart guide to install Panda CSS components in your React, Vue or Solid.js project.
+description: Get up and running with Zalify UI in minutes.
+metaDescription: Get up and running with Zalify UI in minutes. Install the React component library and start building beautiful interfaces.
 category: getting-started
 ---
-
-## Quickstart
-
-Short on time? Jump into our quickstart examples and start to explore Zalify UI in seconds.
-
-<QuickstartGuide />
 
 ## Setup Guide
 
 <Steps>
-<Step title="Prerequisite" number="1">
+<Step title="Install the package" number="1">
 
-Before you start, ensure that your Panda project is set up and ready to go. 
-If not, please refer to the [Panda CSS Getting Started Guide](https://panda-css.com/docs/overview/getting-started) and once you've completed that, come back to this guide.
-
-</Step>
-<Step title="Install Dependencies" number="2">
-
-Zalify UI is built on [Ark UI](https://ark-ui.com) as its headless foundation and uses [Lucide Icons](https://lucide.dev) by default, but you can swap it out for any icon library of your choice.
+Install `@zalify-ui/react` and its peer dependency [React](https://react.dev).
 
 ```bash multi
-npm install @ark-ui/react lucide-react
+npm install @zalify-ui/react
 ```
 
 </Step>
-<Step number="3" title="Initialize Zalify UI">
+<Step title="Add the Provider" number="2">
 
-Next, initialize Zalify UI in your project. This will set up the necessary configuration files and directories.
+Wrap your application with `ZalifyProvider`. This injects the component styles and sets up theming.
 
+```tsx
+import { ZalifyProvider } from '@zalify-ui/react'
 
-```bash
-npx @zalify-ui/cli init
+export default function RootLayout({ children }: { children: React.ReactNode }) {
+  return (
+    <html lang="en">
+      <body>
+        <ZalifyProvider accentColor="jade" grayColor="neutral" borderRadius="md">
+          {children}
+        </ZalifyProvider>
+      </body>
+    </html>
+  )
+}
 ```
 
-Don't forget to run `panda codegen` after updating your Panda configuration.
-
-:::info
-
-Zalify UI uses its own [color system](/docs/theming#colors). To remove Panda’s default color tokens (50–950 shades), add this plugin to your Panda config:
-
-:::
-
-```ts
-// panda.config.ts
-plugins: [
-  {
-    name: 'Remove Panda Preset Colors',
-    hooks: {
-      'preset:resolved': ({ utils, preset, name }) =>
-        name === '@pandacss/preset-panda'
-          ? utils.omit(preset, ['theme.tokens.colors', 'theme.semanticTokens.colors'])
-          : preset,
-    },
-  },
-],
-```
+See [Theming](/docs/theming) for all available accent colors, gray palettes, and border radius options.
 
 </Step>
+<Step title="Use components" number="3">
 
-<Step number="4" title="Add components">
-
-You can now start adding components to your project.
-
-```bash
-npx @zalify-ui/cli add button
-```
-
-The command above will add the Button component to your project. You can then import it like this:
+Import and use any component from the package.
 
 <ComponentExample component="button" name="basic" codeOnly />
 
-If you need additional color palettes, you can do so at any time using the CLI:
-
-```bash
-npx @zalify-ui/cli add teal
-```
-
-And that's it! Happy hacking! ✌️
+And that's it! Happy hacking!
 </Step>
 </Steps>

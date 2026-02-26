@@ -1,5 +1,5 @@
 import { RocketIcon } from 'lucide-react'
-import { Icon } from '@/components/ui'
+import { Icon } from '@zalify-ui/react'
 
 export const App = () => {
   return (

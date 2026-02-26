@@ -1,4 +1,4 @@
-import { Field, NumberInput } from '@/components/ui'
+import { Field, NumberInput } from '@zalify-ui/react'
 
 export const App = () => {
   return (

@@ -1,6 +1,5 @@
 import { UploadIcon } from 'lucide-react'
-import { Box } from 'styled-system/jsx'
-import { FileUpload, Icon } from '@/components/ui'
+import { FileUpload, Icon, Box } from '@zalify-ui/react'
 
 export const App = () => {
   return (

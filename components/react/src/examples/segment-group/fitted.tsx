@@ -1,4 +1,4 @@
-import { SegmentGroup } from '@/components/ui'
+import { SegmentGroup } from '@zalify-ui/react'
 
 export const App = () => {
   const items = ['React', 'Solid', 'Svelte', 'Vue']

@@ -1,5 +1,4 @@
-import { Box, Wrap } from 'styled-system/jsx'
-import { Badge, Button, Card, Image } from '@/components/ui'
+import { Badge, Button, Card, Image, Box, Wrap } from '@zalify-ui/react'
 
 export const App = () => {
   return (

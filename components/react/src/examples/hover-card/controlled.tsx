@@ -2,8 +2,7 @@
 import { Portal } from '@ark-ui/react/portal'
 import { MapPinIcon } from 'lucide-react'
 import { useState } from 'react'
-import { HStack, Stack } from 'styled-system/jsx'
-import { Avatar, HoverCard, Icon, Link, Text } from '@/components/ui'
+import { Avatar, HoverCard, Icon, Link, Text, HStack, Stack } from '@zalify-ui/react'
 
 export const App = () => {
   const [open, setOpen] = useState(false)

@@ -1,5 +1,4 @@
-import { Box } from 'styled-system/jsx'
-import { AbsoluteCenter } from '@/components/ui'
+import { AbsoluteCenter, Box } from '@zalify-ui/react'
 
 export const App = () => {
   return (

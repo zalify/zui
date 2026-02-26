@@ -1,6 +1,6 @@
 'use client'
 import { useState } from 'react'
-import { NumberInput } from '@/components/ui'
+import { NumberInput } from '@zalify-ui/react'
 
 export const App = () => {
   const [value, setValue] = useState('10')

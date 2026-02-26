@@ -1,6 +1,6 @@
 'use client'
 import { ChevronLeftIcon, ChevronRightIcon } from 'lucide-react'
-import { ButtonGroup, IconButton, Pagination } from '@/components/ui'
+import { ButtonGroup, IconButton, Pagination } from '@zalify-ui/react'
 
 export const App = () => {
   return (

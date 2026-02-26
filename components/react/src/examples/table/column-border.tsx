@@ -1,4 +1,4 @@
-import { Table } from '@/components/ui'
+import { Table } from '@zalify-ui/react'
 
 export const App = () => {
   return (

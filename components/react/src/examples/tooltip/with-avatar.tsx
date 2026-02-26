@@ -1,5 +1,5 @@
 import { useId } from 'react'
-import { Avatar, Tooltip } from '@/components/ui'
+import { Avatar, Tooltip } from '@zalify-ui/react'
 
 export const App = () => {
   const id = useId()

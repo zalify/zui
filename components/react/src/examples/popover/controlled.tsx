@@ -1,7 +1,7 @@
 'use client'
 import { Portal } from '@ark-ui/react/portal'
 import { useState } from 'react'
-import { Button, CloseButton, Popover } from '@/components/ui'
+import { Button, CloseButton, Popover } from '@zalify-ui/react'
 
 export const App = () => {
   const [open, setOpen] = useState(false)

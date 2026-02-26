@@ -1,6 +1,6 @@
 'use client'
 import { useRef } from 'react'
-import { Text } from '@/components/ui'
+import { Text } from '@zalify-ui/react'
 
 export const App = () => {
   const ref = useRef<HTMLParagraphElement>(null)

@@ -1,6 +1,6 @@
 'use client'
 import { parseColor } from '@ark-ui/react/color-picker'
-import { ColorPicker } from '@/components/ui'
+import { ColorPicker } from '@zalify-ui/react'
 
 export const App = () => {
   return (

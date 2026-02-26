@@ -1,3 +1,5 @@
+'use client'
+
 import { Slider } from '@/components/ui'
 import { type BorderRadius, radii } from '~/lib/theme'
 

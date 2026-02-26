@@ -1,5 +1,4 @@
-import { Box } from 'styled-system/jsx'
-import { Button, Collapsible } from '@/components/ui'
+import { Button, Collapsible, Box } from '@zalify-ui/react'
 
 export const App = () => {
   return (

@@ -1,6 +1,6 @@
 'use client'
 import { Portal } from '@ark-ui/react/portal'
-import { DatePicker } from '@/components/ui'
+import { DatePicker } from '@zalify-ui/react'
 
 export const App = () => {
   return (

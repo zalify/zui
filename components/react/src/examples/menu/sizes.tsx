@@ -1,5 +1,4 @@
-import { Wrap } from 'styled-system/jsx'
-import { Button, Menu } from '@/components/ui'
+import { Button, Menu, Wrap } from '@zalify-ui/react'
 
 export const App = () => {
   const sizes = ['xs', 'sm', 'md', 'lg'] as const

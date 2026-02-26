@@ -1,4 +1,4 @@
-import { Tabs } from '@/components/ui'
+import { Tabs } from '@zalify-ui/react'
 
 export const App = () => {
   return (

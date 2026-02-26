@@ -1,4 +1,4 @@
-import { Alert } from '@/components/ui'
+import { Alert } from '@zalify-ui/react'
 
 export const App = () => {
   return (

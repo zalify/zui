@@ -1,4 +1,4 @@
-import { Alert, CloseButton } from '@/components/ui'
+import { Alert, CloseButton } from '@zalify-ui/react'
 
 export const App = () => {
   return (

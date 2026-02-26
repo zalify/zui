@@ -1,5 +1,4 @@
-import { Stack, Wrap } from 'styled-system/jsx'
-import { Skeleton, SkeletonCircle } from '@/components/ui'
+import { Skeleton, SkeletonCircle, Stack, Wrap } from '@zalify-ui/react'
 
 export const App = () => {
   return (

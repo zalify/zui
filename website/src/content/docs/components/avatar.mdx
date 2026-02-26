@@ -1,23 +1,18 @@
 ---
 title: Avatar
 description: A component for displaying user profile images with fallback support.
-metaDescription: User profile avatar component for React and Solid.js with automatic fallback to initials, custom images, and accessible design.
+metaDescription: User profile avatar component for React with automatic fallback to initials, custom images, and accessible design.
 category: data-display
 links:
-  recipe: https://github.com/zalify/zalify-ui/blob/main/packages/preset/src/recipes/avatar.ts
   ark: https://ark-ui.com/docs/components/avatar
 ---
 
 <ComponentExample name="basic" />
 
-## Installation
-
-<InstallationGuide />
-
 ## Usage
 
 ```tsx
-import { Avatar } from '@/components/ui'
+import { Avatar } from '@zalify-ui/react'
 ```
 
 ```tsx
@@ -89,7 +84,7 @@ Here's an example of how to compose the avatar with Next.js Image.
 
 ```tsx
 import { getImageProps } from "next/image"
-import { Avatar } from "@/components/ui"
+import { Avatar } from "@zalify-ui/react"
 
 export const App = () => {
   const imageProps = getImageProps({

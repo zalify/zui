@@ -1,5 +1,5 @@
 import { FileUpIcon } from 'lucide-react'
-import { CloseButton, FileUpload, Input, InputGroup } from '@/components/ui'
+import { CloseButton, FileUpload, Input, InputGroup } from '@zalify-ui/react'
 
 export const App = () => {
   return (

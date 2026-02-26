@@ -1,4 +1,4 @@
-import { Splitter } from '@/components/ui'
+import { Splitter } from '@zalify-ui/react'
 
 export const App = () => {
   return (

@@ -1,5 +1,4 @@
-import { Wrap } from 'styled-system/jsx'
-import { Spinner } from '@/components/ui'
+import { Spinner, Wrap } from '@zalify-ui/react'
 
 export const App = () => {
   return (

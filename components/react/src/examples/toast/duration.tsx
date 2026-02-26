@@ -1,5 +1,5 @@
 'use client'
-import { Button, toaster } from '@/components/ui'
+import { Button, toaster } from '@zalify-ui/react'
 
 export const App = () => {
   return (

@@ -1,5 +1,5 @@
 import { CheckIcon, XIcon } from 'lucide-react'
-import { Switch } from '@/components/ui'
+import { Switch } from '@zalify-ui/react'
 
 export const App = () => {
   return (

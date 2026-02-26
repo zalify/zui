@@ -1,6 +1,6 @@
 'use client'
 import { forwardRef, type InputHTMLAttributes, type RefObject } from 'react'
-import { Group, PinInput as StyledPinInput } from '@/components/ui'
+import { Group, PinInput as StyledPinInput } from '@zalify-ui/react'
 
 export interface PinInputProps extends StyledPinInput.RootProps {
   rootRef?: RefObject<HTMLDivElement | null>

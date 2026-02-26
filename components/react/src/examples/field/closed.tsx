@@ -1,5 +1,5 @@
 import { forwardRef, type ReactNode } from 'react'
-import { Field as StyledField } from '@/components/ui'
+import { Field as StyledField } from '@zalify-ui/react'
 
 export interface FieldProps extends Omit<StyledField.RootProps, 'label'> {
   label?: ReactNode

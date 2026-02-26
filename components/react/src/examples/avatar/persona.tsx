@@ -1,5 +1,4 @@
-import { Box, HStack } from 'styled-system/jsx'
-import { Avatar, Text } from '@/components/ui'
+import { Avatar, Text, Box, HStack } from '@zalify-ui/react'
 
 export const App = () => {
   return (

@@ -1,5 +1,5 @@
 import { forwardRef, type ImgHTMLAttributes } from 'react'
-import { Avatar as StyledAvatar } from '@/components/ui'
+import { Avatar as StyledAvatar } from '@zalify-ui/react'
 
 type ImageProps = ImgHTMLAttributes<HTMLImageElement>
 

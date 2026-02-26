@@ -1,4 +1,4 @@
-import { Checkbox, Link } from '@/components/ui'
+import { Checkbox, Link } from '@zalify-ui/react'
 
 export const App = () => {
   return (

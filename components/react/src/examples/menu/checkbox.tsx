@@ -1,6 +1,6 @@
 'use client'
 import { useCheckboxGroup } from '@ark-ui/react/checkbox'
-import { Button, Menu } from '@/components/ui'
+import { Button, Menu } from '@zalify-ui/react'
 
 export const App = () => {
   const items = [

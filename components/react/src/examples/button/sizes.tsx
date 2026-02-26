@@ -1,6 +1,5 @@
 import { CircleDotIcon } from 'lucide-react'
-import { Wrap } from 'styled-system/jsx'
-import { Button } from '@/components/ui'
+import { Button, Wrap } from '@zalify-ui/react'
 
 export const App = () => {
   const sizes = ['xs', 'sm', 'md', 'lg', 'xl', '2xl'] as const

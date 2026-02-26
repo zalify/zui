@@ -1,5 +1,5 @@
 import { CheckIcon, EditIcon, XIcon } from 'lucide-react'
-import { ButtonGroup, Editable, IconButton } from '@/components/ui'
+import { ButtonGroup, Editable, IconButton } from '@zalify-ui/react'
 
 export const App = () => {
   return (

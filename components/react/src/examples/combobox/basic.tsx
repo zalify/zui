@@ -2,7 +2,7 @@
 import { useListCollection } from '@ark-ui/react/collection'
 import { useFilter } from '@ark-ui/react/locale'
 import { Portal } from '@ark-ui/react/portal'
-import { Combobox } from '@/components/ui'
+import { Combobox } from '@zalify-ui/react'
 
 export const App = () => {
   const { contains } = useFilter({ sensitivity: 'base' })

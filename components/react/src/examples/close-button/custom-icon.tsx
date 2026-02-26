@@ -1,5 +1,5 @@
 import { XCircleIcon } from 'lucide-react'
-import { CloseButton } from '@/components/ui'
+import { CloseButton } from '@zalify-ui/react'
 
 export const App = () => {
   return (

@@ -1,4 +1,4 @@
-import { Button, Card, Image } from '@/components/ui'
+import { Button, Card, Image } from '@zalify-ui/react'
 
 export const App = () => {
   return (

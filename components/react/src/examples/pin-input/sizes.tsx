@@ -1,5 +1,4 @@
-import { Stack } from 'styled-system/jsx'
-import { PinInput } from '@/components/ui'
+import { PinInput, Stack } from '@zalify-ui/react'
 
 export const App = () => {
   const sizes = ['sm', 'md', 'lg', 'xl'] as const

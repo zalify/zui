@@ -1,6 +1,6 @@
 'use client'
 import { useState } from 'react'
-import { Checkbox } from '@/components/ui'
+import { Checkbox } from '@zalify-ui/react'
 
 export const App = () => {
   const [checked, setChecked] = useState<Checkbox.CheckedState>(false)

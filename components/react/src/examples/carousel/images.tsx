@@ -1,5 +1,5 @@
 import { ChevronLeftIcon, ChevronRightIcon } from 'lucide-react'
-import { Carousel, IconButton, Image } from '@/components/ui'
+import { Carousel, IconButton, Image } from '@zalify-ui/react'
 
 export const App = () => {
   return (

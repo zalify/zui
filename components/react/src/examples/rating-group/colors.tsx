@@ -1,5 +1,4 @@
-import { Stack } from 'styled-system/jsx'
-import { RatingGroup } from '@/components/ui'
+import { RatingGroup, Stack } from '@zalify-ui/react'
 
 export const App = () => {
   const colors = ['blue', 'green', 'amber', 'red'] as const

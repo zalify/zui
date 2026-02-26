@@ -1,6 +1,5 @@
 import { PhoneIcon } from 'lucide-react'
-import { Wrap } from 'styled-system/jsx'
-import { IconButton } from '@/components/ui'
+import { IconButton, Wrap } from '@zalify-ui/react'
 
 export const App = () => {
   return (

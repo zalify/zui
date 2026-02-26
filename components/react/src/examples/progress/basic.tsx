@@ -1,4 +1,4 @@
-import { Progress } from '@/components/ui'
+import { Progress } from '@zalify-ui/react'
 
 export const App = () => {
   return (

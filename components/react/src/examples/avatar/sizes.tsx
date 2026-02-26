@@ -1,5 +1,4 @@
-import { Wrap } from 'styled-system/jsx'
-import { Avatar } from '@/components/ui'
+import { Avatar, Wrap } from '@zalify-ui/react'
 
 export const App = () => {
   const sizes = ['xs', 'sm', 'md', 'lg', 'xl', '2xl'] as const

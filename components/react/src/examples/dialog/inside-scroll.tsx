@@ -2,7 +2,7 @@
 
 import { Portal } from '@ark-ui/react/portal'
 import { loremIpsum } from 'lorem-ipsum'
-import { Button, CloseButton, Dialog } from '@/components/ui'
+import { Button, CloseButton, Dialog } from '@zalify-ui/react'
 
 export const App = () => {
   return (

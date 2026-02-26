@@ -1,6 +1,5 @@
 import { Portal } from '@ark-ui/react/portal'
-import { Center } from 'styled-system/jsx'
-import { Menu } from '@/components/ui'
+import { Menu, Center } from '@zalify-ui/react'
 
 export const App = () => {
   return (

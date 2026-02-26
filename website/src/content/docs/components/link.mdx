@@ -1,22 +1,16 @@
 ---
 title: Link
 description: A navigation component for creating accessible hyperlinks.
-metaDescription: Link navigation component for React and Solid.js creating accessible hyperlinks with customizable styles. Support for external links, routing, and focus states.
+metaDescription: Link navigation component for React creating accessible hyperlinks with customizable styles. Support for external links, routing, and focus states.
 category: navigation
-links:
-  recipe: https://github.com/zalify/zalify-ui/blob/main/packages/preset/src/recipes/link.ts
 ---
 
 <ComponentExample name="basic" />
 
-## Installation
-
-<InstallationGuide />
-
 ## Usage
 
 ```tsx
-import { Link } from '@/components/ui'
+import { Link } from '@zalify-ui/react'
 ```
 
 ```tsx
@@ -49,7 +43,7 @@ Use the `asChild` prop to compose Link with framework-specific routing component
 
 ```tsx
 import NextLink from 'next/link'
-import { Link } from '@/components/ui'
+import { Link } from '@zalify-ui/react'
 
 export const App = () => {
   return (

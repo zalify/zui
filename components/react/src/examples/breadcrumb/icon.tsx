@@ -1,5 +1,5 @@
 import { ComponentIcon, FileIcon } from 'lucide-react'
-import { Breadcrumb } from '@/components/ui'
+import { Breadcrumb } from '@zalify-ui/react'
 
 export const App = () => {
   return (

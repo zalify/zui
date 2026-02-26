@@ -1,5 +1,5 @@
 import { SendIcon } from 'lucide-react'
-import { IconButton } from '@/components/ui'
+import { IconButton } from '@zalify-ui/react'
 
 export const App = () => {
   return (

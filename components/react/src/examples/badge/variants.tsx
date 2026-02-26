@@ -1,5 +1,4 @@
-import { Wrap } from 'styled-system/jsx'
-import { Badge } from '@/components/ui'
+import { Badge, Wrap } from '@zalify-ui/react'
 
 export const App = () => {
   return (

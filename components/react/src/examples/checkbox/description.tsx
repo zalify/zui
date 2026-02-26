@@ -1,5 +1,4 @@
-import { Stack } from 'styled-system/jsx'
-import { Checkbox, Text } from '@/components/ui'
+import { Checkbox, Text, Stack } from '@zalify-ui/react'
 
 export const App = () => {
   return (

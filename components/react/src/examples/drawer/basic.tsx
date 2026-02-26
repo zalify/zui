@@ -1,5 +1,5 @@
 import { Portal } from '@ark-ui/react/portal'
-import { Button, CloseButton, Drawer } from '@/components/ui'
+import { Button, CloseButton, Drawer } from '@zalify-ui/react'
 
 export const App = () => {
   return (

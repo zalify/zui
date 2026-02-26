@@ -1,5 +1,4 @@
-import { HStack } from 'styled-system/jsx'
-import { RadioCardGroup } from '@/components/ui'
+import { RadioCardGroup, HStack } from '@zalify-ui/react'
 
 export const App = () => {
   return (

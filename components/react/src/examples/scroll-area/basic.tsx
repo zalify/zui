@@ -1,7 +1,7 @@
 'use client'
 
 import { loremIpsum } from 'lorem-ipsum'
-import { ScrollArea } from '@/components/ui'
+import { ScrollArea } from '@zalify-ui/react'
 
 export const App = () => {
   return (

@@ -1,5 +1,5 @@
 import { PlusIcon } from 'lucide-react'
-import { Checkbox } from '@/components/ui'
+import { Checkbox } from '@zalify-ui/react'
 
 export const App = () => {
   return (

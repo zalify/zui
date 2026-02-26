@@ -1,5 +1,4 @@
-import { Wrap } from 'styled-system/jsx'
-import { RadioGroup } from '@/components/ui'
+import { RadioGroup, Wrap } from '@zalify-ui/react'
 
 export const App = () => {
   const sizes = ['sm', 'md', 'lg'] as const

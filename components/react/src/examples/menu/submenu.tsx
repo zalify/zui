@@ -1,6 +1,6 @@
 import { Portal } from '@ark-ui/react/portal'
 import { ChevronRightIcon } from 'lucide-react'
-import { Button, Menu } from '@/components/ui'
+import { Button, Menu } from '@zalify-ui/react'
 
 export const App = () => {
   return (

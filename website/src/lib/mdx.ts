@@ -11,7 +11,6 @@ export const transformMdxContent = async (doc: Doc, framework: Framework) => {
     context,
     replaceComponentExamples,
     replacePropsTables,
-    replaceInstallationGuide,
   )
 
   return `# ${doc.title}\n\n${doc.description}\n\n${content}`
@@ -97,17 +96,6 @@ const createPropsTable = (properties: Array<[string, any]>): string => {
     .join('\n')
 
   return `| Prop | Default | Type |\n| --- | --- | --- |\n${tableRows}`
-}
-
-const replaceInstallationGuide = async (ctx: TransformContext): Promise<string> => {
-  const capitalizedComponent = ctx.component.charAt(0).toUpperCase() + ctx.component.slice(1)
-  const replacement = `Use the Zalify UI CLI to add the ${capitalizedComponent} component to your project:
-
-\`\`\`bash
-npx @zalify-ui/cli add ${ctx.component}
-\`\`\``
-
-  return ctx.content.replace(/<InstallationGuide[^>]*\/>/g, replacement)
 }
 
 const stringify = (value: unknown): string =>

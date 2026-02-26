@@ -1,4 +1,4 @@
-import { Clipboard, IconButton } from '@/components/ui'
+import { Clipboard, IconButton } from '@zalify-ui/react'
 
 export const App = () => {
   return (

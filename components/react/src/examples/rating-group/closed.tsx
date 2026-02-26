@@ -1,5 +1,5 @@
 import { forwardRef, type ReactElement, type ReactNode } from 'react'
-import { RatingGroup as StyledRatingGroup } from '@/components/ui'
+import { RatingGroup as StyledRatingGroup } from '@zalify-ui/react'
 
 export interface RatingProps extends StyledRatingGroup.RootProps {
   icon?: ReactElement

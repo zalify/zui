@@ -1,6 +1,5 @@
 import { EuroIcon, InfoIcon } from 'lucide-react'
-import { Stack } from 'styled-system/jsx'
-import { Input, InputGroup } from '@/components/ui'
+import { Input, InputGroup, Stack } from '@zalify-ui/react'
 
 export const App = () => {
   const variants = ['outline', 'subtle', 'surface', 'flushed'] as const

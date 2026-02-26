@@ -1,5 +1,4 @@
-import { Center, HStack } from 'styled-system/jsx'
-import { ScrollArea } from '@/components/ui'
+import { ScrollArea, Center, HStack } from '@zalify-ui/react'
 
 export const App = () => (
   <ScrollArea.Root scrollbar="visible">

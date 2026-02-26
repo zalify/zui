@@ -1,4 +1,4 @@
-import { Skeleton } from '@/components/ui'
+import { Skeleton } from '@zalify-ui/react'
 
 export const App = () => {
   return (

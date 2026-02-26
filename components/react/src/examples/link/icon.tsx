@@ -1,5 +1,5 @@
 import { ExternalLinkIcon } from 'lucide-react'
-import { Link } from '@/components/ui'
+import { Link } from '@zalify-ui/react'
 
 export const App = () => {
   return (

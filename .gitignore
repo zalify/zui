@@ -37,5 +37,9 @@ report.[0-9]_.[0-9]_.[0-9]_.[0-9]_.json
 .velite
 
 styled-system
+
+# build artifacts
+temp
+src/generated
 # next-agents-md
 .next-docs/

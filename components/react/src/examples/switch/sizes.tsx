@@ -1,5 +1,4 @@
-import { Wrap } from 'styled-system/jsx'
-import { Switch } from '@/components/ui'
+import { Switch, Wrap } from '@zalify-ui/react'
 
 export const App = () => {
   const sizes = ['xs', 'sm', 'md', 'lg'] as const

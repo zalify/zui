@@ -1,5 +1,4 @@
-import { VStack } from 'styled-system/jsx'
-import { Spinner, Text } from '@/components/ui'
+import { Spinner, Text, VStack } from '@zalify-ui/react'
 
 export const App = () => {
   return (

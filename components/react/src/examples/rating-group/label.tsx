@@ -1,4 +1,4 @@
-import { RatingGroup } from '@/components/ui'
+import { RatingGroup } from '@zalify-ui/react'
 
 export const App = () => {
   return (

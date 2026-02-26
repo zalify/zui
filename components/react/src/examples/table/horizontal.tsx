@@ -1,4 +1,4 @@
-import { ScrollArea, Table } from '@/components/ui'
+import { ScrollArea, Table } from '@zalify-ui/react'
 
 export const App = () => {
   return (

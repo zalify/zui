@@ -1,5 +1,5 @@
 import { WebcamIcon } from 'lucide-react'
-import { Button, FileUpload } from '@/components/ui'
+import { Button, FileUpload } from '@zalify-ui/react'
 
 export const App = () => {
   return (

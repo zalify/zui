@@ -1,6 +1,5 @@
 import { DiamondIcon } from 'lucide-react'
-import { Wrap } from 'styled-system/jsx'
-import { Icon } from '@/components/ui'
+import { Icon, Wrap } from '@zalify-ui/react'
 
 export const App = () => {
   const sizes = ['xs', 'sm', 'md', 'lg', 'xl'] as const

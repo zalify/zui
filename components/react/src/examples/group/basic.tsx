@@ -1,4 +1,4 @@
-import { Button, Group } from '@/components/ui'
+import { Button, Group } from '@zalify-ui/react'
 
 export const App = () => {
   return (

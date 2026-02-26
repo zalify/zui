@@ -1,5 +1,5 @@
 import { forwardRef, type ReactNode } from 'react'
-import { Progress as StyledProgress } from '@/components/ui'
+import { Progress as StyledProgress } from '@zalify-ui/react'
 
 interface ProgressProps extends StyledProgress.RootProps {
   showValueText?: boolean

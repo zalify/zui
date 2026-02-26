@@ -1,5 +1,5 @@
+import { Box } from '@zalify-ui/react'
 import type { Meta } from '@storybook/react'
-import { Box } from 'styled-system/jsx'
 
 const meta: Meta = {
   title: 'Feedback / Progress',

@@ -1,7 +1,6 @@
 'use client'
 import { useState } from 'react'
-import { Stack } from 'styled-system/jsx'
-import { Checkbox } from '@/components/ui'
+import { Checkbox, Stack } from '@zalify-ui/react'
 
 export const App = () => {
   const initialValues = [

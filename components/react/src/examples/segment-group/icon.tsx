@@ -1,6 +1,5 @@
 import { Grid2X2Icon, ListIcon, TableIcon } from 'lucide-react'
-import { HStack } from 'styled-system/jsx'
-import { SegmentGroup } from '@/components/ui'
+import { SegmentGroup, HStack } from '@zalify-ui/react'
 
 export const App = () => {
   return (

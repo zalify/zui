@@ -1,5 +1,4 @@
-import { Stack } from 'styled-system/jsx'
-import { RadioGroup } from '@/components/ui'
+import { RadioGroup, Stack } from '@zalify-ui/react'
 
 export const App = () => {
   const colors = ['blue', 'green', 'amber', 'red'] as const

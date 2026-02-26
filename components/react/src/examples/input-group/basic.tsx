@@ -1,5 +1,5 @@
 import { EuroIcon } from 'lucide-react'
-import { Input, InputGroup } from '@/components/ui'
+import { Input, InputGroup } from '@zalify-ui/react'
 
 export const App = () => {
   return (

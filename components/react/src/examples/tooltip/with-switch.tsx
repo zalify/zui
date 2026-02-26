@@ -1,5 +1,5 @@
 import { useId } from 'react'
-import { Switch, Tooltip } from '@/components/ui'
+import { Switch, Tooltip } from '@zalify-ui/react'
 
 export const App = () => {
   const id = useId()

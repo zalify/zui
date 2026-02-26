@@ -1,5 +1,4 @@
-import { Stack } from 'styled-system/jsx'
-import { Progress } from '@/components/ui'
+import { Progress, Stack } from '@zalify-ui/react'
 
 export const App = () => {
   const shapes = ['rounded', 'full', 'square'] as const

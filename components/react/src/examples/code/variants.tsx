@@ -1,5 +1,4 @@
-import { Stack } from 'styled-system/jsx'
-import { Code } from '@/components/ui'
+import { Code, Stack } from '@zalify-ui/react'
 
 export const App = () => {
   const variants = ['solid', 'surface', 'outline', 'subtle', 'plain'] as const

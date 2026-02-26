@@ -1,4 +1,4 @@
-import { Spinner } from '@/components/ui'
+import { Spinner } from '@zalify-ui/react'
 
 export const App = () => {
   return <Spinner css={{ '--spinner-track-color': 'colors.gray.subtle.bg' }} />

@@ -1,5 +1,5 @@
 import { forwardRef, type InputHTMLAttributes, type ReactNode, type RefObject } from 'react'
-import { Switch as ParkSwitch } from '@/components/ui'
+import { Switch as ParkSwitch } from '@zalify-ui/react'
 
 export interface SwitchProps extends ParkSwitch.RootProps {
   inputProps?: InputHTMLAttributes<HTMLInputElement>

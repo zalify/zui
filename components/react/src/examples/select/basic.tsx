@@ -1,6 +1,6 @@
 'use client'
 import { createListCollection } from '@ark-ui/react/collection'
-import { Select } from '@/components/ui'
+import { Select } from '@zalify-ui/react'
 
 const collection = createListCollection({
   items: ['React', 'Vue', 'Svelte', 'Angular'],

@@ -1,8 +1,7 @@
 'use client'
 import { createListCollection } from '@ark-ui/react/collection'
 import { Portal } from '@ark-ui/react/portal'
-import { Stack } from 'styled-system/jsx'
-import { Select } from '@/components/ui'
+import { Select, Stack } from '@zalify-ui/react'
 
 export const App = () => {
   const sizes = ['sm', 'md', 'lg'] as const

@@ -1,5 +1,4 @@
-import { Stack } from 'styled-system/jsx'
-import { Avatar, Group } from '@/components/ui'
+import { Avatar, Group, Stack } from '@zalify-ui/react'
 
 export const App = () => {
   return (

@@ -1,22 +1,16 @@
 ---
 title: Breadcrumb
 description: A navigation component showing the user's location within a site hierarchy.
-metaDescription: Breadcrumb navigation for React and Solid.js showing user location in site hierarchy with accessible breadcrumb trails.
+metaDescription: Breadcrumb navigation for React showing user location in site hierarchy with accessible breadcrumb trails.
 category: navigation
-links:
-  recipe: https://github.com/zalify/zalify-ui/blob/main/packages/preset/src/recipes/breadcrumb.ts
 ---
 
 <ComponentExample name="basic" />
 
-## Installation
-
-<InstallationGuide />
-
 ## Usage
 
 ```tsx
-import { Breadcrumb } from '@/components/ui'
+import { Breadcrumb } from '@zalify-ui/react'
 ```
 
 ```tsx
@@ -87,7 +81,7 @@ Use the `asChild` prop to change the underlying breadcrumb link
 
 ```tsx
 import { Link } from 'next/link'
-import { Breadcrumb } from '@/components/ui'
+import { Breadcrumb } from '@zalify-ui/react'
 
 export const App = () => {
   return (

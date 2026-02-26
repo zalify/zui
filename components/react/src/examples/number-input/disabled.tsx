@@ -1,4 +1,4 @@
-import { NumberInput } from '@/components/ui'
+import { NumberInput } from '@zalify-ui/react'
 
 export const App = () => {
   return (

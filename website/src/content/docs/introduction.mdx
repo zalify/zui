@@ -1,52 +1,57 @@
 ---
 title: Introduction
-description: Zalify UI beautifully-designed, accessible components system and code distribution platform. Built with Panda CSS and supporting a wide range of JS frameworks
-metaDescription: Zalify UI beautifully-designed, accessible components system and code distribution platform. Built with Panda CSS and supporting a wide range of JS frameworks
+description: Zalify UI is a beautifully-designed, accessible component library for React. Install it as an NPM package and start building.
+metaDescription: Zalify UI is a beautifully-designed, accessible component library for React with embedded CSS, zero-config theming, and Server Component support.
 category: getting-started
 ---
 
-Many popular UI component libraries require installing NPM packages and importing their components so you can use them in your app. 
-This works very well until you need to customize a component or add a component that doesn't exist in the library. 
-You end up wrapping library components, overriding styles with workarounds, or mixing incompatible APIs from different libraries.
+Zalify UI is a production-ready React component library that ships as a single NPM package. It provides beautiful, accessible components with embedded CSS — no external style configuration required.
 
-**Zalify UI solves these problems with the following principles**
+## Zero-Config Styling
 
-## Open Code
+Zalify UI embeds all component styles directly in the package. There are no CSS files to import, no build plugins to configure, and no external style dependencies to manage.
 
-Zalify UI gives you direct access to component source code, giving you complete ownership and flexibility. This has several key benefits:
+Wrap your app with `ZalifyProvider` and every component is styled automatically:
 
-* **Full Control:** Every component's implementation and recipe is fully exposed and readable.
-* **Easy Customization:** Change any aspect of a component to match your specific design system and functional needs.
-* **AI Ready:** Direct access to the code makes it straightforward for LLMs to read, understand, and even improve your components.
-* **No More Bug Reports:** Fix it directly in your codebase without waiting for library maintainers.
+```tsx
+import { ZalifyProvider } from '@zalify-ui/react'
 
-*Want to add a new variant to a button or change an existing one? You simply edit the button recipe directly. No need to override or tinker with external APIs.*
+<ZalifyProvider accentColor="jade" grayColor="neutral">
+  {children}
+</ZalifyProvider>
+```
 
 ## Composition
 
-All Zalify UI components are built on top of [Ark UI](https://ark-ui.com), a headless component library designed for building scalable design systems. 
+All Zalify UI components are built on top of [Ark UI](https://ark-ui.com), a headless component library designed for building scalable design systems.
 Every component is architected with composability at its core, enabling seamless combination and customization without complex workarounds.
 
-This shared, composable interface is predictable for both developers and AI tools, maintaining consistency even when switching JavaScript frameworks.
+## Server Component Support
 
-## Code Distribution
+Zalify UI is designed for the React Server Components architecture. Components that don't need interactivity work as Server Components out of the box, while interactive components are properly marked with `'use client'` directives.
 
-As explained above Zalify UI takes a different approach from traditional component libraries by distributing components as source code rather than shipping them as an NPM package. <br />There are two convenient ways to obtain components:
+```tsx
+import { Heading, Badge } from '@zalify-ui/react'
 
-* **CLI:** Install components directly into your project using the Zalify UI CLI.
-* **Docs:** Browse and copy component source code directly from this website.
-
+export default function Page() {
+  return (
+    <>
+      <Heading as="h1">Dashboard</Heading>
+      <Badge>Active</Badge>
+    </>
+  )
+}
+```
 
 ## Beautiful Design
 
-Developed in collaboration with [Brains & Pixels](https://x.com/Brainsandpixels), Zalify UI provides a large collection of components that have carefully chosen default styles.
+Developed in collaboration with [Brains & Pixels](https://x.com/Brainsandpixels), Zalify UI provides a large collection of components with carefully chosen default styles.
 They are designed to look good on their own and to work well together as a consistent system.
 
 * **Minimalistic Design:** Your UI has a clean and minimal look without extra work.
 * **Consistent Styling:** Components naturally fit with one another. Each component is built to match the others, keeping your UI consistent.
-* **Customizable Foundation:** Modify component recipes to adapt the design system to your brand requirements.
-* **Design Integration:** Use the [Figma Kit](/docs/figma) to prototype and design with Zalify UI components.
+* **Customizable Theming:** Configure accent colors, gray palettes, and border radii through `ZalifyProvider` props.
 
 ## AI Ready
 
-The architecture of Zalify UI makes it easy for AI tools to work with your code. Its open code and consistent API allow AI models to read, understand, and even generate new components that integrate seamlessly with your existing design system.
+The architecture of Zalify UI makes it easy for AI tools to work with your code. Its consistent API allows AI models to read, understand, and generate new components that integrate seamlessly with your existing design system.

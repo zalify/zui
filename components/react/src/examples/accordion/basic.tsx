@@ -1,4 +1,4 @@
-import { Accordion } from '@/components/ui'
+import { Accordion } from '@zalify-ui/react'
 
 export const App = () => {
   return (

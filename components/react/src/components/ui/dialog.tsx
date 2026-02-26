@@ -27,10 +27,11 @@ export const Footer = withContext(ark.div, 'footer')
 
 const StyledButton = styled(ark.button)
 
-export const ActionTrigger = forwardRef<HTMLButtonElement, ComponentProps<typeof StyledButton>>(
+export type ActionTriggerProps = ComponentProps<'button'>
+export const ActionTrigger = forwardRef<HTMLButtonElement, ActionTriggerProps>(
   function ActionTrigger(props, ref) {
     const dialog = useDialogContext()
-    return <StyledButton {...props} ref={ref} onClick={() => dialog.setOpen(false)} />
+    return <StyledButton {...(props as any)} ref={ref} onClick={() => dialog.setOpen(false)} />
   },
 )
 

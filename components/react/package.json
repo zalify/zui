@@ -1,9 +1,14 @@
 {
   "name": "@zalify-ui/react",
+  "version": "1.0.0",
   "type": "module",
-  "private": true,
+  "sideEffects": false,
   "scripts": {
     "prepare": "panda codegen --clean --silent",
+    "build:codegen": "panda codegen --clean",
+    "build:css": "panda cssgen --outfile temp/styles.css && node scripts/embed-css.mjs",
+    "build:js": "tsup && node scripts/add-use-client.mjs && node scripts/rewrite-barrel.mjs && node scripts/fix-dts.mjs",
+    "build": "bun run build:codegen && bun run build:css && bun run build:js",
     "dev": "bun run storybook",
     "lint": "biome lint ./src",
     "storybook": "storybook dev -p 6006",
@@ -13,9 +18,24 @@
     "typedoc": "scripts typedoc --out ../../website/public/types/react"
   },
   "exports": {
-    "./examples": "./src/examples/index.ts",
-    ".": "./src/components/ui/index.ts"
+    ".": {
+      "import": {
+        "types": "./dist/index.d.ts",
+        "default": "./dist/index.js"
+      },
+      "require": {
+        "types": "./dist/index.d.cts",
+        "default": "./dist/index.cjs"
+      }
+    },
+    "./examples": "./src/examples/index.ts"
   },
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
   "dependencies": {
     "@ark-ui/react": "5.32.0",
     "lucide-react": "0.575.0"
@@ -24,8 +44,6 @@
     "@pandacss/dev": "1.8.2",
     "@pandacss/preset-base": "1.8.2",
     "@pandacss/preset-panda": "1.8.2",
-    "@zalify-ui/preset": "workspace:*",
-    "@zalify-ui/scripts": "workspace:*",
     "@storybook/addon-a11y": "10.2.12",
     "@storybook/addon-themes": "10.2.12",
     "@storybook/react": "10.2.12",
@@ -34,10 +52,13 @@
     "@types/react": "19.2.14",
     "@types/react-dom": "19.2.3",
     "@vitejs/plugin-react": "5.1.4",
+    "@zalify-ui/preset": "workspace:*",
+    "@zalify-ui/scripts": "workspace:*",
     "lorem-ipsum": "2.0.8",
     "react": "19.2.4",
     "react-dom": "19.2.4",
     "storybook": "10.2.12",
+    "tsup": "8.5.1",
     "typescript": "5.9.3",
     "vite": "7.3.1",
     "vite-tsconfig-paths": "6.1.1"

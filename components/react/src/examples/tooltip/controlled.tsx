@@ -1,6 +1,6 @@
 'use client'
 import { useState } from 'react'
-import { Button, Tooltip } from '@/components/ui'
+import { Button, Tooltip } from '@zalify-ui/react'
 
 export const App = () => {
   const [open, setOpen] = useState(false)

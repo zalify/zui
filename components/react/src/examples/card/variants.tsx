@@ -1,5 +1,4 @@
-import { Box, Grid } from 'styled-system/jsx'
-import { Button, Card } from '@/components/ui'
+import { Button, Card, Box, Grid } from '@zalify-ui/react'
 
 export const App = () => {
   return (

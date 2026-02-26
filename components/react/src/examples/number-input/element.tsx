@@ -1,5 +1,5 @@
 import { DollarSignIcon } from 'lucide-react'
-import { InputGroup, NumberInput } from '@/components/ui'
+import { InputGroup, NumberInput } from '@zalify-ui/react'
 
 export const App = () => {
   return (

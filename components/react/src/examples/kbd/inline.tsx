@@ -1,4 +1,4 @@
-import { Kbd, Text } from '@/components/ui'
+import { Kbd, Text } from '@zalify-ui/react'
 
 export const App = () => {
   return (

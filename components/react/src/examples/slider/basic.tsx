@@ -1,4 +1,4 @@
-import { Slider } from '@/components/ui'
+import { Slider } from '@zalify-ui/react'
 
 export const App = () => {
   return (

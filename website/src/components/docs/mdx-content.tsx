@@ -10,9 +10,7 @@ import { ColorPairings } from './color-pairings'
 import { ComponentExample } from './component-example'
 import { ComponentSizing } from './component-sizing'
 // import { FigmaKitPreview } from './figma-kit-preview'
-import { InstallationGuide } from './installation-guide'
 import { PropsTable } from './props-table'
-import { QuickstartGuide } from './quickstart-guide'
 import { ShadowTokens } from './shadow-tokens'
 import { VariantPreview } from './variant-preview'
 
@@ -23,9 +21,7 @@ const sharedComponents = {
   ComponentExample,
   ComponentSizing,
   // FigmaKitPreview,
-  InstallationGuide,
   PropsTable,
-  QuickstartGuide,
   ShadowTokens,
   Step,
   Steps,

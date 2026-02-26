@@ -1,5 +1,4 @@
-import { Stack } from 'styled-system/jsx'
-import { TagsInput } from '@/components/ui'
+import { TagsInput, Stack } from '@zalify-ui/react'
 
 export const App = () => {
   const variants = ['outline', 'subtle', 'surface'] as const

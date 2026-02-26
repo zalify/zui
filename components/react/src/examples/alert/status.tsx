@@ -1,5 +1,4 @@
-import { Stack } from 'styled-system/jsx'
-import { Alert } from '@/components/ui'
+import { Alert, Stack } from '@zalify-ui/react'
 
 export const App = () => {
   const statuses = ['neutral', 'info', 'warning', 'error', 'success'] as const

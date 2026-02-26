@@ -1,5 +1,4 @@
-import { Stack } from 'styled-system/jsx'
-import { Badge, Button, Group } from '@/components/ui'
+import { Badge, Button, Group, Stack } from '@zalify-ui/react'
 
 export const App = () => {
   return (

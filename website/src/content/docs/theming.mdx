@@ -1,11 +1,37 @@
 ---
 title: Theming
-description: This guide covers the key differences Zalify UI introduces to theming.
-metaDescription: Customize your Zalify UI theme with Panda CSS. Learn about sizing, variants, and our systematic design approach for consistent UIs.
+description: Configure your Zalify UI theme with the ZalifyProvider.
+metaDescription: Customize your Zalify UI theme. Learn about accent colors, gray palettes, border radii, component sizing, and variants.
 category: getting-started
 ---
 
-Zalify UI extends the default [Panda Preset](https://www.npmjs.com/package/@pandacss/preset-panda) with a minimal, systematic design approach. It introduces key adjustments to component sizing and variants to ensure alignment and visual consistency across your UI.
+Zalify UI theming is configured through `ZalifyProvider` props. The provider injects all component styles and maps your chosen accent color, gray palette, and border radius across the entire component library.
+
+```tsx
+import { ZalifyProvider } from '@zalify-ui/react'
+
+<ZalifyProvider accentColor="jade" grayColor="neutral" borderRadius="md">
+  {children}
+</ZalifyProvider>
+```
+
+### Accent Color
+
+The `accentColor` prop sets the primary color palette used across interactive components. Available values:
+
+`neutral` `tomato` `red` `ruby` `crimson` `pink` `plum` `purple` `violet` `iris` `indigo` `blue` `cyan` `teal` `jade` `green` `grass` `bronze` `gold` `brown` `orange` `amber` `yellow` `lime` `mint` `sky`
+
+### Gray Color
+
+The `grayColor` prop sets the neutral palette used for text, borders, and backgrounds. Available values:
+
+`neutral` `mauve` `olive` `sage` `sand` `slate`
+
+### Border Radius
+
+The `borderRadius` prop controls corner rounding globally. Available values:
+
+`none` `xs` `sm` `md` `lg` `xl` `2xl`
 
 ## Components
 
@@ -66,7 +92,7 @@ Minimal style with background on interaction. Use for text buttons, links, tabs,
 
 ## Colors
 
-The biggest change Zalify UI introduces is its color system. Instead of the `50â€“950` scale used in Panda CSS, Zalify UI is built on [Radix Colors](https://www.radix-ui.com/colors). Each color comes with 12 shades per mode (light and dark), for a total of 24 shades. This provides finer control and greater flexibility than the traditional 11-shade scale.
+Zalify UI's color system is built on [Radix Colors](https://www.radix-ui.com/colors). Each color comes with 12 shades per mode (light and dark), for a total of 24 shades.
 
 ### Gray
 
@@ -78,7 +104,7 @@ The biggest change Zalify UI introduces is its color system. Instead of the `50â
 
 ### Pairings
 
-Zalify UI is built around the concept of one accent color and one gray color. When initializing your project, you'll choose which combination works best for you.
+Zalify UI is built around the concept of one accent color and one gray color. Configure which combination works best for you via the `ZalifyProvider` props.
 
 #### Neutral Pairings
 
@@ -104,7 +130,7 @@ Radii tokens define consistent corner rounding across components. This setup mak
 
 ### Shadows
 
-Shadows provide consistent elevation levels, from `xs` to `2xl`. Unlike the default Panda shadows, they adapt seamlessly to both light and dark mode.
+Shadows provide consistent elevation levels, from `xs` to `2xl`. They adapt seamlessly to both light and dark mode.
 
 <ShadowTokens />
 

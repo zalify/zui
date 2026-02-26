@@ -1,5 +1,5 @@
 import { forwardRef, type ReactElement, type ReactNode } from 'react'
-import { Alert as StyledAlert } from '@/components/ui'
+import { Alert as StyledAlert } from '@zalify-ui/react'
 
 export interface AlertProps extends Omit<StyledAlert.RootProps, 'title'> {
   startElement?: ReactNode

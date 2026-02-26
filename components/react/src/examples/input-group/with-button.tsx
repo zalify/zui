@@ -1,5 +1,5 @@
 import { SearchIcon } from 'lucide-react'
-import { IconButton, Input, InputGroup } from '@/components/ui'
+import { IconButton, Input, InputGroup } from '@zalify-ui/react'
 
 export const App = () => {
   return (

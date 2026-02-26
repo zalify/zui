@@ -1,4 +1,4 @@
-import { Field, Textarea } from '@/components/ui'
+import { Field, Textarea } from '@zalify-ui/react'
 
 export const App = () => {
   return (

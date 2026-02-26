@@ -1,7 +1,7 @@
 'use client'
 import { createListCollection } from '@ark-ui/react/collection'
 import { Portal } from '@ark-ui/react/portal'
-import { Select } from '@/components/ui'
+import { Select } from '@zalify-ui/react'
 
 export const App = () => {
   return (

@@ -1,5 +1,4 @@
-import { Flex } from 'styled-system/jsx'
-import { Text } from '@/components/ui'
+import { Text, Flex } from '@zalify-ui/react'
 
 export const App = () => {
   return (

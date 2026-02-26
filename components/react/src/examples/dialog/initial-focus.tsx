@@ -1,7 +1,7 @@
 'use client'
 import { Portal } from '@ark-ui/react/portal'
 import { useRef } from 'react'
-import { Button, CloseButton, Dialog, Field, Input } from '@/components/ui'
+import { Button, CloseButton, Dialog, Field, Input } from '@zalify-ui/react'
 
 export const App = () => {
   const ref = useRef<HTMLInputElement>(null)

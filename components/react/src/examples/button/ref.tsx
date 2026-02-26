@@ -1,6 +1,6 @@
 'use client'
 import { useRef } from 'react'
-import { Button } from '@/components/ui'
+import { Button } from '@zalify-ui/react'
 
 export const App = () => {
   const ref = useRef<HTMLButtonElement>(null)

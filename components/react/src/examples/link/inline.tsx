@@ -1,4 +1,4 @@
-import { Link, Text } from '@/components/ui'
+import { Link, Text } from '@zalify-ui/react'
 
 export const App = () => {
   return (

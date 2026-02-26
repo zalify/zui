@@ -1,5 +1,5 @@
 import { MoonIcon, SunIcon } from 'lucide-react'
-import { Icon, Switch } from '@/components/ui'
+import { Icon, Switch } from '@zalify-ui/react'
 
 export const App = () => {
   return (

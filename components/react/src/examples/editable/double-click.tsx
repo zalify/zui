@@ -1,4 +1,4 @@
-import { Editable } from '@/components/ui'
+import { Editable } from '@zalify-ui/react'
 
 export const App = () => {
   return (

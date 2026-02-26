@@ -1,5 +1,4 @@
-import { Stack } from 'styled-system/jsx'
-import { Text } from '@/components/ui'
+import { Text, Stack } from '@zalify-ui/react'
 
 export const App = () => {
   return (

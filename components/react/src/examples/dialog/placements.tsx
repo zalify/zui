@@ -1,6 +1,5 @@
 import { Portal } from '@ark-ui/react/portal'
-import { Wrap } from 'styled-system/jsx'
-import { Button, CloseButton, Dialog } from '@/components/ui'
+import { Button, CloseButton, Dialog, Wrap } from '@zalify-ui/react'
 
 export const App = () => {
   const placements = ['top', 'center', 'bottom'] as const

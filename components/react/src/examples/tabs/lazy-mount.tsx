@@ -1,6 +1,6 @@
 'use client'
 import { useEffect, useState } from 'react'
-import { Tabs } from '@/components/ui'
+import { Tabs } from '@zalify-ui/react'
 
 export const App = () => {
   return (

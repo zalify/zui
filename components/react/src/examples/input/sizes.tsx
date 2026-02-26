@@ -1,5 +1,4 @@
-import { Stack } from 'styled-system/jsx'
-import { Input } from '@/components/ui'
+import { Input, Stack } from '@zalify-ui/react'
 
 export const App = () => {
   const sizes = ['sm', 'md', 'lg', 'xl'] as const

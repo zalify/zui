@@ -1,4 +1,4 @@
-import { RadioGroup } from '@/components/ui'
+import { RadioGroup } from '@zalify-ui/react'
 
 export const App = () => {
   return (

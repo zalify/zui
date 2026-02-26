@@ -1,5 +1,4 @@
-import { HStack } from 'styled-system/jsx'
-import { Kbd } from '@/components/ui'
+import { Kbd, HStack } from '@zalify-ui/react'
 
 export const App = () => {
   return (

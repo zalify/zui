@@ -1,5 +1,5 @@
 import { LogOutIcon, Settings2Icon, UserIcon } from 'lucide-react'
-import { Avatar, Menu } from '@/components/ui'
+import { Avatar, Menu } from '@zalify-ui/react'
 
 export const App = () => {
   return (

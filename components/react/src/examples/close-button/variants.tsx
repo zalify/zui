@@ -1,5 +1,4 @@
-import { Wrap } from 'styled-system/jsx'
-import { CloseButton } from '@/components/ui'
+import { CloseButton, Wrap } from '@zalify-ui/react'
 
 export const App = () => {
   return (

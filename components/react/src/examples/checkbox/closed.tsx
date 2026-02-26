@@ -1,6 +1,5 @@
 import { forwardRef } from 'react'
-import { VisuallyHidden } from 'styled-system/jsx'
-import { Checkbox as StyledCheckbox } from '@/components/ui'
+import { Checkbox as StyledCheckbox, VisuallyHidden } from '@zalify-ui/react'
 
 export type { CheckboxCheckedState } from '@ark-ui/react/checkbox'
 

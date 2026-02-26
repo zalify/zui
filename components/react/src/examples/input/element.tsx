@@ -1,6 +1,5 @@
 import { EuroIcon, InfoIcon, UserIcon } from 'lucide-react'
-import { Stack } from 'styled-system/jsx'
-import { Input, InputGroup } from '@/components/ui'
+import { Input, InputGroup, Stack } from '@zalify-ui/react'
 
 export const App = () => {
   return (

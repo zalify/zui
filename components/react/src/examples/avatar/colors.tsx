@@ -1,5 +1,4 @@
-import { Wrap } from 'styled-system/jsx'
-import { Avatar } from '@/components/ui'
+import { Avatar, Wrap } from '@zalify-ui/react'
 
 const colorPalette = ['red', 'blue', 'green', 'yellow', 'purple', 'orange'] as const
 

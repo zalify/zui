@@ -1,8 +1,7 @@
 'use client'
 import { useVirtualizer } from '@tanstack/react-virtual'
 import { useRef } from 'react'
-import { Box, Center } from 'styled-system/jsx'
-import { ScrollArea } from '@/components/ui'
+import { ScrollArea, Box, Center } from '@zalify-ui/react'
 
 export const App = () => {
   const scrollRef = useRef<HTMLDivElement>(null)

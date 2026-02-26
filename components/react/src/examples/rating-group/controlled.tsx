@@ -1,6 +1,6 @@
 'use client'
 import { useState } from 'react'
-import { RatingGroup } from '@/components/ui'
+import { RatingGroup } from '@zalify-ui/react'
 
 export const App = () => {
   const [value, setValue] = useState(3)

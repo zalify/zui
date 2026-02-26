@@ -1,5 +1,5 @@
 import { Fragment, forwardRef, type ReactNode } from 'react'
-import { Breadcrumb as StyledBreadcrumb } from '@/components/ui'
+import { Breadcrumb as StyledBreadcrumb } from '@zalify-ui/react'
 
 export interface BreadcrumbProps extends StyledBreadcrumb.RootProps {
   items: Array<{ title: ReactNode; url?: string }>

@@ -1,6 +1,5 @@
 'use client'
-import { Wrap } from 'styled-system/jsx'
-import { Button, toaster } from '@/components/ui'
+import { Button, toaster, Wrap } from '@zalify-ui/react'
 
 export const App = () => {
   return (

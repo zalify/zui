@@ -1,5 +1,5 @@
 import { forwardRef, type InputHTMLAttributes, type RefObject } from 'react'
-import { NumberInput as StyledNumberInput } from '@/components/ui'
+import { NumberInput as StyledNumberInput } from '@zalify-ui/react'
 
 export interface NumberInputProps extends StyledNumberInput.RootProps {
   rootRef?: RefObject<HTMLDivElement | null>

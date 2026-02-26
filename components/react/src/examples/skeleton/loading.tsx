@@ -1,7 +1,6 @@
 'use client'
 import { useState } from 'react'
-import { Stack } from 'styled-system/jsx'
-import { Button, Skeleton, Text } from '@/components/ui'
+import { Button, Skeleton, Text, Stack } from '@zalify-ui/react'
 
 export const App = () => {
   const [loading, setLoading] = useState(true)

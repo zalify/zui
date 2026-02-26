@@ -1,5 +1,4 @@
-import { HStack } from 'styled-system/jsx'
-import { Progress } from '@/components/ui'
+import { Progress, HStack } from '@zalify-ui/react'
 
 export const App = () => {
   return (

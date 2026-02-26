@@ -1,5 +1,4 @@
-import { Circle, Float } from 'styled-system/jsx'
-import { Avatar } from '@/components/ui'
+import { Avatar, Circle, Float } from '@zalify-ui/react'
 
 export const App = () => {
   return (

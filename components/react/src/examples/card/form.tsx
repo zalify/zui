@@ -1,6 +1,5 @@
 import { GithubIcon, GitlabIcon } from 'lucide-react'
-import { Divider, HStack, Stack } from 'styled-system/jsx'
-import { Button, Card, Field, Input, Text } from '@/components/ui'
+import { Button, Card, Field, Input, Text, Divider, HStack, Stack } from '@zalify-ui/react'
 
 export const App = () => {
   return (

@@ -1,6 +1,5 @@
 'use client'
-import { Stack } from 'styled-system/jsx'
-import { DisplayValue, Span } from '@/components/ui'
+import { DisplayValue, Span, Stack } from '@zalify-ui/react'
 
 export const App = () => {
   return (

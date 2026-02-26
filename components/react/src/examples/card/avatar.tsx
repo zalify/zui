@@ -1,6 +1,5 @@
 import { CheckIcon, XIcon } from 'lucide-react'
-import { HStack, Stack } from 'styled-system/jsx'
-import { Avatar, Button, Card, Text } from '@/components/ui'
+import { Avatar, Button, Card, Text, HStack, Stack } from '@zalify-ui/react'
 
 export const App = () => {
   return (

@@ -1,3 +1,5 @@
+'use client'
+
 import { Portal } from '@ark-ui/react/portal'
 import { MenuIcon } from 'lucide-react'
 import { HStack } from 'styled-system/jsx'

@@ -1,6 +1,5 @@
 import { ChevronDownIcon, ChevronUpIcon } from 'lucide-react'
-import { Center } from 'styled-system/jsx'
-import { Carousel, IconButton, Text } from '@/components/ui'
+import { Carousel, IconButton, Text, Center } from '@zalify-ui/react'
 
 export const App = () => {
   const slides = 5

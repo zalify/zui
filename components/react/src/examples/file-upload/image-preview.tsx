@@ -1,7 +1,7 @@
 'use client'
 import { useFileUploadContext } from '@ark-ui/react/file-upload'
 import { ImageUpIcon, XIcon } from 'lucide-react'
-import { Button, FileUpload, IconButton } from '@/components/ui'
+import { Button, FileUpload, IconButton } from '@zalify-ui/react'
 
 export const App = () => {
   return (

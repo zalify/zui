@@ -1,6 +1,6 @@
 'use client'
 import { useState } from 'react'
-import { Switch } from '@/components/ui'
+import { Switch } from '@zalify-ui/react'
 
 export const App = () => {
   const [checked, setChecked] = useState(false)

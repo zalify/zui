@@ -1,6 +1,5 @@
 import { Portal } from '@ark-ui/react/portal'
-import { Wrap } from 'styled-system/jsx'
-import { Button, CloseButton, Drawer } from '@/components/ui'
+import { Button, CloseButton, Drawer, Wrap } from '@zalify-ui/react'
 
 export const App = () => {
   return (

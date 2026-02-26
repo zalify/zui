@@ -1,5 +1,4 @@
-import { Stack } from 'styled-system/jsx'
-import { Skeleton, Text } from '@/components/ui'
+import { Skeleton, Text, Stack } from '@zalify-ui/react'
 
 export const App = () => {
   return (

@@ -1,5 +1,4 @@
-import { Stack, Wrap } from 'styled-system/jsx'
-import { Code } from '@/components/ui'
+import { Code, Stack, Wrap } from '@zalify-ui/react'
 
 export const App = () => {
   const colors = ['blue', 'green', 'amber', 'red'] as const

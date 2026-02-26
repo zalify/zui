@@ -1,5 +1,4 @@
-import { Stack } from 'styled-system/jsx'
-import { NumberInput } from '@/components/ui'
+import { NumberInput, Stack } from '@zalify-ui/react'
 
 export const App = () => {
   return (

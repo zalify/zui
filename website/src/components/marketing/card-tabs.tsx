@@ -1,3 +1,5 @@
+'use client'
+
 import { Button, Card, Field, Input, Tabs } from '@/components/ui'
 
 export const CardTabs = () => {

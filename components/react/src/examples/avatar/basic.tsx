@@ -1,4 +1,4 @@
-import { Avatar } from '@/components/ui'
+import { Avatar } from '@zalify-ui/react'
 
 export const App = () => {
   return (

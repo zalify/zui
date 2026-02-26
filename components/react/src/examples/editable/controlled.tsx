@@ -1,6 +1,6 @@
 'use client'
 import { useState } from 'react'
-import { Editable } from '@/components/ui'
+import { Editable } from '@zalify-ui/react'
 
 export const App = () => {
   const [name, setName] = useState('')

@@ -1,7 +1,6 @@
 'use client'
 import { useSplitter } from '@ark-ui/react/splitter'
-import { Stack } from 'styled-system/jsx'
-import { Button, Splitter } from '@/components/ui'
+import { Button, Splitter, Stack } from '@zalify-ui/react'
 
 export const App = () => {
   const splitter = useSplitter({

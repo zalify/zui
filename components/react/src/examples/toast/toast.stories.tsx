@@ -1,5 +1,5 @@
 import type { Meta } from '@storybook/react'
-import { Toaster } from '@/components/ui'
+import { Toaster } from '@zalify-ui/react'
 
 const meta: Meta = {
   title: 'Feedback / Toast',

@@ -1,6 +1,6 @@
 import { Portal } from '@ark-ui/react/portal'
 import { EllipsisIcon } from 'lucide-react'
-import { Breadcrumb, IconButton, Menu } from '@/components/ui'
+import { Breadcrumb, IconButton, Menu } from '@zalify-ui/react'
 
 export const App = () => {
   return (

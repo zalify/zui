@@ -1,5 +1,4 @@
-import { Stack } from 'styled-system/jsx'
-import { Textarea } from '@/components/ui'
+import { Textarea, Stack } from '@zalify-ui/react'
 
 export const App = () => {
   const sizes = ['xs', 'sm', 'md', 'lg', 'xl'] as const
