@@ -10,6 +10,7 @@ import { ThemeTokens } from '~/components/theme/theme-tokens'
 import { dmSans, inter, outfit, roboto, space } from './fonts'
 import './index.css'
 import { ThemeAttributes } from '~/components/theme/theme-attributes'
+import { Analytics } from "@vercel/analytics/next"
 
 export default async function RootLayout(props: PropsWithChildren) {
   return (
@@ -37,6 +38,7 @@ export default async function RootLayout(props: PropsWithChildren) {
           {props.children}
           <Toaster />
         </ThemeProvider>
+        <Analytics />
       </body>
     </html>
   )

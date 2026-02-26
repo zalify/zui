@@ -35,7 +35,8 @@
     "ts-pattern": "5.9.0",
     "unist-util-visit": "5.1.0",
     "zod": "4.3.6",
-    "zustand": "5.0.11"
+    "zustand": "5.0.11",
+    "@vercel/analytics": "1.6.1"
   },
   "devDependencies": {
     "@pandacss/dev": "1.8.2",
