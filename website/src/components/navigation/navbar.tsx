@@ -1,8 +1,8 @@
 import { MoreVerticalIcon } from 'lucide-react'
 import Link from 'next/link'
 import { Box, HStack } from 'styled-system/jsx'
-import { IconButton } from '@/components/ui'
-import { ZUIIcon } from '~/components/icons'
+import { IconButton, Span } from '@/components/ui'
+
 import { CommandMenu } from '../cmd-menu'
 import { ColorModeButton } from '../color-mode-button'
 import { ThemeDrawer } from '../docs/theme-drawer'
@@ -22,7 +22,7 @@ export const Navbar = () => {
     >
       <HStack h="full" px={{ base: '4', sm: '6', md: '8' }} justify="space-between">
         <Link href="/" aria-label="Home">
-          <ZUIIcon />
+          <Span color="colorPalette.solid.bg" fontWeight="bold">zalify-ui</Span>
         </Link>
         <HStack gap="5">
           <CommandMenu />
