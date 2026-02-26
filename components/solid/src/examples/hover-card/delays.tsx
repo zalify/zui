@@ -8,8 +8,8 @@ export const App = () => {
     <HoverCard.Root openDelay={1000} closeDelay={100}>
       <HoverCard.Trigger
         asChild={(triggerProps) => (
-          <Link href="https://x.com/ZuiDevs/" target="_blank" {...triggerProps()}>
-            @ZuiDevs
+          <Link href="https://x.com/zalifyui/" target="_blank" {...triggerProps()}>
+            @zalifyui
           </Link>
         )}
       />
@@ -27,7 +27,7 @@ export const App = () => {
               <Stack gap="3">
                 <Stack gap="1">
                   <Text textStyle="sm" fontWeight="semibold">
-                    @ZuiDevs
+                    @zalifyui
                   </Text>
                   <Text textStyle="sm" color="fg.muted">
                     Principal Software Engineer working at Pyck.ai

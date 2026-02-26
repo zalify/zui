@@ -86,7 +86,7 @@ const prompt = ({ accentColors, neutralColors }: Args) =>
     },
     {
       onCancel: () => {
-        p.cancel("Setup cancelled. Run the command again when you're ready to configure ZUI.")
+        p.cancel("Setup cancelled. Run the command again when you're ready to configure Zalify UI.")
         process.exit(0)
       },
     },

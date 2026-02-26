@@ -3,7 +3,7 @@ import { Accordion } from '@/components/ui'
 
 export const App = () => {
   return (
-    <Accordion.Root defaultValue={['What is ZUI?']} multiple>
+    <Accordion.Root defaultValue={['What is Zalify UI?']} multiple>
       <For each={faqItems}>
         {(item) => (
           <Accordion.Item value={item.question}>
@@ -23,7 +23,7 @@ export const App = () => {
 
 const faqItems = [
   {
-    question: 'What is ZUI?',
+    question: 'What is Zalify UI?',
     answer: 'A beautiful component library built with Ark UI and Panda CSS.',
   },
   {
@@ -32,6 +32,6 @@ const faqItems = [
   },
   {
     question: 'Is it free to use?',
-    answer: 'Yes! ZUI is completely free and open source.',
+    answer: 'Yes! Zalify UI is completely free and open source.',
   },
 ]

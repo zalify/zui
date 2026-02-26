@@ -13,7 +13,7 @@ export const add = new Command('add')
   .argument('[components...]', 'list of components to add')
   .option('--all', 'add all components', false)
   .action(async (components, opts) => {
-    p.intro(`${color.bgCyan(color.black(' ZUI '))}`)
+    p.intro(`${color.bgCyan(color.black(' Zalify UI '))}`)
 
     const program = pipe(
       opts.all
@@ -30,7 +30,7 @@ export const add = new Command('add')
         Effect.sync(() => {
           p.log.error('An unexpected error occurred while installing components.')
           p.outro(
-            `You can report this issue at: ${color.underline(color.cyan('https://github.com/zalify/zui/issues'))})`,
+            `You can report this issue at: ${color.underline(color.cyan('https://github.com/zalify/zalify-ui/issues'))})`,
           )
         }),
       ),

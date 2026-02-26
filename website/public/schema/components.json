@@ -1,13 +1,13 @@
 {
   "$schema": "http://json-schema.org/draft-07/schema#",
-  "title": "ZUI Components Configuration",
-  "description": "Configuration file for ZUI components and project structure",
+  "title": "Zalify UI Components Configuration",
+  "description": "Configuration file for Zalify UI components and project structure",
   "type": "object",
   "properties": {
     "$schema": {
       "type": "string",
       "format": "uri",
-      "default": "https://zui.sh/schema/components.json"
+      "default": "https://ui.zalify.com/schema/components.json"
     },
 
     "framework": {

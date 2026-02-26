@@ -1,7 +1,7 @@
 import { docs, posts } from '.velite'
 import type { MetadataRoute } from 'next'
 
-const baseUrl = 'https://zui.sh'
+const baseUrl = 'https://ui.zalify.com'
 
 const staticPages = ['/', '/changelog', '/blog']
 

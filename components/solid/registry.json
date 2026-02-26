@@ -1,7 +1,7 @@
 {
-  "$schema": "https://zui.sh/schema/registry.json",
-  "name": "@zuish/solid",
-  "homepage": "https://zui.sh",
+  "$schema": "https://ui.zalify.com/schema/registry.json",
+  "name": "@zalify-ui/solid",
+  "homepage": "https://ui.zalify.com",
   "items": [
     {
       "name": "absolute-center",
@@ -535,7 +535,12 @@
     {
       "name": "file-upload",
       "type": "registry:ui",
-      "dependencies": ["@ark-ui/solid", "lucide-solid", "solid-js", "@/components"],
+      "dependencies": [
+        "@ark-ui/solid",
+        "lucide-solid",
+        "solid-js",
+        "@/components"
+      ],
       "files": [
         {
           "path": "src/components/ui/file-upload.tsx",
@@ -1362,14 +1367,24 @@
     {
       "name": "toast",
       "type": "registry:ui",
-      "dependencies": ["@ark-ui/solid", "lucide-solid", "solid-js", "solid-js/web"],
+      "dependencies": [
+        "@ark-ui/solid",
+        "lucide-solid",
+        "solid-js",
+        "solid-js/web"
+      ],
       "files": [
         {
           "path": "src/components/ui/toast.tsx",
           "type": "registry:ui"
         }
       ],
-      "registryDependencies": ["close-button", "icon", "spinner", "toast-recipe"]
+      "registryDependencies": [
+        "close-button",
+        "icon",
+        "spinner",
+        "toast-recipe"
+      ]
     },
     {
       "name": "toast-recipe",

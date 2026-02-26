@@ -5,7 +5,7 @@ const robots = (): MetadataRoute.Robots => ({
     userAgent: '*',
     allow: '/',
   },
-  sitemap: 'https://zui.sh/sitemap.xml',
+  sitemap: 'https://ui.zalify.com/sitemap.xml',
 })
 
 export default robots

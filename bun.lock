@@ -11,7 +11,7 @@
       },
     },
     "components/react": {
-      "name": "@zuish/react",
+      "name": "@zalify-ui/react",
       "dependencies": {
         "@ark-ui/react": "5.32.0",
         "lucide-react": "0.575.0",
@@ -28,8 +28,8 @@
         "@types/react": "19.2.14",
         "@types/react-dom": "19.2.3",
         "@vitejs/plugin-react": "5.1.4",
-        "@zuish/preset": "workspace:*",
-        "@zuish/scripts": "workspace:*",
+        "@zalify-ui/preset": "workspace:*",
+        "@zalify-ui/scripts": "workspace:*",
         "lorem-ipsum": "2.0.8",
         "react": "19.2.4",
         "react-dom": "19.2.4",
@@ -44,7 +44,7 @@
       },
     },
     "components/solid": {
-      "name": "@zuish/solid",
+      "name": "@zalify-ui/solid",
       "dependencies": {
         "@ark-ui/solid": "5.30.0",
         "@tanstack/solid-virtual": "3.13.18",
@@ -56,8 +56,8 @@
         "@pandacss/preset-panda": "1.8.2",
         "@storybook/addon-a11y": "10.2.0",
         "@storybook/addon-themes": "10.2.0",
-        "@zuish/preset": "workspace:*",
-        "@zuish/scripts": "workspace:*",
+        "@zalify-ui/preset": "workspace:*",
+        "@zalify-ui/scripts": "workspace:*",
         "lorem-ipsum": "2.0.8",
         "solid-js": "1.9.11",
         "storybook": "10.2.0",
@@ -72,7 +72,7 @@
       },
     },
     "components/vue": {
-      "name": "@zuish/vue",
+      "name": "@zalify-ui/vue",
       "dependencies": {
         "@ark-ui/vue": "5.30.0",
         "lucide-vue-next": "0.563.0",
@@ -82,15 +82,15 @@
         "@pandacss/dev": "1.8.2",
         "@pandacss/preset-base": "1.8.2",
         "@pandacss/preset-panda": "1.8.2",
-        "@zuish/preset": "workspace:*",
-        "@zuish/scripts": "workspace:*",
+        "@zalify-ui/preset": "workspace:*",
+        "@zalify-ui/scripts": "workspace:*",
       },
     },
     "packages/cli": {
-      "name": "@zuish/cli",
+      "name": "@zalify-ui/cli",
       "version": "1.0.7",
       "bin": {
-        "zui": "dist/index.js",
+        "zalify-ui": "dist/index.js",
       },
       "dependencies": {
         "@better-fetch/fetch": "1.1.21",
@@ -121,7 +121,7 @@
       },
     },
     "packages/preset": {
-      "name": "@zuish/preset",
+      "name": "@zalify-ui/preset",
       "version": "1.0.0",
       "dependencies": {
         "@ark-ui/react": "5.32.0",
@@ -129,12 +129,12 @@
       "devDependencies": {
         "@pandacss/dev": "1.8.2",
         "@radix-ui/colors": "3.0.0",
-        "@zuish/scripts": "workspace:*",
+        "@zalify-ui/scripts": "workspace:*",
         "typescript": "5.9.3",
       },
     },
     "packages/scripts": {
-      "name": "@zuish/scripts",
+      "name": "@zalify-ui/scripts",
       "bin": {
         "scripts": "src/index.ts",
       },
@@ -169,18 +169,18 @@
         "@types/node": "^20",
         "@types/react": "^19",
         "@types/react-dom": "^19",
-        "@zuish/cli": "workspace:*",
+        "@zalify-ui/cli": "workspace:*",
         "babel-plugin-react-compiler": "1.0.0",
         "typescript": "^5",
       },
     },
     "website": {
-      "name": "@zuish/website",
+      "name": "@zalify-ui/website",
       "dependencies": {
         "@ark-ui/react": "5.32.0",
         "@icons-pack/react-simple-icons": "13.11.2",
         "@vercel/analytics": "1.6.1",
-        "@zuish/react": "workspace:*",
+        "@zalify-ui/react": "workspace:*",
         "change-case": "5.4.4",
         "effect": "3.19.19",
         "framer-motion": "12.34.3",
@@ -214,15 +214,15 @@
         "@types/node": "25.3.0",
         "@types/react": "19.2.14",
         "@types/react-dom": "19.2.3",
-        "@zuish/preset": "workspace:*",
+        "@zalify-ui/preset": "workspace:*",
         "typescript": "5.9.3",
         "velite": "0.3.1",
       },
     },
   },
   "trustedDependencies": [
-    "@zuish/react",
-    "@zuish/website",
+    "@zalify-ui/website",
+    "@zalify-ui/react",
   ],
   "overrides": {
     "caniuse-lite": "1.0.30001751",
@@ -952,19 +952,19 @@
 
     "@zag-js/vue": ["@zag-js/vue@1.31.1", "", { "dependencies": { "@zag-js/core": "1.31.1", "@zag-js/store": "1.31.1", "@zag-js/types": "1.31.1", "@zag-js/utils": "1.31.1" }, "peerDependencies": { "vue": ">=3.0.0" } }, "sha512-LcMNChb5Pi8x5uYBTq6IC6xgIMPHVhu0JpPDJipECXNQ0JqWYfv7KT+Wxf9XZytFXeohe/zhZIl2PF1k6a1tmA=="],
 
-    "@zuish/cli": ["@zuish/cli@workspace:packages/cli"],
+    "@zalify-ui/cli": ["@zalify-ui/cli@workspace:packages/cli"],
 
-    "@zuish/preset": ["@zuish/preset@workspace:packages/preset"],
+    "@zalify-ui/preset": ["@zalify-ui/preset@workspace:packages/preset"],
 
-    "@zuish/react": ["@zuish/react@workspace:components/react"],
+    "@zalify-ui/react": ["@zalify-ui/react@workspace:components/react"],
 
-    "@zuish/scripts": ["@zuish/scripts@workspace:packages/scripts"],
+    "@zalify-ui/scripts": ["@zalify-ui/scripts@workspace:packages/scripts"],
 
-    "@zuish/solid": ["@zuish/solid@workspace:components/solid"],
+    "@zalify-ui/solid": ["@zalify-ui/solid@workspace:components/solid"],
 
-    "@zuish/vue": ["@zuish/vue@workspace:components/vue"],
+    "@zalify-ui/vue": ["@zalify-ui/vue@workspace:components/vue"],
 
-    "@zuish/website": ["@zuish/website@workspace:website"],
+    "@zalify-ui/website": ["@zalify-ui/website@workspace:website"],
 
     "accepts": ["accepts@2.0.0", "", { "dependencies": { "mime-types": "^3.0.0", "negotiator": "^1.0.0" } }, "sha512-5cvg6CtKwfgdmVqY1WIiXKc3Q1bkRqGLi+2W/6ao+6Y7gu/RCwRuAhGEzh5B4KlszSuTLgZYuqFqo5bImjNKng=="],
 
@@ -2708,13 +2708,13 @@
 
     "@zag-js/vue/@zag-js/utils": ["@zag-js/utils@1.31.1", "", {}, "sha512-KLm0pmOtf4ydALbaVLboL7W98TDVxwVVLvSuvtRgV53XTjlsVopTRA5/Xmzq2NhWujDZAXv7bRV603NDgDcjSw=="],
 
-    "@zuish/solid/@storybook/addon-a11y": ["@storybook/addon-a11y@10.2.0", "", { "dependencies": { "@storybook/global": "^5.0.0", "axe-core": "^4.2.0" }, "peerDependencies": { "storybook": "^10.2.0" } }, "sha512-PJVvEr6KpuOvCr1megfp39RNvFSut6XmFxaiDKtf8kxYbD8tMYL2n/9xFcPIvozJCO4zRmug50X+OIoh0GsSGQ=="],
+    "@zalify-ui/solid/@storybook/addon-a11y": ["@storybook/addon-a11y@10.2.0", "", { "dependencies": { "@storybook/global": "^5.0.0", "axe-core": "^4.2.0" }, "peerDependencies": { "storybook": "^10.2.0" } }, "sha512-PJVvEr6KpuOvCr1megfp39RNvFSut6XmFxaiDKtf8kxYbD8tMYL2n/9xFcPIvozJCO4zRmug50X+OIoh0GsSGQ=="],
 
-    "@zuish/solid/@storybook/addon-themes": ["@storybook/addon-themes@10.2.0", "", { "dependencies": { "ts-dedent": "^2.0.0" }, "peerDependencies": { "storybook": "^10.2.0" } }, "sha512-BJsBvxqMtBcZYKVOt0S8NRMAeOBXND5mtOr3ga7jRXDGMP6/BbFo/SBJ1QKjRTsXw/rsOfm6MKWc4jwgbuj4Nw=="],
+    "@zalify-ui/solid/@storybook/addon-themes": ["@storybook/addon-themes@10.2.0", "", { "dependencies": { "ts-dedent": "^2.0.0" }, "peerDependencies": { "storybook": "^10.2.0" } }, "sha512-BJsBvxqMtBcZYKVOt0S8NRMAeOBXND5mtOr3ga7jRXDGMP6/BbFo/SBJ1QKjRTsXw/rsOfm6MKWc4jwgbuj4Nw=="],
 
-    "@zuish/solid/storybook": ["storybook@10.2.0", "", { "dependencies": { "@storybook/global": "^5.0.0", "@storybook/icons": "^2.0.1", "@testing-library/jest-dom": "^6.6.3", "@testing-library/user-event": "^14.6.1", "@vitest/expect": "3.2.4", "@vitest/spy": "3.2.4", "esbuild": "^0.18.0 || ^0.19.0 || ^0.20.0 || ^0.21.0 || ^0.22.0 || ^0.23.0 || ^0.24.0 || ^0.25.0 || ^0.26.0 || ^0.27.0", "open": "^10.2.0", "recast": "^0.23.5", "semver": "^7.7.3", "use-sync-external-store": "^1.5.0", "ws": "^8.18.0" }, "peerDependencies": { "prettier": "^2 || ^3" }, "optionalPeers": ["prettier"], "bin": "./dist/bin/dispatcher.js" }, "sha512-fIQnFtpksRRgHR1CO1onGX3djaog4qsW/c5U8arqYTkUEr2TaWpn05mIJDOBoPJFlOdqFrB4Ttv0PZJxV7avhw=="],
+    "@zalify-ui/solid/storybook": ["storybook@10.2.0", "", { "dependencies": { "@storybook/global": "^5.0.0", "@storybook/icons": "^2.0.1", "@testing-library/jest-dom": "^6.6.3", "@testing-library/user-event": "^14.6.1", "@vitest/expect": "3.2.4", "@vitest/spy": "3.2.4", "esbuild": "^0.18.0 || ^0.19.0 || ^0.20.0 || ^0.21.0 || ^0.22.0 || ^0.23.0 || ^0.24.0 || ^0.25.0 || ^0.26.0 || ^0.27.0", "open": "^10.2.0", "recast": "^0.23.5", "semver": "^7.7.3", "use-sync-external-store": "^1.5.0", "ws": "^8.18.0" }, "peerDependencies": { "prettier": "^2 || ^3" }, "optionalPeers": ["prettier"], "bin": "./dist/bin/dispatcher.js" }, "sha512-fIQnFtpksRRgHR1CO1onGX3djaog4qsW/c5U8arqYTkUEr2TaWpn05mIJDOBoPJFlOdqFrB4Ttv0PZJxV7avhw=="],
 
-    "@zuish/solid/vite-tsconfig-paths": ["vite-tsconfig-paths@6.0.5", "", { "dependencies": { "debug": "^4.1.1", "globrex": "^0.1.2", "tsconfck": "^3.0.3" }, "peerDependencies": { "vite": "*" } }, "sha512-f/WvY6ekHykUF1rWJUAbCU7iS/5QYDIugwpqJA+ttwKbxSbzNlqlE8vZSrsnxNQciUW+z6lvhlXMaEyZn9MSig=="],
+    "@zalify-ui/solid/vite-tsconfig-paths": ["vite-tsconfig-paths@6.0.5", "", { "dependencies": { "debug": "^4.1.1", "globrex": "^0.1.2", "tsconfck": "^3.0.3" }, "peerDependencies": { "vite": "*" } }, "sha512-f/WvY6ekHykUF1rWJUAbCU7iS/5QYDIugwpqJA+ttwKbxSbzNlqlE8vZSrsnxNQciUW+z6lvhlXMaEyZn9MSig=="],
 
     "anymatch/picomatch": ["picomatch@2.3.1", "", {}, "sha512-JU3teHTNjmE2VCGFzuY8EXzCDVwEqB2a8fsIvwaStHhAWJEeVd1o1QD80CU6+ZdEXXSLbSsuLwJjkCBWqRQUVA=="],
 
@@ -3196,7 +3196,7 @@
 
     "@zag-js/vue/@zag-js/core/@zag-js/dom-query": ["@zag-js/dom-query@1.31.1", "", { "dependencies": { "@zag-js/types": "1.31.1" } }, "sha512-2tCZLwSfoXm62gwl0neiAN6u5VnzUhy5wHtKbX+klqGFatnca3Bm++H9+4PHMrwUWRbPg3H5N151lKFEOQhBfQ=="],
 
-    "@zuish/solid/storybook/semver": ["semver@7.7.3", "", { "bin": { "semver": "bin/semver.js" } }, "sha512-SdsKMrI9TdgjdweUSR9MweHA4EJ8YxHn8DFaDisvhVlUOe4BF1tLD7GAj0lIqWVl+dPb/rExr0Btby5loQm20Q=="],
+    "@zalify-ui/solid/storybook/semver": ["semver@7.7.3", "", { "bin": { "semver": "bin/semver.js" } }, "sha512-SdsKMrI9TdgjdweUSR9MweHA4EJ8YxHn8DFaDisvhVlUOe4BF1tLD7GAj0lIqWVl+dPb/rExr0Btby5loQm20Q=="],
 
     "babel-plugin-jsx-dom-expressions/@babel/types/@babel/helper-validator-identifier": ["@babel/helper-validator-identifier@7.27.1", "", {}, "sha512-D2hP9eA+Sqx1kBZgzxZh0y1trbuU+JoDkiEwqhQ36nodYqJwyEIhPSdMNd7lOm/4io72luTPWH20Yda0xOuUow=="],
 

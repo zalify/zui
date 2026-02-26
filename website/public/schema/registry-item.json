@@ -1,7 +1,7 @@
 {
   "$schema": "http://json-schema.org/draft-07/schema#",
-  "title": "ZUI Registry Item",
-  "description": "Schema for ZUI component registry items. Defines the structure for components, recipes, themes, and other registry assets used by the ZUI CLI.",
+  "title": "Zalify UI Registry Item",
+  "description": "Schema for Zalify UI component registry items. Defines the structure for components, recipes, themes, and other registry assets used by the Zalify UI CLI.",
   "type": "object",
   "properties": {
     "$schema": {

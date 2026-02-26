@@ -1,8 +1,8 @@
 {
   "$schema": "http://json-schema.org/draft-07/schema#",
-  "$id": "https://zui.sh/schema/registry.json",
-  "title": "ZUI Registry",
-  "description": "Schema for ZUI component registry",
+  "$id": "https://ui.zalify.com/schema/registry.json",
+  "title": "Zalify UI Registry",
+  "description": "Schema for Zalify UI component registry",
   "type": "object",
   "required": ["$schema", "name", "homepage", "items"],
   "properties": {

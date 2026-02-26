@@ -2,7 +2,7 @@ import { Clipboard, IconButton, Input, InputGroup } from '@/components/ui'
 
 export const App = () => {
   return (
-    <Clipboard.Root value="https://zui.sh">
+    <Clipboard.Root value="https://ui.zalify.com">
       <Clipboard.Label textStyle="label">Document Link</Clipboard.Label>
       <InputGroup endElement={<ClipboardIconButton />}>
         <Clipboard.Input asChild>

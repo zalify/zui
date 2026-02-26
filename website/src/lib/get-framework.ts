@@ -10,7 +10,7 @@ const cookieSchema = z.object({
 
 export const getFramework = async (): Promise<Framework> => {
   const cookieStore = await cookies()
-  const cookieValue = cookieStore.get('zui')?.value
+  const cookieValue = cookieStore.get('zalify-ui')?.value
 
   if (!cookieValue) return 'react'
 

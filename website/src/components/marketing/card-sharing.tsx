@@ -15,7 +15,7 @@ export const CardSharing = () => {
         </Card.Description>
       </Card.Header>
       <Card.Body gap="4">
-        <Clipboard.Root value="https://zui.sh">
+        <Clipboard.Root value="https://ui.zalify.com">
           <Clipboard.Label textStyle="label">Document Link</Clipboard.Label>
           <Group attached width="full">
             <Clipboard.Input asChild>
@@ -91,18 +91,18 @@ const Member = (props: Props) => {
 
 const members = [
   {
-    name: 'Christian Schröter',
+    name: 'Ryan Zou',
     avatar: 'https://avatars.githubusercontent.com/u/10615036?v=4',
-    email: 'chris@zui.com',
+    email: 'ryan@zalify.com',
   },
   {
-    name: 'Segun Adebayo',
-    avatar: 'https://avatars.githubusercontent.com/u/6916170?v=4',
-    email: 'segun@zui.com',
+    name: 'Leo Mao',
+    avatar: 'https://avatars.githubusercontent.com/u/20615214&v=4',
+    email: 'leo@zalify.com',
   },
   {
-    name: 'Philipp Körner',
-    avatar: 'https://avatars.githubusercontent.com/u/153984143?v=4',
-    email: 'phil@zui.com',
+    name: 'ChengLei Shao',
+    avatar: 'https://avatars.githubusercontent.com/u/1624785?v=4',
+    email: 'chareice@zalify.com',
   },
 ]

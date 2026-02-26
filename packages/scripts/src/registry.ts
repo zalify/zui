@@ -129,7 +129,7 @@ const generateColors = async () => {
       `./website/public/registry/theme/colors/${type}/${id}.json`,
       JSON.stringify(
         {
-          $schema: 'https://zui.sh/schema/registry-item.json',
+          $schema: 'https://ui.zalify.com/schema/registry-item.json',
           id,
           type: 'theme',
           files,
@@ -234,7 +234,7 @@ const main = async () => {
           `./website/public/registry/components/${framework}/${id}.json`,
           JSON.stringify(
             {
-              $schema: 'https://zui.sh/schema/registry-item.json',
+              $schema: 'https://ui.zalify.com/schema/registry-item.json',
               id,
               type: 'component',
               files,

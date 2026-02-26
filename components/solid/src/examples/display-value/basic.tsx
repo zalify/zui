@@ -1,5 +1,5 @@
 import { DisplayValue } from '@/components/ui'
 
 export const App = () => {
-  return <DisplayValue value="ZUI" />
+  return <DisplayValue value="Zalify UI" />
 }

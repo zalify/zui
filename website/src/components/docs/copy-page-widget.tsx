@@ -16,7 +16,7 @@ export const CopyPageWidget = async (props: Props) => {
   const framework = await getFramework()
   const content = await transformMdxContent(doc, framework)
 
-  const pageUrl = `https://zui.sh/api/${framework}/docs/${doc.slug}`
+  const pageUrl = `https://ui.zalify.com/api/${framework}/docs/${doc.slug}`
   const prompt = encodeURIComponent(
     `Use web browsing to access links and information: ${pageUrl}\n\nI want to ask some questions`,
   )

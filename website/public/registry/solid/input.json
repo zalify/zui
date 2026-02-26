@@ -1,5 +1,5 @@
 {
-  "$schema": "https://zui.sh/schema/registry-item.json",
+  "$schema": "https://ui.zalify.com/schema/registry-item.json",
   "name": "input",
   "type": "registry:ui",
   "dependencies": ["@ark-ui/solid", "solid-js"],

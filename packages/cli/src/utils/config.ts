@@ -158,7 +158,7 @@ export const withConfig = <A, R>(effect: Effect.Effect<A, never, R>) =>
     Effect.catchAll(({ message }) =>
       Effect.sync(() => {
         p.log.error(message)
-        p.outro(`Run npx @zuish/cli init to create a new configuration.`)
+        p.outro(`Run npx @zalify-ui/cli init to create a new configuration.`)
       }),
     ),
   )
@@ -168,7 +168,7 @@ export const saveConfig = (framework: Framework) =>
     pipe(
       Effect.all([PandaConfig, TSConfig]),
       Effect.map(([pandaConfig, { aliasPrefix }]) => ({
-        $schema: 'https://zui.sh/schema/components.json',
+        $schema: 'https://ui.zalify.com/schema/components.json',
         framework,
         panda: {
           config: path.relative(process.cwd(), pandaConfig.path),

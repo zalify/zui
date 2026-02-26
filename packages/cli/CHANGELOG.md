@@ -2,4 +2,4 @@
 
 ### Added
 
-- Initial release of ZUI CLI.
+- Initial release of Zalify UI CLI.

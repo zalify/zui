@@ -101,10 +101,10 @@ const createPropsTable = (properties: Array<[string, any]>): string => {
 
 const replaceInstallationGuide = async (ctx: TransformContext): Promise<string> => {
   const capitalizedComponent = ctx.component.charAt(0).toUpperCase() + ctx.component.slice(1)
-  const replacement = `Use the ZUI CLI to add the ${capitalizedComponent} component to your project:
+  const replacement = `Use the Zalify UI CLI to add the ${capitalizedComponent} component to your project:
 
 \`\`\`bash
-npx @zuish/cli add ${ctx.component}
+npx @zalify-ui/cli add ${ctx.component}
 \`\`\``
 
   return ctx.content.replace(/<InstallationGuide[^>]*\/>/g, replacement)

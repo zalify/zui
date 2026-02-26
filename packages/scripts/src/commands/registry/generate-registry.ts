@@ -192,7 +192,7 @@ export const generateRegistry = async (options: { name: string; pattern?: string
   const pattern = options.pattern || 'src/components/ui/*.tsx'
   console.log(`🔍 Scanning files matching: ${pattern}`)
 
-  // Extract framework from registry name (e.g., '@zuish/solid' -> 'solid')
+  // Extract framework from registry name (e.g., '@zalify-ui/solid' -> 'solid')
   const framework: Framework = options.name.includes('solid') ? 'solid' : 'react'
 
   const files = await fg(pattern, {
@@ -256,9 +256,9 @@ export const generateRegistry = async (options: { name: string; pattern?: string
   const allItems = [...items, ...recipeItems].sort((a, b) => a.name.localeCompare(b.name))
 
   const registry: Registry = {
-    $schema: 'https://zui.sh/schema/registry.json',
+    $schema: 'https://ui.zalify.com/schema/registry.json',
     name: options.name,
-    homepage: 'https://zui.sh',
+    homepage: 'https://ui.zalify.com',
     items: allItems,
   }
 

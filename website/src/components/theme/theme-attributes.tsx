@@ -2,7 +2,7 @@ import { cookies } from 'next/headers'
 
 export const ThemeAttributes = async () => {
   const cookieStore = await cookies()
-  const state = cookieStore.get('zui')
+  const state = cookieStore.get('zalify-ui')
 
   const { accentColor, grayColor } = state?.value
     ? JSON.parse(state.value).state

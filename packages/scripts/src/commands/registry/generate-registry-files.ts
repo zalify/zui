@@ -71,7 +71,7 @@ export const generateRegistryFiles = async (options?: { outputDir?: string }) =>
       )
 
       const output: RegistryItem = {
-        $schema: 'https://zui.sh/schema/registry-item.json',
+        $schema: 'https://ui.zalify.com/schema/registry-item.json',
         name: item.name,
         type: item.type,
         dependencies: item.dependencies,

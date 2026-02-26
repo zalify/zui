@@ -10,12 +10,12 @@ export const PandaConfigInvalid = (configPath: string) => ({
 
 export const ConfigNotFound = (configPath: string) => ({
   _tag: 'ConfigNotFound' as const,
-  message: `No ZUI configuration found at ${configPath}.`,
+  message: `No Zalify UI configuration found at ${configPath}.`,
 })
 
 export const ConfigInvalid = (configPath: string) => ({
   _tag: 'ConfigInvalid' as const,
-  message: `ZUI configuration at ${configPath} is invalid or outdated.`,
+  message: `Zalify UI configuration at ${configPath} is invalid or outdated.`,
 })
 
 export const TSConfigNotFound = (configPath: string) => ({

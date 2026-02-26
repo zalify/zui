@@ -11,13 +11,13 @@ export const CardTabs = () => {
         </Tabs.List>
         <Tabs.Content value="login">
           <Card.Header>
-            <Card.Title>Welcome to ZUI</Card.Title>
+            <Card.Title>Welcome to Zalify UI</Card.Title>
             <Card.Description>Enter your credentials to login to your account.</Card.Description>
           </Card.Header>
           <Card.Body gap="4">
             <Field.Root>
               <Field.Label>Username</Field.Label>
-              <Input defaultValue="ZuiDevs" />
+              <Input defaultValue="zalifyui" />
             </Field.Root>
             <Field.Root>
               <Field.Label>Password</Field.Label>

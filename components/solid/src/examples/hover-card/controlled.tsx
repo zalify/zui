@@ -11,8 +11,8 @@ export const App = () => {
     <HoverCard.Root open={open()} onOpenChange={(e) => setOpen(e.open)}>
       <HoverCard.Trigger
         asChild={(triggerProps) => (
-          <Link href="https://x.com/ZuiDevs/" target="_blank" {...triggerProps()}>
-            @ZuiDevs
+          <Link href="https://x.com/zalifyui/" target="_blank" {...triggerProps()}>
+            @zalifyui
           </Link>
         )}
       />
@@ -29,7 +29,7 @@ export const App = () => {
               </Avatar.Root>
               <Stack gap="3">
                 <Stack gap="1">
-                  <Text fontWeight="semibold">@ZuiDevs</Text>
+                  <Text fontWeight="semibold">@zalifyui</Text>
                   <Text color="fg.muted">Principal Software Engineer working at Pyck.ai</Text>
                 </Stack>
                 <HStack gap="1" color="fg.subtle">

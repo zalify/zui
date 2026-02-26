@@ -99,7 +99,7 @@ const useThemeStore = create<State & Actions>()(
       setRadius: (radius) => set(() => ({ radius })),
     }),
     {
-      name: 'zui',
+      name: 'zalify-ui',
       storage: {
         getItem: async (name: string) => {
           const cookie = await cookieStore.get(name)

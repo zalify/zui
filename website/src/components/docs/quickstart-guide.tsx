@@ -5,8 +5,8 @@ import { NextJsIcon, SolidStartIcon } from '../icons'
 
 export const QuickstartGuide = () => {
   const frameworks = [
-    { name: 'Next.js', icon: NextJsIcon, slug: 'zui-nextjs' },
-    { name: 'Solid Start', icon: SolidStartIcon, slug: 'zui-solid-start' },
+    { name: 'Next.js', icon: NextJsIcon, slug: 'zalify-ui-nextjs' },
+    { name: 'Solid Start', icon: SolidStartIcon, slug: 'zalify-ui-solid-start' },
     // { name: 'Nuxt', icon: NuxtIcon, slug: 'templates/vue/nuxt' },
   ]
   return (

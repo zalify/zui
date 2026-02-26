@@ -1,5 +1,4 @@
 import type { Metadata } from 'next'
-import Script from 'next/script'
 import { ThemeProvider } from 'next-themes'
 import type { PropsWithChildren } from 'react'
 import { Suspense } from 'react'
@@ -27,7 +26,6 @@ export default async function RootLayout(props: PropsWithChildren) {
     >
       <head>
         <ThemeTokens />
-        <Script src="https://plausible.io/js/plausible.js" data-domain="zui.sh" />
         <Suspense fallback={null}>
           <ThemeAttributes />
         </Suspense>
@@ -45,11 +43,11 @@ export default async function RootLayout(props: PropsWithChildren) {
 }
 
 export const metadata: Metadata = {
-  metadataBase: new URL('https://zui.sh'),
-  applicationName: 'ZUI',
+  metadataBase: new URL('https://ui.zalify.com'),
+  applicationName: 'Zalify UI',
   title: {
-    default: 'Home | ZUI',
-    template: '%s | ZUI',
+    default: 'Home | Zalify UI',
+    template: '%s | Zalify UI',
   },
   description:
     'Beautifully designed components built with Ark UI and Panda CSS that work with a variety of JS frameworks.',
@@ -61,11 +59,11 @@ export const metadata: Metadata = {
   openGraph: {
     type: 'website',
     locale: 'en_US',
-    url: 'https://zui.sh',
+    url: 'https://ui.zalify.com',
     description:
       'Beautifully designed components built with Ark UI and Panda CSS that work with a variety of JS frameworks.',
   },
   twitter: {
-    creator: '@ZuiDevs',
+    creator: '@zalifyui',
   },
 }

@@ -24,4 +24,4 @@ jobs:
           file: ./Dockerfile
           push: true
           tags: |
-            zalify/zui:latest
+            zalify/zalify-ui:latest

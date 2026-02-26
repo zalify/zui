@@ -2,8 +2,8 @@ import type { MetadataRoute } from 'next'
 
 export default function manifest(): MetadataRoute.Manifest {
   return {
-    name: 'ZUI',
-    short_name: 'ZUI',
+    name: 'Zalify UI',
+    short_name: 'Zalify UI',
     description:
       'Beautifully designed components built with Ark UI and Panda CSS that work with avariety of JS frameworks.',
     start_url: '/',

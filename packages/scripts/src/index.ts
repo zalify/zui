@@ -7,7 +7,7 @@ process.on('SIGINT', () => process.exit(0))
 process.on('SIGTERM', () => process.exit(0))
 
 async function main() {
-  const program = new Command().name('ZUI / Scripts')
+  const program = new Command().name('Zalify UI / Scripts')
 
   program.addCommand(registry).addCommand(typedoc).parse()
 }

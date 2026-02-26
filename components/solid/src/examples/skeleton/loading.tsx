@@ -9,7 +9,7 @@ export const App = () => {
   return (
     <Stack align="flex-start" gap="4">
       <Skeleton loading={loading()}>
-        <Text>ZUI rocks 🚀</Text>
+        <Text>Zalify UI rocks 🚀</Text>
       </Skeleton>
       <Button variant="surface" onClick={() => setLoading((c) => !c)}>
         Toggle

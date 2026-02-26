@@ -6,7 +6,7 @@ import { ManualIntallationGuide } from './manual-installation-guide'
 
 export const InstallationGuide = () => {
   const { component } = getServerContext()
-  const sourceCode: SourceCode = { code: `npx @zuish/cli add ${component}`, lang: 'bash' }
+  const sourceCode: SourceCode = { code: `npx @zalify-ui/cli add ${component}`, lang: 'bash' }
 
   return (
     <Tabs.Root defaultValue="cli" gap="6">

@@ -22,8 +22,8 @@ export const App = () => {
             <Dialog.Body>
               <HoverCard.Root>
                 <HoverCard.Trigger asChild>
-                  <Link href="https://x.com/ZuiDevs/" target="_blank">
-                    @ZuiDevs
+                  <Link href="https://x.com/zalifyui/" target="_blank">
+                    @zalifyui
                   </Link>
                 </HoverCard.Trigger>
                 <HoverCard.Positioner>
@@ -39,7 +39,7 @@ export const App = () => {
                       <Stack gap="3">
                         <Stack gap="1">
                           <Text textStyle="sm" fontWeight="semibold">
-                            @ZuiDevs
+                            @zalifyui
                           </Text>
                           <Text textStyle="sm" color="fg.muted">
                             Principal Software Engineer working at Pyck.ai

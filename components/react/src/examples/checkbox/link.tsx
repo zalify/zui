@@ -9,7 +9,7 @@ export const App = () => {
       </Checkbox.Control>
       <Checkbox.Label>
         I agree to the{' '}
-        <Link href="https:/zui.sh" target="_blank">
+        <Link href="https://ui.zalify.com" target="_blank">
           terms and conditions
         </Link>
       </Checkbox.Label>

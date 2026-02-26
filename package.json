@@ -29,8 +29,8 @@
     "lefthook": "2.1.1"
   },
   "trustedDependencies": [
-    "@zuish/react",
-    "@zuish/website"
+    "@zalify-ui/react",
+    "@zalify-ui/website"
   ],
   "packageManager": "bun@1.3.9",
   "resolutions": {

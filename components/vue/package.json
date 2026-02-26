@@ -1,5 +1,5 @@
 {
-  "name": "@zuish/vue",
+  "name": "@zalify-ui/vue",
   "type": "module",
   "private": true,
   "scripts": {
@@ -14,7 +14,7 @@
     "@pandacss/dev": "1.8.2",
     "@pandacss/preset-base": "1.8.2",
     "@pandacss/preset-panda": "1.8.2",
-    "@zuish/preset": "workspace:*",
-    "@zuish/scripts": "workspace:*"
+    "@zalify-ui/preset": "workspace:*",
+    "@zalify-ui/scripts": "workspace:*"
   }
 }

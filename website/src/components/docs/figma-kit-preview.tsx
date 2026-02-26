@@ -28,14 +28,14 @@ export const FigmaKitPreview = (props: Props) =>
       href=""
       target="_blank"
       rel="noreferrer"
-      aria-label="Preview ZUI Figma Kit Pro"
+      aria-label="Preview Zalify UI Figma Kit Pro"
       className="not-prose"
     >
       <AspectRatio ratio={16 / 9}>
         <Image
           fill
           src={coverImage}
-          alt="ZUI Figma Kit Pro Cover Image"
+          alt="Zalify UI Figma Kit Pro Cover Image"
           style={{
             objectFit: 'cover',
           }}

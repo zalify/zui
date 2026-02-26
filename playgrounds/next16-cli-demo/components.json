@@ -1,5 +1,5 @@
 {
-  "$schema": "https://zui.sh/schema/components.json",
+  "$schema": "https://ui.zalify.com/schema/components.json",
   "framework": "react",
   "panda": {
     "config": "panda.config.ts"

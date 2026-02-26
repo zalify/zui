@@ -1,7 +1,7 @@
 {
-  "$schema": "https://zui.sh/schema/registry.json",
-  "name": "@zuish/preset",
-  "homepage": "https://zui.sh",
+  "$schema": "https://ui.zalify.com/schema/registry.json",
+  "name": "@zalify-ui/preset",
+  "homepage": "https://ui.zalify.com",
   "items": [
     {
       "name": "__init",

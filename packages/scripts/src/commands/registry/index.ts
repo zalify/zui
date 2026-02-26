@@ -10,10 +10,10 @@ export const registry = new Command('registry')
   .addCommand(
     new Command('prepare')
       .description('prepare registry.json from component files')
-      .requiredOption('--name <name>', 'registry name (e.g., @zuish/react)')
+      .requiredOption('--name <name>', 'registry name (e.g., @zalify-ui/react)')
       .argument('[pattern]', 'glob pattern for component files (e.g., src/components/ui/*.tsx)')
       .action(async (pattern, options) => {
-        p.intro(`${color.bgCyan(color.black(' ZUI '))}`)
+        p.intro(`${color.bgCyan(color.black(' Zalify UI '))}`)
 
         const program = Effect.promise(() =>
           generateRegistry({ name: options.name, pattern }),
@@ -23,7 +23,7 @@ export const registry = new Command('registry')
             Effect.sync(() => {
               p.log.error(`An error occurred while preparing the registry: ${error}`)
               p.outro(
-                `You can report this issue at: ${color.underline(color.cyan('https://github.com/zalify/zui/issues'))}`,
+                `You can report this issue at: ${color.underline(color.cyan('https://github.com/zalify/zalify-ui/issues'))}`,
               )
             }),
           ),
@@ -37,7 +37,7 @@ export const registry = new Command('registry')
       .description('build individual registry JSON files from registry.json')
       .argument('[output-dir]', 'output subdirectory within the registry (e.g., react)')
       .action(async (outputDir?: string) => {
-        p.intro(`${color.bgCyan(color.black(' ZUI '))}`)
+        p.intro(`${color.bgCyan(color.black(' Zalify UI '))}`)
 
         const program = Effect.promise(() => generateRegistryFiles({ outputDir })).pipe(
           Effect.tap(() => p.outro('Registry files built successfully! 🎉')),
@@ -45,7 +45,7 @@ export const registry = new Command('registry')
             Effect.sync(() => {
               p.log.error(`An error occurred while building registry files: ${error}`)
               p.outro(
-                `You can report this issue at: ${color.underline(color.cyan('https://github.com/zalify/zui/issues'))}`,
+                `You can report this issue at: ${color.underline(color.cyan('https://github.com/zalify/zalify-ui/issues'))}`,
               )
             }),
           ),

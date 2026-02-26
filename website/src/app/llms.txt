@@ -1,14 +1,14 @@
-# ZUI
+# Zalify UI
 
 > Beautifully-designed, accessible components built with Ark UI and Panda CSS
 
-ZUI is a component system and code distribution platform that gives you complete ownership of your UI code. Built on Ark UI (headless components) and Panda CSS (build-time CSS-in-JS), ZUI supports React and Solid.js.
+Zalify UI is a component system and code distribution platform that gives you complete ownership of your UI code. Built on Ark UI (headless components) and Panda CSS (build-time CSS-in-JS), Zalify UI supports React and Solid.js.
 
-**Website:** https://zui.sh
+**Website:** https://ui.zalify.com
 
-## What is ZUI?
+## What is Zalify UI?
 
-ZUI takes a different approach from traditional component libraries. Instead of installing packages and importing components, you copy the source code directly into your project. This gives you full control, easy customization, and the freedom to modify components without waiting for library maintainers.
+Zalify UI takes a different approach from traditional component libraries. Instead of installing packages and importing components, you copy the source code directly into your project. This gives you full control, easy customization, and the freedom to modify components without waiting for library maintainers.
 
 ### Core Principles
 
@@ -28,7 +28,7 @@ ZUI takes a different approach from traditional component libraries. Instead of 
 **3. Code Distribution**
 - Components distributed as source code, not NPM packages
 - Two ways to get components:
-  - **CLI:** `npx @zuish/cli add [component]`
+  - **CLI:** `npx @zalify-ui/cli add [component]`
   - **Docs:** Copy directly from the website
 - You own the code once it's in your project
 
@@ -62,14 +62,14 @@ Set up Panda CSS first: https://panda-css.com/docs/overview/getting-started
 npm install @ark-ui/react lucide-react
 ```
 
-2. **Initialize ZUI:**
+2. **Initialize Zalify UI:**
 ```bash
-npx @zuish/cli init
+npx @zalify-ui/cli init
 ```
 
 3. **Add components:**
 ```bash
-npx @zuish/cli add button
+npx @zalify-ui/cli add button
 ```
 
 ### Framework-Specific Packages
@@ -155,7 +155,7 @@ npx @zuish/cli add button
 
 ## Theming System
 
-ZUI extends the Panda CSS preset with a systematic design approach focused on consistency and visual harmony.
+Zalify UI extends the Panda CSS preset with a systematic design approach focused on consistency and visual harmony.
 
 ### Component Sizing
 
@@ -183,7 +183,7 @@ Five consistent variants across all components:
 
 ### Color System
 
-ZUI uses **Radix Colors** instead of traditional 50-950 scales:
+Zalify UI uses **Radix Colors** instead of traditional 50-950 scales:
 - 12 shades per color per mode (24 total per color)
 - Finer control and greater flexibility
 - Optimized for both light and dark modes
@@ -215,7 +215,7 @@ ZUI uses **Radix Colors** instead of traditional 50-950 scales:
 
 ### Why Source Code Distribution?
 
-Traditional component libraries lock you into their APIs and update cycles. ZUI solves this by giving you the code:
+Traditional component libraries lock you into their APIs and update cycles. Zalify UI solves this by giving you the code:
 
 **Problems with NPM packages:**
 - Need to wrap components for customization
@@ -223,7 +223,7 @@ Traditional component libraries lock you into their APIs and update cycles. ZUI 
 - Mix incompatible APIs from different libraries
 - Wait for maintainers to fix bugs
 
-**ZUI solution:**
+**Zalify UI solution:**
 - Edit component recipes directly
 - Full control over implementation
 - No version lock-in
@@ -231,7 +231,7 @@ Traditional component libraries lock you into their APIs and update cycles. ZUI 
 
 ### Component Structure
 
-Every ZUI component consists of:
+Every Zalify UI component consists of:
 1. **Component file** - The React/Vue/Solid implementation
 2. **Recipe file** - Panda CSS styling configuration
 3. **Ark UI foundation** - Headless accessibility and behavior
@@ -243,7 +243,7 @@ This separation allows you to:
 
 ### Customization Workflow
 
-1. Add component via CLI: `npx @zuish/cli add button`
+1. Add component via CLI: `npx @zalify-ui/cli add button`
 2. Component code lands in your project
 3. Edit the recipe in your Panda config to change styles
 4. Modify component implementation for behavior changes
@@ -258,7 +258,7 @@ This separation allows you to:
 
 ## Best Practices
 
-### When to Use ZUI
+### When to Use Zalify UI
 - You want full control over component code
 - You need a consistent, beautiful design system out of the box
 - You're building with React or Solid.js
@@ -280,16 +280,16 @@ This separation allows you to:
 
 ## Resources
 
-- **Documentation:** https://zui.sh
-- **GitHub:** https://github.com/zalify/zui
+- **Documentation:** https://ui.zalify.com
+- **GitHub:** https://github.com/zalify/zalify-ui
 - **Ark UI Docs:** https://ark-ui.com
 - **Panda CSS Docs:** https://panda-css.com
-- **Creator:** [@ZuiDevs](https://x.com/ZuiDevs)
+- **Creator:** [@zalifyui](https://x.com/zalifyui)
 
 ## License
 
-MIT © ZuiDevs
+MIT © zalifyui
 
 ---
 
-*This file is optimized for AI systems to quickly understand ZUI's architecture, components, and philosophy. For human-readable documentation, visit https://zui.sh*
+*This file is optimized for AI systems to quickly understand Zalify UI's architecture, components, and philosophy. For human-readable documentation, visit https://ui.zalify.com*

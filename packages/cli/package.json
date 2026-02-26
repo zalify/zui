@@ -1,28 +1,28 @@
 {
-  "name": "@zuish/cli",
+  "name": "@zalify-ui/cli",
   "version": "1.0.7",
-  "description": "CLI tool for ZUI components",
+  "description": "CLI tool for Zalify UI components",
   "type": "module",
   "bin": {
-    "zui": "dist/index.js"
+    "zalify-ui": "dist/index.js"
   },
   "publishConfig": {
     "access": "public"
   },
   "license": "MIT",
   "author": {
-    "name": "ZuiDevs",
-    "url": "https://x.com/ZuiDevs"
+    "name": "zalifyui",
+    "url": "https://x.com/zalifyui"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/zalify/zui.git",
+    "url": "https://github.com/zalify/zalify-ui.git",
     "directory": "packages/cli"
   },
   "bugs": {
-    "url": "https://github.com/zalify/zui/issues"
+    "url": "https://github.com/zalify/zalify-ui/issues"
   },
-  "homepage": "https://zui.sh",
+  "homepage": "https://ui.zalify.com",
   "files": [
     "dist"
   ],
@@ -34,7 +34,7 @@
     "ark",
     "react",
     "solid",
-    "zui"
+    "zalify-ui"
   ],
   "exports": {
     ".": {

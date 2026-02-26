@@ -11,7 +11,7 @@ export const GithubButton = (props: ButtonProps) => (
     asChild
     {...props}
   >
-    <a href="https://github.com/zalify/zui" target="_blank" rel="noopener noreferrer">
+    <a href="https://github.com/zalify/zalify-ui" target="_blank" rel="noopener noreferrer">
       <Icon>
         <SiGithub />
       </Icon>

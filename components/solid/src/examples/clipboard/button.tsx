@@ -2,7 +2,7 @@ import { Button, Clipboard } from '@/components/ui'
 
 export const App = () => {
   return (
-    <Clipboard.Root value="https://zui.sh">
+    <Clipboard.Root value="https://ui.zalify.com">
       <Clipboard.Trigger
         asChild={(triggerProps) => (
           <Button variant="surface" size="sm" {...triggerProps()}>

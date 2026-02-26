@@ -10,7 +10,7 @@ process.on('SIGTERM', () => process.exit(0))
 
 async function main() {
   const program = new Command()
-    .name('ZUI')
+    .name('Zalify UI')
     .description('Build your own Design System')
     .version(packageJson.version || '1.0.0', '-v, --version', 'display the version number')
 

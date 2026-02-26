@@ -22,7 +22,7 @@ const GLOBALS_CONTENT = '@layer reset, base, tokens, recipes, utilities;\n'
 const setupPanda = (packageManager: PackageManager) =>
   Effect.try({
     try: () => {
-      // Skip if panda is already initialized — makes zui init idempotent
+      // Skip if panda is already initialized — makes zalify-ui init idempotent
       // and avoids package manager errors in workspaces (e.g. workspace: protocol)
       if (existsSync(join(process.cwd(), 'panda.config.ts'))) return
 
@@ -85,10 +85,10 @@ const defaultInitConfig = {
 }
 
 export const init = new Command('init')
-  .description('initialize zui in your project')
+  .description('initialize zalify-ui in your project')
   .option('--default', 'use default init values without prompts', false)
   .action(async (opts) => {
-    p.intro(`${color.bgCyan(color.black(' ZUI '))}`)
+    p.intro(`${color.bgCyan(color.black(' Zalify UI '))}`)
 
     const initConfig = opts.default ? Effect.succeed(defaultInitConfig) : promptInitConfig()
 
@@ -118,12 +118,12 @@ export const init = new Command('init')
           ),
         ),
       ),
-      Effect.tap(() => p.outro(`ZUI has been initialized successfully! 🎉`)),
+      Effect.tap(() => p.outro(`Zalify UI has been initialized successfully! 🎉`)),
       Effect.catchAll(() =>
         Effect.sync(() => {
-          p.log.error('An error occurred while initializing ZUI.')
+          p.log.error('An error occurred while initializing Zalify UI.')
           p.outro(
-            `You can report this issue at: ${color.underline(color.cyan('https://github.com/zalify/zui/issues'))}`,
+            `You can report this issue at: ${color.underline(color.cyan('https://github.com/zalify/zalify-ui/issues'))}`,
           )
         }),
       ),

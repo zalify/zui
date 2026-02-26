@@ -1,10 +1,10 @@
 {
-  "name": "@zuish/preset",
+  "name": "@zalify-ui/preset",
   "version": "1.0.0",
   "main": "src/index.ts",
   "private": true,
   "scripts": {
-    "registry:prepare": "scripts registry prepare --name @zuish/react 'src/theme/colors/*.ts'",
+    "registry:prepare": "scripts registry prepare --name @zalify-ui/react 'src/theme/colors/*.ts'",
     "registry:build-react": "scripts registry build react",
     "registry:build-solid": "scripts registry build solid"
   },
@@ -13,7 +13,7 @@
   },
   "devDependencies": {
     "@pandacss/dev": "1.8.2",
-    "@zuish/scripts": "workspace:*",
+    "@zalify-ui/scripts": "workspace:*",
     "@radix-ui/colors": "3.0.0",
     "typescript": "5.9.3"
   }

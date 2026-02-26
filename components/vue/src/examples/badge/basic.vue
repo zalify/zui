@@ -3,5 +3,5 @@ import { Badge } from "@/components/ui";
 </script>
 
 <template>
-  <Badge>ZUI</Badge>
+  <Badge>Zalify UI</Badge>
 </template>

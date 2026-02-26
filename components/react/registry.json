@@ -1,7 +1,7 @@
 {
-  "$schema": "https://zui.sh/schema/registry.json",
-  "name": "@zuish/react",
-  "homepage": "https://zui.sh",
+  "$schema": "https://ui.zalify.com/schema/registry.json",
+  "name": "@zalify-ui/react",
+  "homepage": "https://ui.zalify.com",
   "items": [
     {
       "name": "absolute-center",
@@ -558,7 +558,12 @@
     {
       "name": "file-upload",
       "type": "registry:ui",
-      "dependencies": ["@ark-ui/react", "lucide-react", "react", "@/components"],
+      "dependencies": [
+        "@ark-ui/react",
+        "lucide-react",
+        "react",
+        "@/components"
+      ],
       "files": [
         {
           "path": "src/components/ui/file-upload.tsx",
@@ -1418,7 +1423,12 @@
           "exports": "export { Toaster, toaster } from './toast'"
         }
       ],
-      "registryDependencies": ["close-button", "icon", "spinner", "toast-recipe"]
+      "registryDependencies": [
+        "close-button",
+        "icon",
+        "spinner",
+        "toast-recipe"
+      ]
     },
     {
       "name": "toast-recipe",

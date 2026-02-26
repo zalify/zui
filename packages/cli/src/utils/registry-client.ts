@@ -88,7 +88,7 @@ const fetchRegistryItem = (
   })
 
 const $fetch = createFetch({
-  baseURL: 'https://zui.sh/registry',
+  baseURL: 'https://ui.zalify.com/registry',
   throw: true,
   schema: createSchema({
     '/:framework/index': { output: registryIndexList },
