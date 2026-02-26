@@ -57,7 +57,7 @@ export const App = () => {
               </HoverCard.Root>
             </Dialog.Body>
             <Dialog.Footer>
-              <Dialog.ActionTrigger asChild>
+              <Dialog.ActionTrigger>
                 <Button variant="outline">Close</Button>
               </Dialog.ActionTrigger>
             </Dialog.Footer>

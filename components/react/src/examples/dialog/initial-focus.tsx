@@ -30,10 +30,10 @@ export const App = () => {
               </Field.Root>
             </Dialog.Body>
             <Dialog.Footer>
-              <Dialog.ActionTrigger asChild>
+              <Dialog.ActionTrigger>
                 <Button variant="outline">Cancel</Button>
               </Dialog.ActionTrigger>
-              <Dialog.ActionTrigger asChild>
+              <Dialog.ActionTrigger>
                 <Button>Save</Button>
               </Dialog.ActionTrigger>
             </Dialog.Footer>

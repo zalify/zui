@@ -21,10 +21,10 @@ export const App = () => {
             </Dialog.Header>
             <Dialog.Body>{/* Content */}</Dialog.Body>
             <Dialog.Footer>
-              <Dialog.ActionTrigger asChild>
+              <Dialog.ActionTrigger>
                 <Button variant="outline">Cancel</Button>
               </Dialog.ActionTrigger>
-              <Dialog.ActionTrigger asChild>
+              <Dialog.ActionTrigger>
                 <Button>Save</Button>
               </Dialog.ActionTrigger>
             </Dialog.Footer>

@@ -21,7 +21,7 @@ export const App = () => {
               This popover is inside a dialog. Click the button below to open the
             </Dialog.Body>
             <Dialog.Footer>
-              <Dialog.ActionTrigger asChild>
+              <Dialog.ActionTrigger>
                 <Button variant="outline">Close</Button>
               </Dialog.ActionTrigger>
               <Popover.Root>

@@ -1,5 +1,5 @@
-import { Portal } from '@ark-ui/react/portal'
-import { Button, CloseButton, Dialog } from '@zalify-ui/react'
+import { Portal } from "@ark-ui/react/portal";
+import { Button, CloseButton, Dialog } from "@zalify-ui/react";
 
 export const App = () => {
   return (
@@ -14,17 +14,17 @@ export const App = () => {
             <Dialog.Header>
               <Dialog.Title>Are you sure?</Dialog.Title>
               <Dialog.Description>
-                This action cannot be undone. This will permanently delete your account and remove
-                your data from our systems.
+                This action cannot be undone. This will permanently delete your
+                account and remove your data from our systems.
               </Dialog.Description>
             </Dialog.Header>
             <Dialog.Footer>
-              <Dialog.ActionTrigger asChild>
+              <Dialog.ActionTrigger>
                 <Button colorPalette="gray" variant="outline">
                   Cancel
                 </Button>
               </Dialog.ActionTrigger>
-              <Dialog.ActionTrigger asChild>
+              <Dialog.ActionTrigger>
                 <Button colorPalette="red">Delete</Button>
               </Dialog.ActionTrigger>
             </Dialog.Footer>
@@ -35,5 +35,5 @@ export const App = () => {
         </Dialog.Positioner>
       </Portal>
     </Dialog.Root>
-  )
-}
+  );
+};
