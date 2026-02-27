@@ -1,0 +1,23 @@
+{
+  "Root": {
+    "props": {
+      "align": {
+        "type": "ConditionalValue<CSSProperties['alignItems']>",
+        "isRequired": false
+      },
+      "justify": {
+        "type": "ConditionalValue<CSSProperties['justifyContent']>",
+        "isRequired": false
+      },
+      "direction": {
+        "type": "ConditionalValue<CSSProperties['flexDirection']>",
+        "defaultValue": "'column'",
+        "isRequired": false
+      },
+      "gap": {
+        "type": "ConditionalValue<CSSProperties['gap']>",
+        "isRequired": false
+      }
+    }
+  }
+}

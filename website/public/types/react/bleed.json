@@ -1,0 +1,16 @@
+{
+  "Root": {
+    "props": {
+      "inline": {
+        "type": "ConditionalValue<CSSProperties['marginInline']>",
+        "isRequired": false,
+        "description": "The negative margin on the inline axis."
+      },
+      "block": {
+        "type": "ConditionalValue<CSSProperties['marginBlock']>",
+        "isRequired": false,
+        "description": "The negative margin on the block axis."
+      }
+    }
+  }
+}

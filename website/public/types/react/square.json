@@ -1,0 +1,11 @@
+{
+  "Root": {
+    "props": {
+      "size": {
+        "type": "ConditionalValue<CSSProperties['width']>",
+        "isRequired": false,
+        "description": "The size of the square."
+      }
+    }
+  }
+}

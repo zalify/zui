@@ -1,0 +1,16 @@
+{
+  "Root": {
+    "props": {
+      "name": {
+        "type": "ConditionalValue<Token<'containerNames'> | CSSProperties['containerName']>",
+        "isRequired": false,
+        "description": "The name of the container for container queries."
+      },
+      "type": {
+        "type": "ConditionalValue<CSSProperties['containerType']>",
+        "isRequired": false,
+        "description": "The container type (e.g. 'inline-size', 'size')."
+      }
+    }
+  }
+}

@@ -6,7 +6,7 @@ const componentRegistry = new Map()
 Object.entries(Examples).forEach(([componentName, componentExamples]) => {
   if (typeof componentExamples === 'object') {
     Object.entries(componentExamples).forEach(([exampleName, ExampleComponent]) => {
-      const key = `${componentName}-${exampleName}`
+      const key = `${componentName.toLowerCase()}-${exampleName.toLowerCase()}`
       componentRegistry.set(key, ExampleComponent)
     })
   }
@@ -18,6 +18,6 @@ interface Props {
 }
 
 export const getComponentExample = ({ component, name }: Props) => {
-  const key = `${pascalCase(component)}-${camelCase(name)}`
+  const key = `${pascalCase(component).toLowerCase()}-${camelCase(name).toLowerCase()}`
   return componentRegistry.get(key)
 }

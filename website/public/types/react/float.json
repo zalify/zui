@@ -1,0 +1,26 @@
+{
+  "Root": {
+    "props": {
+      "offsetX": {
+        "type": "ConditionalValue<Token<'spacing'> | CSSProperties['left']>",
+        "isRequired": false,
+        "description": "The horizontal offset of the element."
+      },
+      "offsetY": {
+        "type": "ConditionalValue<Token<'spacing'> | CSSProperties['top']>",
+        "isRequired": false,
+        "description": "The vertical offset of the element."
+      },
+      "offset": {
+        "type": "ConditionalValue<Token<'spacing'> | CSSProperties['top']>",
+        "isRequired": false,
+        "description": "The offset of the element in both directions."
+      },
+      "placement": {
+        "type": "'bottom-end' | 'bottom-start' | 'top-end' | 'top-start' | 'bottom-center' | 'top-center' | 'middle-center' | 'middle-end' | 'middle-start'",
+        "isRequired": false,
+        "description": "The placement of the floating element."
+      }
+    }
+  }
+}

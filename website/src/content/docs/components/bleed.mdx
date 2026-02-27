@@ -1,0 +1,26 @@
+---
+title: Bleed
+description: A layout component that allows content to extend beyond its parent's padding.
+metaDescription: Bleed layout component for extending content beyond parent padding boundaries. Use inline and block props to create full-bleed sections within padded containers.
+category: layout
+---
+
+<ComponentExample name="basic" />
+
+## Usage
+
+```tsx
+import { Bleed, Box } from '@zalify-ui/react'
+```
+
+```tsx
+<Box p="8">
+  <Bleed inline="8">
+    <div>This content bleeds into the padding</div>
+  </Bleed>
+</Box>
+```
+
+## Props
+
+<PropsTable />

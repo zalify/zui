@@ -1,0 +1,22 @@
+---
+title: Box
+description: The most fundamental layout component that maps directly to a div with style props.
+metaDescription: Box is the foundational layout component for building UIs. It renders a div with full access to style props for spacing, color, typography, and more.
+category: layout
+---
+
+<ComponentExample name="basic" />
+
+## Usage
+
+```tsx
+import { Box } from '@zalify-ui/react'
+```
+
+```tsx
+<Box bg="gray.subtle.bg" p="4" borderRadius="l2">
+  Content
+</Box>
+```
+
+Box accepts all style props including `p`, `m`, `bg`, `color`, `borderRadius`, and any other CSS property supported by the design system.

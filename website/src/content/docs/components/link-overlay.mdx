@@ -1,0 +1,22 @@
+---
+title: Link Overlay
+description: A layout component that stretches a link over its parent container to make the entire area clickable.
+metaDescription: LinkOverlay layout component for making entire containers clickable. Stretches a link across its relative-positioned parent for card-style click targets.
+category: layout
+---
+
+<ComponentExample name="basic" />
+
+## Usage
+
+```tsx
+import { Box, LinkOverlay } from '@zalify-ui/react'
+```
+
+```tsx
+<Box position="relative">
+  <h3>Card Title</h3>
+  <p>Card description</p>
+  <LinkOverlay href="/details">Read more</LinkOverlay>
+</Box>
+```

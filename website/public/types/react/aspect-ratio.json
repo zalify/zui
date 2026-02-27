@@ -1,0 +1,11 @@
+{
+  "Root": {
+    "props": {
+      "ratio": {
+        "type": "ConditionalValue<number>",
+        "isRequired": false,
+        "description": "The aspect ratio of the container (e.g. 16/9, 4/3)."
+      }
+    }
+  }
+}

@@ -1,0 +1,36 @@
+{
+  "Root": {
+    "props": {
+      "colSpan": {
+        "type": "ConditionalValue<number>",
+        "isRequired": false,
+        "description": "The number of columns the item spans."
+      },
+      "rowSpan": {
+        "type": "ConditionalValue<number>",
+        "isRequired": false,
+        "description": "The number of rows the item spans."
+      },
+      "colStart": {
+        "type": "ConditionalValue<number>",
+        "isRequired": false,
+        "description": "The column start position."
+      },
+      "rowStart": {
+        "type": "ConditionalValue<number>",
+        "isRequired": false,
+        "description": "The row start position."
+      },
+      "colEnd": {
+        "type": "ConditionalValue<number>",
+        "isRequired": false,
+        "description": "The column end position."
+      },
+      "rowEnd": {
+        "type": "ConditionalValue<number>",
+        "isRequired": false,
+        "description": "The row end position."
+      }
+    }
+  }
+}

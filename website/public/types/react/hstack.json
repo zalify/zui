@@ -1,0 +1,14 @@
+{
+  "Root": {
+    "props": {
+      "justify": {
+        "type": "ConditionalValue<CSSProperties['justifyContent']>",
+        "isRequired": false
+      },
+      "gap": {
+        "type": "ConditionalValue<CSSProperties['gap']>",
+        "isRequired": false
+      }
+    }
+  }
+}

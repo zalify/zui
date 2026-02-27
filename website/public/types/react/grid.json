@@ -1,0 +1,28 @@
+{
+  "Root": {
+    "props": {
+      "gap": {
+        "type": "ConditionalValue<CSSProperties['gap']>",
+        "isRequired": false
+      },
+      "columnGap": {
+        "type": "ConditionalValue<CSSProperties['gap']>",
+        "isRequired": false
+      },
+      "rowGap": {
+        "type": "ConditionalValue<CSSProperties['gap']>",
+        "isRequired": false
+      },
+      "columns": {
+        "type": "ConditionalValue<number>",
+        "isRequired": false,
+        "description": "The number of equal-width columns in the grid."
+      },
+      "minChildWidth": {
+        "type": "ConditionalValue<Token<'sizes'> | CSSProperties['width']>",
+        "isRequired": false,
+        "description": "The minimum width of each child before wrapping. Uses repeat(auto-fit, minmax(...))."
+      }
+    }
+  }
+}

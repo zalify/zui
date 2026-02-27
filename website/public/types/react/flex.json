@@ -1,0 +1,34 @@
+{
+  "Root": {
+    "props": {
+      "align": {
+        "type": "ConditionalValue<CSSProperties['alignItems']>",
+        "isRequired": false
+      },
+      "justify": {
+        "type": "ConditionalValue<CSSProperties['justifyContent']>",
+        "isRequired": false
+      },
+      "direction": {
+        "type": "ConditionalValue<CSSProperties['flexDirection']>",
+        "isRequired": false
+      },
+      "wrap": {
+        "type": "ConditionalValue<CSSProperties['flexWrap']>",
+        "isRequired": false
+      },
+      "basis": {
+        "type": "ConditionalValue<CSSProperties['flexBasis']>",
+        "isRequired": false
+      },
+      "grow": {
+        "type": "ConditionalValue<CSSProperties['flexGrow']>",
+        "isRequired": false
+      },
+      "shrink": {
+        "type": "ConditionalValue<CSSProperties['flexShrink']>",
+        "isRequired": false
+      }
+    }
+  }
+}

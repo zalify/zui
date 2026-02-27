@@ -1,0 +1,24 @@
+---
+title: CQ
+description: A layout component that creates a container query context for responsive child layouts.
+metaDescription: CQ (Container Query) layout component for creating container query contexts. Use name and type props to enable @container queries for responsive component design.
+category: layout
+---
+
+<ComponentExample name="basic" />
+
+## Usage
+
+```tsx
+import { CQ } from '@zalify-ui/react'
+```
+
+```tsx
+<CQ name="sidebar" type="inline-size">
+  <div>Responds to container width</div>
+</CQ>
+```
+
+## Props
+
+<PropsTable />

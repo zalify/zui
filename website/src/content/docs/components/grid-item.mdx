@@ -1,0 +1,32 @@
+---
+title: Grid Item
+description: A layout component used as a child of Grid to control column and row spanning.
+metaDescription: GridItem layout component for controlling grid item placement. Use colSpan, rowSpan, colStart, and rowStart props to position items within a CSS grid.
+category: layout
+---
+
+<ComponentExample name="basic" />
+
+## Usage
+
+```tsx
+import { Grid, GridItem } from '@zalify-ui/react'
+```
+
+```tsx
+<Grid columns={4} gap="4">
+  <GridItem colSpan={2}>
+    <div>Spans 2 columns</div>
+  </GridItem>
+  <GridItem colSpan={1}>
+    <div>Spans 1 column</div>
+  </GridItem>
+  <GridItem colSpan={1}>
+    <div>Spans 1 column</div>
+  </GridItem>
+</Grid>
+```
+
+## Props
+
+<PropsTable />

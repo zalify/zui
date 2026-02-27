@@ -1,0 +1,26 @@
+{
+  "Root": {
+    "props": {
+      "gap": {
+        "type": "ConditionalValue<CSSProperties['gap']>",
+        "isRequired": false
+      },
+      "rowGap": {
+        "type": "ConditionalValue<CSSProperties['gap']>",
+        "isRequired": false
+      },
+      "columnGap": {
+        "type": "ConditionalValue<CSSProperties['gap']>",
+        "isRequired": false
+      },
+      "align": {
+        "type": "ConditionalValue<CSSProperties['alignItems']>",
+        "isRequired": false
+      },
+      "justify": {
+        "type": "ConditionalValue<CSSProperties['justifyContent']>",
+        "isRequired": false
+      }
+    }
+  }
+}

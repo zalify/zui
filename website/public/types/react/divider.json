@@ -1,0 +1,21 @@
+{
+  "Root": {
+    "props": {
+      "orientation": {
+        "type": "'horizontal' | 'vertical'",
+        "isRequired": false,
+        "description": "The orientation of the divider."
+      },
+      "thickness": {
+        "type": "ConditionalValue<Token<'sizes'> | CSSProperties['borderWidth']>",
+        "isRequired": false,
+        "description": "The thickness of the divider."
+      },
+      "color": {
+        "type": "ConditionalValue<Token<'colors'> | CSSProperties['borderColor']>",
+        "isRequired": false,
+        "description": "The color of the divider."
+      }
+    }
+  }
+}

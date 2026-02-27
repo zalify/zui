@@ -1,0 +1,11 @@
+{
+  "Root": {
+    "props": {
+      "inline": {
+        "type": "ConditionalValue<boolean>",
+        "isRequired": false,
+        "description": "Whether to use inline-flex instead of flex."
+      }
+    }
+  }
+}

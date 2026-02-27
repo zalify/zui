@@ -1,0 +1,11 @@
+{
+  "Root": {
+    "props": {
+      "size": {
+        "type": "ConditionalValue<Token<'spacing'>>",
+        "isRequired": false,
+        "description": "The size of the spacer."
+      }
+    }
+  }
+}
